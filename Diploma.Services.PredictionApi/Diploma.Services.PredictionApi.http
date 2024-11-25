@@ -1,0 +1,6 @@
+@Diploma.Services.PredictionApi_HostAddress = http://localhost:5256
+
+GET {{Diploma.Services.PredictionApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

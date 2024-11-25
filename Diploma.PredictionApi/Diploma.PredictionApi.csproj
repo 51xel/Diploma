@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <InvariantGlobalization>true</InvariantGlobalization>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Diploma.Application\Diploma.Application.csproj" />
+    <ProjectReference Include="..\Diploma.Contracts\Diploma.Contracts.csproj" />
+    <ProjectReference Include="..\Diploma.Dal.EntityFramework\Diploma.Dal.EntityFramework.csproj" />
+    <ProjectReference Include="..\Diploma.Dal.MemoryCache\Diploma.Dal.MemoryCache.csproj" />
+    <ProjectReference Include="..\Diploma.Dal.PythonRunTime\Diploma.Dal.PythonRunTime.csproj" />
+    <ProjectReference Include="..\Diploma.Dal.Storage\Diploma.Dal.Storage.csproj" />
+    <ProjectReference Include="..\Diploma.Domain\Diploma.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
