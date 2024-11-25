@@ -1,26 +1,26 @@
 ﻿using Diploma.Domain.Common.Models;
 using Diploma.Domain.Models;
+using Diploma.Tests.Common.Models;
+using Diploma.Tests.Common.TestConstants;
 using FluentAssertions;
 
 namespace Diploma.Domain.UnitTests.Models
 {
     public class TrainingTimeRangeTests
     {
+        public static IEnumerable<object[]> TimeRangeValidationData => Constants.TrainingTimeRange.ValidationData;
+
         [Fact]
         public void Constructor_WithValidParameters_ShouldInitializeProperties()
         {
             // Arrange
-            var type = TimeRangeType.ByDays;
-            var from = DateTime.Now.AddDays(-7);
-            var to = DateTime.Now;
-
             // Act
-            var range = new TrainingTimeRange(type, from, to);
+            var range = TrainingTimeRangeFactory.CreateDefault();
 
             // Assert
-            range.Type.Should().Be(type);
-            range.From.Should().Be(from);
-            range.To.Should().Be(to);
+            range.Type.Should().Be(Constants.TrainingTimeRange.DefaultTimeRangeType);
+            range.From.Should().Be(Constants.TrainingTimeRange.DefaultFrom);
+            range.To.Should().Be(Constants.TrainingTimeRange.DefaultTo);
         }
 
         [Fact]
@@ -56,15 +56,7 @@ namespace Diploma.Domain.UnitTests.Models
         }
 
         [Theory]
-        //                                    d  h  m  sf st  
-        [InlineData(TimeRangeType.BySeconds, -5, 0, 0, 0, 1, true)] // Valid: BySeconds >= 1
-        [InlineData(TimeRangeType.BySeconds, 0, 0, 0, 0, 0.9, false)] // Invalid: BySeconds < 1
-        [InlineData(TimeRangeType.ByMinutes, -1, 0, 0, 0, 60, true)] // Valid: ByMinutes >= 1
-        [InlineData(TimeRangeType.ByMinutes, -1, 0, 0, 0, 59, false)] // Invalid: ByMinutes < 1
-        [InlineData(TimeRangeType.ByHours, 0, -2, 0, 0, 3600, true)] // Valid: ByHours >= 1
-        [InlineData(TimeRangeType.ByHours, 0, -1, 0, 0, 3599, false)] // Invalid: ByHours < 1
-        [InlineData(TimeRangeType.ByDays, -7, 0, 0, 0, 86400, true)] // Valid: ByDays >= 1
-        [InlineData(TimeRangeType.ByDays, -1, 0.5, 0, 0, 60, false)] // Invalid: ByDays < 1
+        [MemberData(nameof(TimeRangeValidationData))]
         public void Constructor_WithVariousTimeRangeTypes_ShouldValidateCorrectly(
             TimeRangeType type,
             double daysFrom,

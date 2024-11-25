@@ -25,6 +25,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Diploma.Domain\Diploma.Domain.csproj" />
+    <ProjectReference Include="..\Diploma.Tests.Common\Diploma.Tests.Common.csproj" />
   </ItemGroup>
 
 </Project>

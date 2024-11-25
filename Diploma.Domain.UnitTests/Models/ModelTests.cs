@@ -1,5 +1,6 @@
-﻿using Diploma.Domain.Common.Models;
-using Diploma.Domain.Models;
+﻿using Diploma.Domain.Models;
+using Diploma.Tests.Common.Models;
+using Diploma.Tests.Common.TestConstants;
 using FluentAssertions;
 
 namespace Diploma.Domain.UnitTests.Models
@@ -10,43 +11,30 @@ namespace Diploma.Domain.UnitTests.Models
         public void Constructor_WithValidParameters_ShouldInitializeProperties()
         {
             // Arrange
-            var name = "Test Model";
-            var type = ModelType.SARIMA;
-            var trainingTimeRange = new TrainingTimeRange(
-                TimeRangeType.ByDays, 
-                DateTime.Now.AddDays(-7), 
-                DateTime.Now);
-
             // Act
-            var model = new Model(name, type, trainingTimeRange);
+            var model = ModelFactory.CreateDefaultModel();
 
             // Assert
             model.Id.Should().NotBeEmpty();
-            model.Name.Should().Be(name);
-            model.Type.Should().Be(type);
-            model.TrainingTime.Should().Be(trainingTimeRange);
+            model.Name.Should().Be(Constants.Models.DefaultName);
+            model.Type.Should().Be(Constants.Models.DefaultType);
+            model.TrainingTime.Should().Be(Constants.Models.DefaultTimeRange);
         }
 
         [Fact]
         public void Constructor_WithCustomId_ShouldInitializeWithProvidedId()
         {
             // Arrange
-            var name = "Custom Model";
-            var type = ModelType.SARIMA;
-            var trainingTimeRange = new TrainingTimeRange(
-                TimeRangeType.ByDays, 
-                DateTime.Now.AddDays(-3), 
-                DateTime.Now);
             var customId = Guid.NewGuid();
 
             // Act
-            var model = new Model(name, type, trainingTimeRange, customId);
+            var model = ModelFactory.CreateDefaultModel(id: customId);
 
             // Assert
             model.Id.Should().Be(customId);
-            model.Name.Should().Be(name);
-            model.Type.Should().Be(type);
-            model.TrainingTime.Should().Be(trainingTimeRange);
+            model.Name.Should().Be(Constants.Models.DefaultName);
+            model.Type.Should().Be(Constants.Models.DefaultType);
+            model.TrainingTime.Should().Be(Constants.Models.DefaultTimeRange);
         }
 
         [Fact]
@@ -54,14 +42,12 @@ namespace Diploma.Domain.UnitTests.Models
         {
             // Arrange
             string? name = null;
-            var type = ModelType.SARIMA;
-            var trainingTimeRange = new TrainingTimeRange(
-                TimeRangeType.ByDays, 
-                DateTime.Now.AddDays(-5), 
-                DateTime.Now);
 
             // Act
-            Action act = () => new Model(name!, type, trainingTimeRange);
+            Action act = () => new Model(
+                name!, 
+                Constants.Models.DefaultType, 
+                Constants.Models.DefaultTimeRange);
 
             // Assert
             act.Should().Throw<ArgumentException>()
@@ -73,11 +59,12 @@ namespace Diploma.Domain.UnitTests.Models
         {
             // Arrange
             var name = "Invalid Model";
-            var type = ModelType.SARIMA;
-            TrainingTimeRange? trainingTimeRange = null;
 
             // Act
-            Action act = () => new Model(name, type, trainingTimeRange!);
+            Action act = () => new Model(
+                name!,
+                Constants.Models.DefaultType,
+                null!);
 
             // Assert
             act.Should().Throw<ArgumentNullException>()
