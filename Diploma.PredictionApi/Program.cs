@@ -1,3 +1,5 @@
+using Azure.Extensions.AspNetCore.Configuration.Secrets;
+using Azure.Identity;
 using Diploma.Application;
 using Diploma.Dal.EntityFramework;
 using Diploma.Dal.MemoryCache;
@@ -6,6 +8,14 @@ using Diploma.Dal.PythonRunTime.Common;
 using Diploma.Dal.Storage;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Configuration.AddAzureKeyVault(
+    new Uri(builder.Configuration["AzureKeyVaultUri"]!),
+    new DefaultAzureCredential(),
+    new AzureKeyVaultConfigurationOptions
+    {
+        Manager = new KeyVaultSecretManager()
+    });
 
 builder.Services
     .AddApplication()
