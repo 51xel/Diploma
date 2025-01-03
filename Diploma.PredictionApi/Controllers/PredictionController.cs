@@ -1,9 +1,8 @@
 ﻿using AutoMapper;
-using Diploma.Application.Predictions.Queries;
+using Diploma.Application.Predictions.Queries.PredictPrice;
 using Diploma.Contracts.Predictions;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace Diploma.PredictionApi.Controllers

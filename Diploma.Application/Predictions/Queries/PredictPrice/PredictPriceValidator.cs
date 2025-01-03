@@ -1,10 +1,10 @@
 ﻿using FluentValidation;
 
-namespace Diploma.Application.Predictions.Queries
+namespace Diploma.Application.Predictions.Queries.PredictPrice
 {
     internal class PredictPriceValidator : AbstractValidator<PredictPriceQuery>
     {
-        public PredictPriceValidator() 
+        public PredictPriceValidator()
         {
             RuleFor(query => query.From)
                 .LessThan(query => query.To)

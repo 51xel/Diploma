@@ -12,6 +12,19 @@ namespace Diploma.Dal.PythonRunTime.Predictions
     {
         public ModelType ForModelType => ModelType.SARIMA;
 
+        // Python libs
+        private static dynamic _joblib;
+        private static dynamic _io;
+
+        static SARIMAPredictionRepository()
+        {
+            PythonEngineControl.Execute(() =>
+            {
+                _joblib = Py.Import("joblib");
+                _io = Py.Import("io");
+            });
+        }
+
         public List<Prediction> GetPredictions(IPredictionSettings settings, MemoryStream modelStream)
         {
             if (modelStream is null || !modelStream.CanRead)
@@ -32,17 +45,9 @@ namespace Diploma.Dal.PythonRunTime.Predictions
             {
                 byte[] modelBytes = modelStream.ToArray();
 
-                dynamic json = Py.Import("json");
-                dynamic joblib = Py.Import("joblib");
-                dynamic pandas = Py.Import("pandas");
-                dynamic sarimax = Py.Import("statsmodels.tsa.statespace.sarimax");
-                dynamic io = Py.Import("io");
-
-                using (PyObject pyStream = io.BytesIO(modelBytes.ToPython()))
+                using (PyObject pyStream = _io.BytesIO(modelBytes.ToPython()))
                 {
-                    dynamic model = joblib.load(pyStream);
-
-                    dynamic inputSeries = pandas.Series(sarimaSettings.InputData.ToPython());
+                    dynamic model = _joblib.load(pyStream);
 
                     var predictedPrices = model.predict(start: sarimaSettings.InputData.First(), end: sarimaSettings.InputData[^1]);
 

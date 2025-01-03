@@ -13,11 +13,8 @@ namespace Diploma.Domain.UnitTests.Models
         [Fact]
         public void Constructor_WithValidParameters_ShouldInitializeProperties()
         {
-            // Arrange
-            // Act
             var range = TrainingTimeRangeFactory.CreateDefault();
 
-            // Assert
             range.Type.Should().Be(Constants.TrainingTimeRange.DefaultTimeRangeType);
             range.From.Should().Be(Constants.TrainingTimeRange.DefaultFrom);
             range.To.Should().Be(Constants.TrainingTimeRange.DefaultTo);
@@ -26,15 +23,12 @@ namespace Diploma.Domain.UnitTests.Models
         [Fact]
         public void Constructor_WithInvalidDateRange_ShouldThrowArgumentException()
         {
-            // Arrange
             var type = TimeRangeType.ByDays;
             var from = DateTime.Now;
             var to = DateTime.Now.AddDays(-1);
 
-            // Act
             Action act = () => new TrainingTimeRange(type, from, to);
 
-            // Assert
             act.Should().Throw<ArgumentException>()
                 .WithMessage("The 'From' date must be earlier than the 'To' date.");
         }
@@ -42,15 +36,12 @@ namespace Diploma.Domain.UnitTests.Models
         [Fact]
         public void Constructor_WithInvalidTimeRangeType_ShouldThrowArgumentException()
         {
-            // Arrange
             var type = TimeRangeType.ByYears;
             var from = DateTime.Now.AddMonths(-6);
             var to = DateTime.Now;
 
-            // Act
             Action act = () => new TrainingTimeRange(type, from, to);
 
-            // Assert
             act.Should().Throw<ArgumentException>()
                 .WithMessage($"The specified time range '{type}' is invalid for the given dates: from({from}), to({to})");
         }
@@ -74,10 +65,8 @@ namespace Diploma.Domain.UnitTests.Models
 
             var to = from.AddSeconds(secondsTo);
 
-            // Act
             Action act = () => new TrainingTimeRange(type, from, to);
 
-            // Assert
             if (isValid)
             {
                 act.Should().NotThrow();
@@ -92,10 +81,8 @@ namespace Diploma.Domain.UnitTests.Models
         [Fact]
         public void EFConstructor_ShouldInitializePropertiesToDefaults()
         {
-            // Arrange & Act
             var range = new TrainingTimeRange();
 
-            // Assert
             range.Type.Should().Be(TimeRangeType.None);
             range.From.Should().Be(default);
             range.To.Should().Be(default);

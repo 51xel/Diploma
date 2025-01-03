@@ -11,7 +11,7 @@ namespace Diploma.Dal.PythonRunTime.Common
                 return;
             }
 
-            Runtime.PythonDLL = @"C:\Users\User\AppData\Local\Programs\Python\Python312\python312.dll";
+            Runtime.PythonDLL = @"C:\Users\User\AppData\Local\Programs\Python\Python312\python312.dll"; //TODO Replace
             PythonEngine.Initialize();
             PythonEngine.BeginAllowThreads();
         }

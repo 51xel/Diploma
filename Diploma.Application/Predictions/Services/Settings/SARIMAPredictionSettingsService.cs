@@ -29,6 +29,7 @@ namespace Diploma.Application.Predictions.Services.Settings
             var predictionDuration = DateTimeHelper.CalculateDuration(model.TrainingTime.Type, predictionDifference);
 
             var inputIndexes = Enumerable
+                // Need +1 because of DateTime subtraction returns the number of days excluding the start date.
                 .Range((int)trainingDuration, (int)predictionDuration + 1)
                 .ToList();
 

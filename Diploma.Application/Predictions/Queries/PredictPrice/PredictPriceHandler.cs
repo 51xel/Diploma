@@ -4,7 +4,7 @@ using Diploma.Domain.Predictions;
 using ErrorOr;
 using MediatR;
 
-namespace Diploma.Application.Predictions.Queries
+namespace Diploma.Application.Predictions.Queries.PredictPrice
 {
     internal class PredictPriceHandler : IRequestHandler<PredictPriceQuery, ErrorOr<IEnumerable<Prediction>>>
     {
@@ -28,7 +28,7 @@ namespace Diploma.Application.Predictions.Queries
         }
 
         public async Task<ErrorOr<IEnumerable<Prediction>>> Handle(
-            PredictPriceQuery request, 
+            PredictPriceQuery request,
             CancellationToken cancellationToken)
         {
             var validationResult = await _validator.ValidateAsync(request, cancellationToken);
