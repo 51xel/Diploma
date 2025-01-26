@@ -7,6 +7,6 @@ namespace Diploma.Application.Predictions.Interfaces
     public interface IPredictionRepository
     {
         public ModelType ForModelType { get; }
-        public List<Prediction> GetPredictions(IPredictionSettings predictionSettings, MemoryStream modelStream);
+        public List<Prediction> GetPredictions(IPredictionSettings predictionSettings, MemoryStream modelFile);
     }
 }

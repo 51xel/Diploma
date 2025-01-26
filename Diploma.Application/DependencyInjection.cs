@@ -18,7 +18,7 @@ namespace Diploma.Application
                 options.RegisterServicesFromAssemblyContaining(typeof(DependencyInjection));
             });
 
-            services.AddTransient<IModelCacheService, ModelCacheService>();
+            services.AddTransient<IModelFileCacheService, ModelFileCacheService>();
 
             services.AddTransient<IPredictionSettingsFactory, PredictionSettingsFactory>();
             services.AddTransient<IPredictionRepositoryFactory, PredictionRepositoryFactory>();

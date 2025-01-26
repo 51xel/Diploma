@@ -14,9 +14,9 @@ namespace Diploma.Dal.EntityFramework.Models
             _cosmosDbContext = cosmosDbContext;
         }
 
-        public async Task<Model?> GetModelByIdAsync(Guid id)
+        public async Task<Model?> GetAsync(Guid modelId)
         {
-            return await _cosmosDbContext.Models.FirstOrDefaultAsync(x => x.Id == id);
+            return await _cosmosDbContext.Models.FirstOrDefaultAsync(x => x.Id == modelId);
         }
     }
 }

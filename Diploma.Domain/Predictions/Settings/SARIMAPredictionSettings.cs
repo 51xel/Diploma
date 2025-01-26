@@ -4,11 +4,11 @@ namespace Diploma.Domain.Predictions.Settings
 {
     public class SARIMAPredictionSettings : IPredictionSettings
     {
-        public List<int> InputData { get; init; }
-
         public DateTime From { get; init; }
         public DateTime To { get; init; }
         public TimeRangeType TimeRangeType { get; init; }
+
+        public List<int> InputData { get; init; }
 
         public SARIMAPredictionSettings(
             DateTime predictionFrom, 

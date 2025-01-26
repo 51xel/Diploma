@@ -13,8 +13,8 @@ namespace Diploma.Dal.PythonRunTime.Predictions
         public ModelType ForModelType => ModelType.SARIMA;
 
         // Python libs
-        private static dynamic _joblib;
-        private static dynamic _io;
+        private static dynamic? _joblib;
+        private static dynamic? _io;
 
         static SARIMAPredictionRepository()
         {
@@ -23,11 +23,16 @@ namespace Diploma.Dal.PythonRunTime.Predictions
                 _joblib = Py.Import("joblib");
                 _io = Py.Import("io");
             });
+
+            if (_joblib is null || _io is null)
+            {
+                throw new InvalidOperationException("Can`t load python libs");
+            }
         }
 
-        public List<Prediction> GetPredictions(IPredictionSettings settings, MemoryStream modelStream)
+        public List<Prediction> GetPredictions(IPredictionSettings settings, MemoryStream modelFile)
         {
-            if (modelStream is null || !modelStream.CanRead)
+            if (modelFile is null || !modelFile.CanRead)
             {
                 throw new ArgumentException("Model stream cannot be null or empty.");
             }
@@ -43,20 +48,22 @@ namespace Diploma.Dal.PythonRunTime.Predictions
 
             PythonEngineControl.Execute(() => 
             {
-                byte[] modelBytes = modelStream.ToArray();
+                byte[] modelBytes = modelFile.ToArray();
 
-                using (PyObject pyStream = _io.BytesIO(modelBytes.ToPython()))
+                using (PyObject pyStream = _io!.BytesIO(modelBytes.ToPython()))
                 {
-                    dynamic model = _joblib.load(pyStream);
+                    var model = _joblib!.load(pyStream);
 
-                    var predictedPrices = model.predict(start: sarimaSettings.InputData.First(), end: sarimaSettings.InputData[^1]);
+                    var predictedPrices = model.predict(
+                        start: sarimaSettings.InputData.First(),
+                        end: sarimaSettings.InputData[^1]);
 
                     var totalPredictions = sarimaSettings.InputData.Count;
                     var interval = CalculateInterval(sarimaSettings);
 
                     for (int i = 0; i < totalPredictions; i++)
                     {
-                        var predictionDate = sarimaSettings.From.AddDays(interval * i);
+                        var predictionDate = sarimaSettings.From.AddTime(sarimaSettings.TimeRangeType, interval * i);
 
                         var prediction = new Prediction(predictionDate, (double)predictedPrices[i]);
 

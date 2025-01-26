@@ -12,14 +12,15 @@
     <PackageReference Include="Azure.Extensions.AspNetCore.Configuration.Secrets" Version="1.3.2" />
     <PackageReference Include="Azure.Identity" Version="1.13.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    <PackageReference Include="Testcontainers.Redis" Version="4.1.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Diploma.Application\Diploma.Application.csproj" />
     <ProjectReference Include="..\Diploma.Contracts\Diploma.Contracts.csproj" />
     <ProjectReference Include="..\Diploma.Dal.EntityFramework\Diploma.Dal.EntityFramework.csproj" />
-    <ProjectReference Include="..\Diploma.Dal.MemoryCache\Diploma.Dal.MemoryCache.csproj" />
     <ProjectReference Include="..\Diploma.Dal.PythonRunTime\Diploma.Dal.PythonRunTime.csproj" />
+    <ProjectReference Include="..\Diploma.Dal.RedisCache\Diploma.Dal.RedisCache.csproj" />
     <ProjectReference Include="..\Diploma.Dal.Storage\Diploma.Dal.Storage.csproj" />
     <ProjectReference Include="..\Diploma.Domain\Diploma.Domain.csproj" />
   </ItemGroup>

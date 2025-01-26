@@ -18,10 +18,10 @@ namespace Diploma.Dal.Storage.Models
             _storageAccountSettings = storageAccountSettings.Value;
         }
 
-        public async Task<MemoryStream?> GetModelAsync(string name)
+        public async Task<MemoryStream?> GetAsync(string modelName)
         {
             var blobContainerClient = _blobServiceClient.GetBlobContainerClient(_storageAccountSettings.ModelsContainerName);
-            var blobClient = blobContainerClient.GetBlobClient(name);
+            var blobClient = blobContainerClient.GetBlobClient(modelName);
 
             if (!await blobClient.ExistsAsync())
             {

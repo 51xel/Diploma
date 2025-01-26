@@ -9,20 +9,20 @@ namespace Diploma.Application.Predictions.Queries.PredictPrice
     internal class PredictPriceHandler : IRequestHandler<PredictPriceQuery, ErrorOr<IEnumerable<Prediction>>>
     {
         private readonly PredictPriceValidator _validator;
-        private readonly IModelRepository _modelsRepository;
-        private readonly IModelCacheService _modelsCacheService;
+        private readonly IModelRepository _modelRepository;
+        private readonly IModelFileCacheService _modelFileCacheService;
         private readonly IPredictionSettingsFactory _predictionSettingsFactory;
         private readonly IPredictionRepositoryFactory _predictionRepositoryFactory;
 
         public PredictPriceHandler(
             IModelRepository modelsRepository,
-            IModelCacheService modelsCacheService,
+            IModelFileCacheService modelsCacheService,
             IPredictionSettingsFactory predictionSettingsFactory,
             IPredictionRepositoryFactory predictionRepositoryFactory)
         {
             _validator = new PredictPriceValidator();
-            _modelsRepository = modelsRepository;
-            _modelsCacheService = modelsCacheService;
+            _modelRepository = modelsRepository;
+            _modelFileCacheService = modelsCacheService;
             _predictionSettingsFactory = predictionSettingsFactory;
             _predictionRepositoryFactory = predictionRepositoryFactory;
         }
@@ -40,27 +40,28 @@ namespace Diploma.Application.Predictions.Queries.PredictPrice
                     .ToList();
             }
 
-            var model = await _modelsRepository.GetModelByIdAsync(request.ModelId);
+            var model = await _modelRepository.GetAsync(request.ModelId);
 
             if (model is null)
             {
                 return Error.NotFound($"Model not found by id {request.ModelId}");
             }
 
-            var modelStream = await _modelsCacheService.GetOrCreateModelStreamAsync(model);
-
-            if (modelStream is null)
+            using (var modelFile = await _modelFileCacheService.GetOrAddAsync(model))
             {
-                return Error.Failure($"Can`t get model data with name {model.Name}");
+                if (modelFile is null)
+                {
+                    return Error.Failure($"Can`t get model data with name {model.Name}");
+                }
+
+                var predictionSettingsService = _predictionSettingsFactory.GetPredictionSettingsService(model.Type);
+                var predictionSettings = predictionSettingsService.GetSettings(model, request.From, request.To);
+
+                var predictionRepository = _predictionRepositoryFactory.GetPredictionRepository(model.Type);
+                var predictions = predictionRepository.GetPredictions(predictionSettings, modelFile);
+
+                return predictions;
             }
-
-            var predictionSettingsService = _predictionSettingsFactory.GetPredictionSettingsService(model.Type);
-            var predictionSettings = predictionSettingsService.GetSettings(model, request.From, request.To);
-
-            var predictionRepository = _predictionRepositoryFactory.GetPredictionRepository(model.Type);
-            var predictions = predictionRepository.GetPredictions(predictionSettings, modelStream);
-
-            return predictions;
         }
     }
 }

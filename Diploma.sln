@@ -15,15 +15,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Diploma.Dal.EntityFramework
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Diploma.Dal.Storage", "Diploma.Dal.Storage\Diploma.Dal.Storage.csproj", "{AC327D91-5865-4B5A-8C89-B806E7E8221F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Diploma.Dal.MemoryCache", "Diploma.Dal.MemoryCache\Diploma.Dal.MemoryCache.csproj", "{C9FB30CE-5FEE-4FC2-AEFA-01B3E48BA880}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Diploma.Dal.PythonRunTime", "Diploma.Dal.PythonRunTime\Diploma.Dal.PythonRunTime.csproj", "{81528B30-7058-4742-B5C3-E09456DA2C1E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{3606A984-4A34-42EC-B72E-A9A416235D00}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diploma.Tests.Common", "Diploma.Tests.Common\Diploma.Tests.Common.csproj", "{DEF3224C-9AEB-4057-A64D-521282D5E255}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Diploma.Tests.Common", "Diploma.Tests.Common\Diploma.Tests.Common.csproj", "{DEF3224C-9AEB-4057-A64D-521282D5E255}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diploma.Domain.UnitTests", "Diploma.Domain.UnitTests\Diploma.Domain.UnitTests.csproj", "{D225CDC3-9E82-4050-A2D0-A8267F38FE08}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Diploma.Domain.UnitTests", "Diploma.Domain.UnitTests\Diploma.Domain.UnitTests.csproj", "{D225CDC3-9E82-4050-A2D0-A8267F38FE08}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Diploma.Dal.RedisCache", "Diploma.Dal.RedisCache\Diploma.Dal.RedisCache.csproj", "{6E0878A0-35CE-4DFA-ADA3-AA0BA5C4B423}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,10 +55,6 @@ Global
 		{AC327D91-5865-4B5A-8C89-B806E7E8221F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC327D91-5865-4B5A-8C89-B806E7E8221F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC327D91-5865-4B5A-8C89-B806E7E8221F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C9FB30CE-5FEE-4FC2-AEFA-01B3E48BA880}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C9FB30CE-5FEE-4FC2-AEFA-01B3E48BA880}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C9FB30CE-5FEE-4FC2-AEFA-01B3E48BA880}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C9FB30CE-5FEE-4FC2-AEFA-01B3E48BA880}.Release|Any CPU.Build.0 = Release|Any CPU
 		{81528B30-7058-4742-B5C3-E09456DA2C1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{81528B30-7058-4742-B5C3-E09456DA2C1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81528B30-7058-4742-B5C3-E09456DA2C1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -71,6 +67,10 @@ Global
 		{D225CDC3-9E82-4050-A2D0-A8267F38FE08}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D225CDC3-9E82-4050-A2D0-A8267F38FE08}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D225CDC3-9E82-4050-A2D0-A8267F38FE08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E0878A0-35CE-4DFA-ADA3-AA0BA5C4B423}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E0878A0-35CE-4DFA-ADA3-AA0BA5C4B423}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E0878A0-35CE-4DFA-ADA3-AA0BA5C4B423}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E0878A0-35CE-4DFA-ADA3-AA0BA5C4B423}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

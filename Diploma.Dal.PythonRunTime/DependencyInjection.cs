@@ -1,7 +1,6 @@
 ﻿using Diploma.Application.Predictions.Interfaces;
 using Diploma.Dal.PythonRunTime.Predictions;
 using Microsoft.Extensions.DependencyInjection;
-using Python.Runtime;
 
 namespace Diploma.Dal.PythonRunTime
 {

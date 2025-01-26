@@ -2,6 +2,6 @@
 {
     public interface IModelFileRepository
     {
-        public Task<MemoryStream?> GetModelAsync(string name);
+        public Task<MemoryStream?> GetAsync(string modelName);
     }
 }

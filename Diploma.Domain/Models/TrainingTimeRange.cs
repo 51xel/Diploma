@@ -52,7 +52,7 @@ namespace Diploma.Domain.Models
                 case TimeRangeType.ByYears:
                     return (to.Year - from.Year) >= 1;
                 default:
-                    throw new ArgumentOutOfRangeException(nameof(trainingTimeRangeType), "Unsupported time range type");
+                    throw new InvalidOperationException($"Unsupported time range type: {trainingTimeRangeType}");
             }
         }
     }

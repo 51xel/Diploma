@@ -23,5 +23,20 @@ namespace Diploma.Domain.Common.Helpers
                 _ => throw new InvalidOperationException("Unsupported time range type")
             };
         }
+
+        public static DateTime AddTime(this DateTime dateTime, TimeRangeType timeRangeType, double amount)
+        {
+            return timeRangeType switch
+            {
+                TimeRangeType.BySeconds => dateTime.AddSeconds(amount),
+                TimeRangeType.ByMinutes => dateTime.AddMinutes(amount),
+                TimeRangeType.ByHours => dateTime.AddHours(amount),
+                TimeRangeType.ByDays => dateTime.AddDays(amount),
+                TimeRangeType.ByWeeks => dateTime.AddDays(amount * 7),
+                TimeRangeType.ByMonths => dateTime.AddMonths((int)amount),
+                TimeRangeType.ByYears => dateTime.AddYears((int)amount),
+                _ => throw new InvalidOperationException("Unsupported time range type")
+            };
+        }
     }
 }
