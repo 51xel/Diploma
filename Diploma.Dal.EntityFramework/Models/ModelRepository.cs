@@ -7,9 +7,9 @@ namespace Diploma.Dal.EntityFramework.Models
 {
     internal class ModelRepository : IModelRepository
     {
-        private readonly CosmosDbContext _cosmosDbContext;
+        private readonly ApplicationDbContext _cosmosDbContext;
 
-        public ModelRepository(CosmosDbContext cosmosDbContext)
+        public ModelRepository(ApplicationDbContext cosmosDbContext)
         {
             _cosmosDbContext = cosmosDbContext;
         }

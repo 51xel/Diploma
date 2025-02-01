@@ -3,6 +3,6 @@
     public enum ModelType
     {
         None = 0,
-        SARIMA
+        SARIMA = 1
     }
 }

@@ -1,7 +1,6 @@
 ﻿using Diploma.Application.Models.Interfaces;
 using Diploma.Dal.EntityFramework.Common;
 using Diploma.Dal.EntityFramework.Models;
-using Microsoft.Azure.Cosmos;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -25,20 +24,9 @@ namespace Diploma.Dal.EntityFramework
             this IServiceCollection services,
             IConfiguration configuration)
         {
-            services.AddDbContextFactory<CosmosDbContext>(optionsBuilder => optionsBuilder.UseCosmos(
-                connectionString: configuration.GetConnectionString("CosmosDb")!,
-                databaseName: configuration["CosmosDbSettings:DatabaseName"]!,
-                cosmosOptionsAction: options =>
-                {
-                    options.ConnectionMode(ConnectionMode.Direct);
-                    options.MaxRequestsPerTcpConnection(16);
-                    options.MaxTcpConnectionsPerEndpoint(32);
-                    options.HttpClientFactory(() => new HttpClient(new HttpClientHandler
-                    {
-                        ServerCertificateCustomValidationCallback = HttpClientHandler.DangerousAcceptAnyServerCertificateValidator
-                    }));
-                }
-            ));
+            services.AddDbContext<ApplicationDbContext>(options => options
+                    .UseSqlServer(configuration.GetConnectionString("AzureSql"))
+                    .UseLazyLoadingProxies());
 
             return services;
         }

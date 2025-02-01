@@ -44,21 +44,23 @@ namespace Diploma.Application.Predictions.Queries.PredictPrice
 
             if (model is null)
             {
-                return Error.NotFound($"Model not found by id {request.ModelId}");
+                return Error.NotFound(description: $"Model not found by id {request.ModelId}");
             }
 
             using (var modelFile = await _modelFileCacheService.GetOrAddAsync(model))
             {
                 if (modelFile is null)
                 {
-                    return Error.Failure($"Can`t get model data with name {model.Name}");
+                    return Error.Failure(description: $"Can`t get model data with name {model.Name}");
                 }
 
-                var predictionSettingsService = _predictionSettingsFactory.GetPredictionSettingsService(model.Type);
-                var predictionSettings = predictionSettingsService.GetSettings(model, request.From, request.To);
+                var predictionSettings = _predictionSettingsFactory
+                    .GetPredictionSettingsService(model.Type)
+                    .GetSettings(model, request.From, request.To);
 
-                var predictionRepository = _predictionRepositoryFactory.GetPredictionRepository(model.Type);
-                var predictions = predictionRepository.GetPredictions(predictionSettings, modelFile);
+                var predictions = _predictionRepositoryFactory
+                    .GetPredictionRepository(model.Type)
+                    .GetPredictions(predictionSettings, modelFile);
 
                 return predictions;
             }

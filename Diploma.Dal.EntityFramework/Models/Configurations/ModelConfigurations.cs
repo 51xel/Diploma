@@ -1,7 +1,9 @@
 ﻿using Diploma.Dal.EntityFramework.Common.Helpers;
+using Diploma.Domain.Common.Models;
 using Diploma.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Diploma.Dal.EntityFramework.Models.Configurations
 {
@@ -9,47 +11,42 @@ namespace Diploma.Dal.EntityFramework.Models.Configurations
     {
         public void Configure(EntityTypeBuilder<Model> builder)
         {
-            builder
-                .HasNoDiscriminator()
-                .ToContainer("Models")
-                .HasPartitionKey(model => model.Type)
-                .HasKey(model => model.Id);
+            builder.ToTable("model");
+
+            builder.HasKey(model => model.Id);
 
             builder
                 .Property(model => model.Id)
-                .ToJsonProperty("id")
+                .HasColumnName("id")
                 .IsRequired();
 
             builder
                 .Property(model => model.Name)
-                .ToJsonProperty("name")
+                .HasColumnName("name")
                 .IsRequired();
 
             builder
                 .Property(model => model.Type)
-                .ToJsonProperty("type")
-                .HasConversion(ValueConverterHelper.GetConverterForModelType())
+                .HasColumnName("type")
+                .HasConversion<EnumToIntConverter<ModelType>>()
                 .IsRequired();
 
             builder.OwnsOne(model => model.TrainingTime, trainingTime =>
             {
                 trainingTime
-                    .ToJsonProperty("trainingTime");
-
-                trainingTime
                     .Property(t => t.Type)
-                    .ToJsonProperty("timeRange")
-                    .HasConversion(ValueConverterHelper.GetConverterForTrainingTimeRangeType())
+                    .HasColumnName("timeRange")
+                    .HasConversion<EnumToIntConverter<TimeRangeType>>()
                     .IsRequired();
 
                 trainingTime
                     .Property(t => t.From)
-                    .ToJsonProperty("from")
+                    .HasColumnName("from")
                     .IsRequired();
 
                 trainingTime
                     .Property(t => t.To)
-                    .ToJsonProperty("to")
+                    .HasColumnName("to")
                     .IsRequired();
             });
         }
