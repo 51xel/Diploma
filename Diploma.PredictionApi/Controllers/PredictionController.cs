@@ -21,14 +21,16 @@ namespace Diploma.PredictionApi.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> PredictPriceAsync([FromBody][Required] PredictPriceRequest predictPriceRequest)
+        public async Task<IActionResult> PredictPriceAsync(
+            [FromBody][Required] PredictPriceRequest predictPriceRequest,
+            CancellationToken cancellationToken)
         {
             var query = new PredictPriceQuery(
                 predictPriceRequest.ModelId, 
                 predictPriceRequest.From, 
                 predictPriceRequest.To);
 
-            var predictedPrices = await _mediator.Send(query);
+            var predictedPrices = await _mediator.Send(query, cancellationToken);
 
             if (predictedPrices.IsError)
             {

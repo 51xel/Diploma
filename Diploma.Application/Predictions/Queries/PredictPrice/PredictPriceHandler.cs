@@ -40,14 +40,14 @@ namespace Diploma.Application.Predictions.Queries.PredictPrice
                     .ToList();
             }
 
-            var model = await _modelRepository.GetAsync(request.ModelId);
+            var model = await _modelRepository.GetAsync(request.ModelId, cancellationToken);
 
             if (model is null)
             {
                 return Error.NotFound(description: $"Model not found by id {request.ModelId}");
             }
 
-            using (var modelFile = await _modelFileCacheService.GetOrAddAsync(model))
+            using (var modelFile = await _modelFileCacheService.GetOrAddAsync(model, cancellationToken))
             {
                 if (modelFile is null)
                 {

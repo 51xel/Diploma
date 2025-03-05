@@ -19,7 +19,7 @@ namespace Diploma.Dal.RedisCache.Models
             _redisCacheSettings = redisCacheSettings.Value;
         }
 
-        public async Task SaveAsync(Guid modelId, MemoryStream modelFile)
+        public async Task SaveAsync(Guid modelId, MemoryStream modelFile, CancellationToken cancellationToken)
         {
             if (modelFile is null || !modelFile.CanRead)
             {
@@ -33,12 +33,12 @@ namespace Diploma.Dal.RedisCache.Models
                 AbsoluteExpirationRelativeToNow = _redisCacheSettings.ExpirationTime
             };
 
-            await _distributedCache.SetAsync(modelId.ToString(), modelBytes, cacheOptions);
+            await _distributedCache.SetAsync(modelId.ToString(), modelBytes, cacheOptions, cancellationToken);
         }
 
-        public async Task<MemoryStream?> GetAsync(Guid modelId)
+        public async Task<MemoryStream?> GetAsync(Guid modelId, CancellationToken cancellationToken)
         {
-            var modelBytes = await _distributedCache.GetAsync(modelId.ToString());
+            var modelBytes = await _distributedCache.GetAsync(modelId.ToString(), cancellationToken);
 
             if (modelBytes is null) 
             {

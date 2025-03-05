@@ -2,7 +2,7 @@
 {
     public interface IModelFileCacheRepository
     {
-        public Task<MemoryStream?> GetAsync(Guid modelId);
-        public Task SaveAsync(Guid modelId, MemoryStream modelFile);
+        public Task<MemoryStream?> GetAsync(Guid modelId, CancellationToken cancellationToken);
+        public Task SaveAsync(Guid modelId, MemoryStream modelFile, CancellationToken cancellationToken);
     }
 }

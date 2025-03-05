@@ -16,16 +16,16 @@ namespace Diploma.Application.Models.Services
             _modelFileCacheRepository = modelsCacheRepository;
         }
 
-        public async Task<MemoryStream?> GetOrAddAsync(Model model)
+        public async Task<MemoryStream?> GetOrAddAsync(Model model, CancellationToken cancellationToken)
         {
-            var modelFile = await _modelFileCacheRepository.GetAsync(model.Id);
+            var modelFile = await _modelFileCacheRepository.GetAsync(model.Id, cancellationToken);
 
             if (modelFile is not null)
             {
                 return modelFile;
             }
 
-            modelFile = await _modelFileRepository.GetAsync(model.Name);
+            modelFile = await _modelFileRepository.GetAsync(model.Name, cancellationToken);
 
             if (modelFile is null)
             {
@@ -33,7 +33,7 @@ namespace Diploma.Application.Models.Services
             }
 
             //TODO speed up?
-            await _modelFileCacheRepository.SaveAsync(model.Id, modelFile);
+            await _modelFileCacheRepository.SaveAsync(model.Id, modelFile, cancellationToken);
 
             return modelFile;
         }

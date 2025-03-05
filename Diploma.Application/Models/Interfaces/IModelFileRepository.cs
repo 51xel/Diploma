@@ -2,6 +2,6 @@
 {
     public interface IModelFileRepository
     {
-        public Task<MemoryStream?> GetAsync(string modelName);
+        public Task<MemoryStream?> GetAsync(string modelName, CancellationToken cancellationToken);
     }
 }

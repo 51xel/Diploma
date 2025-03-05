@@ -18,20 +18,20 @@ namespace Diploma.Dal.Storage.Models
             _storageAccountSettings = storageAccountSettings.Value;
         }
 
-        public async Task<MemoryStream?> GetAsync(string modelName)
+        public async Task<MemoryStream?> GetAsync(string modelName, CancellationToken cancellationToken)
         {
             var blobContainerClient = _blobServiceClient.GetBlobContainerClient(_storageAccountSettings.ModelsContainerName);
             var blobClient = blobContainerClient.GetBlobClient(modelName);
 
-            if (!await blobClient.ExistsAsync())
+            if (!await blobClient.ExistsAsync(cancellationToken))
             {
                 return null;
             }
 
-            var contentFromStorage = await blobClient.DownloadStreamingAsync();
+            var contentFromStorage = await blobClient.DownloadStreamingAsync(cancellationToken: cancellationToken);
 
             var memoryStream = new MemoryStream();
-            await contentFromStorage.Value.Content.CopyToAsync(memoryStream);
+            await contentFromStorage.Value.Content.CopyToAsync(memoryStream, cancellationToken);
             return memoryStream;
         }
     }

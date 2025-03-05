@@ -4,6 +4,6 @@ namespace Diploma.Application.Models.Interfaces
 {
     public interface IModelFileCacheService
     {
-        public Task<MemoryStream?> GetOrAddAsync(Model model);
+        public Task<MemoryStream?> GetOrAddAsync(Model model, CancellationToken cancellationToken);
     }
 }
