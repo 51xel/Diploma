@@ -6,7 +6,7 @@ using Diploma.Domain.Predictions.Settings;
 
 namespace Diploma.Application.Predictions.Services.Settings
 {
-    internal class SARIMAPredictionSettingsService : IPredictionSettingsService
+    internal class SarimaPredictionSettingsService : IPredictionSettingsService
     {
         public ModelType ForModelType => ModelType.SARIMA;
 
@@ -19,7 +19,7 @@ namespace Diploma.Application.Predictions.Services.Settings
 
             if (predictionFrom < model.TrainingTime.From || predictionTo < model.TrainingTime.From)
             {
-                throw new ArgumentOutOfRangeException("The requested range is outside the model's training range.");
+                throw new InvalidOperationException("The requested range is outside the model's training range.");
             }
 
             var trainingDifference = predictionFrom - model.TrainingTime.From;
@@ -33,7 +33,7 @@ namespace Diploma.Application.Predictions.Services.Settings
                 .Range((int)trainingDuration, (int)predictionDuration + 1)
                 .ToList();
 
-            return new SARIMAPredictionSettings(predictionFrom, predictionTo, model.TrainingTime.Type, inputIndexes);
+            return new SarimaPredictionSettings(predictionFrom, predictionTo, model.TrainingTime.Type, inputIndexes);
         }
     }
 }

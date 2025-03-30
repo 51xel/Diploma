@@ -2,7 +2,7 @@
 
 namespace Diploma.Domain.Predictions.Settings
 {
-    public class SARIMAPredictionSettings : IPredictionSettings
+    public class SarimaPredictionSettings : IPredictionSettings
     {
         public DateTime From { get; init; }
         public DateTime To { get; init; }
@@ -10,7 +10,7 @@ namespace Diploma.Domain.Predictions.Settings
 
         public List<int> InputData { get; init; }
 
-        public SARIMAPredictionSettings(
+        public SarimaPredictionSettings(
             DateTime predictionFrom, 
             DateTime predictionTo, 
             TimeRangeType timeRangeType,

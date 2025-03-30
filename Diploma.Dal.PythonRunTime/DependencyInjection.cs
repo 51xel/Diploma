@@ -8,7 +8,7 @@ namespace Diploma.Dal.PythonRunTime
     {
         public static IServiceCollection AddDalPythonRunTime(this IServiceCollection services)
         {
-            services.AddTransient<IPredictionRepository, SARIMAPredictionRepository>();
+            services.AddTransient<IPredictionRepository, SarimaPredictionRepository>();
 
             return services;
         }

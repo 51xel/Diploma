@@ -1,4 +1,5 @@
-﻿using Diploma.Domain.Models;
+﻿using Diploma.Domain.Algorithms;
+using Diploma.Domain.Models;
 using Diploma.Tests.Common.Models;
 
 namespace Diploma.Tests.Common.TestConstants
@@ -10,6 +11,7 @@ namespace Diploma.Tests.Common.TestConstants
             public static readonly string DefaultName = "Default Model";
             public static readonly ModelType DefaultType = ModelType.SARIMA;
             public static readonly Domain.Models.TrainingTimeRange DefaultTimeRange = TrainingTimeRangeFactory.CreateDefault();
+            public static readonly IEnumerable<Algorithm> DefaultAlgorithms = new List<Algorithm>();
         }
     }
 }
