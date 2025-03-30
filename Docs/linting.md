@@ -50,11 +50,11 @@ dotnet tool install --global dotnet-sonarscanner
 
 2. Запустіть аналіз у корені вашого проєкту:
 ```sh
-dotnet sonarscanner begin /k:"Diploma" /d:sonar.host.url="http://localhost:9000" /d:sonar.login="admin"
+dotnet sonarscanner begin /k:"your_project_key" /d:sonar.host.url="http://localhost:9000" /d:sonar.login="your_token"
 
 dotnet build
 
-dotnet sonarscanner end /d:sonar.login="admin"
+dotnet sonarscanner end /d:sonar.login="your_token"
 ```
 
 ##### 3. Перегляд результатів
