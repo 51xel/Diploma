@@ -9,7 +9,7 @@ namespace Diploma.PredictionApi.Controllers
     {
         protected IActionResult Problem(IEnumerable<Error> errors)
         {
-            if (errors.Count() is 0)
+            if (errors.Any())
             {
                 return Problem();
             }

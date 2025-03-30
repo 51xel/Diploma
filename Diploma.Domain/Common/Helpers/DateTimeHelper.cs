@@ -1,4 +1,5 @@
 ﻿using Diploma.Domain.Common.Models;
+using Diploma.Domain.Predictions.Settings;
 
 namespace Diploma.Domain.Common.Helpers
 {
@@ -37,6 +38,15 @@ namespace Diploma.Domain.Common.Helpers
                 TimeRangeType.ByYears => dateTime.AddYears((int)amount),
                 _ => throw new InvalidOperationException("Unsupported time range type")
             };
+        }
+
+        public static double CalculateInterval(SarimaPredictionSettings sarimaSettings)
+        {
+            var totalPredictions = sarimaSettings.InputData.Count;
+            var predictionDifference = sarimaSettings.To - sarimaSettings.From;
+            var predictionDuration = CalculateDuration(sarimaSettings.TimeRangeType, predictionDifference);
+
+            return predictionDuration / (totalPredictions - 1);
         }
     }
 }

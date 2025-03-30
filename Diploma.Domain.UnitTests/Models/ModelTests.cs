@@ -39,7 +39,8 @@ namespace Diploma.Domain.UnitTests.Models
             Action act = () => new Model(
                 name!, 
                 Constants.Models.DefaultType, 
-                Constants.Models.DefaultTimeRange);
+                Constants.Models.DefaultTimeRange,
+                Constants.Models.DefaultAlgorithms.ToList());
 
             act.Should().Throw<ArgumentException>()
                 .WithMessage("Value cannot be null. (Parameter 'name')");
@@ -53,6 +54,7 @@ namespace Diploma.Domain.UnitTests.Models
             Action act = () => new Model(
                 name!,
                 Constants.Models.DefaultType,
+                null!,
                 null!);
 
             act.Should().Throw<ArgumentNullException>()

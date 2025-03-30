@@ -23,7 +23,7 @@ namespace Diploma.Application
             services.AddTransient<IPredictionSettingsFactory, PredictionSettingsFactory>();
             services.AddTransient<IPredictionRepositoryFactory, PredictionRepositoryFactory>();
 
-            services.AddTransient<IPredictionSettingsService, SARIMAPredictionSettingsService>();
+            services.AddTransient<IPredictionSettingsService, SarimaPredictionSettingsService>();
 
             return services;
         }

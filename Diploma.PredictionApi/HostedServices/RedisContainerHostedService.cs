@@ -5,7 +5,7 @@ namespace Diploma.PredictionApi.HostedServices
     public class RedisContainerHostedService : IHostedService
     {
         private readonly ILogger<RedisContainerHostedService> _logger;
-        public IHostApplicationLifetime _appLifetime;
+        private readonly IHostApplicationLifetime _appLifetime;
 
         public RedisContainerHostedService(ILogger<RedisContainerHostedService> logger, IHostApplicationLifetime appLifetime)
         {
@@ -27,7 +27,7 @@ namespace Diploma.PredictionApi.HostedServices
                     .WithLogger(loggerFactory.CreateLogger<RedisContainerHostedService>())
                     .Build();
 
-                await redisContainer.StartAsync();
+                await redisContainer.StartAsync(cancellationToken);
 
                 _logger.LogInformation($"Redis container started with ID: {redisContainer.Id}");
             }
