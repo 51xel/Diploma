@@ -1,0 +1,71 @@
+### YamlMime:ManagedReference
+items:
+- uid: Diploma.Application.Predictions.Interfaces
+  commentId: N:Diploma.Application.Predictions.Interfaces
+  id: Interfaces
+  parent: Diploma.Application.Predictions
+  children:
+  - Diploma.Application.Predictions.Interfaces.IPredictionRepository
+  - Diploma.Application.Predictions.Interfaces.IPredictionSettingsService
+  langs:
+  - csharp
+  - vb
+  name: Diploma.Application.Predictions.Interfaces
+  nameWithType: Diploma.Application.Predictions.Interfaces
+  fullName: Diploma.Application.Predictions.Interfaces
+  type: Namespace
+  assemblies:
+  - Diploma.Application
+references:
+- uid: Diploma.Application.Predictions.Interfaces.IPredictionRepository
+  commentId: T:Diploma.Application.Predictions.Interfaces.IPredictionRepository
+  parent: Diploma.Application.Predictions.Interfaces
+  href: Diploma.Application.Predictions.Interfaces.IPredictionRepository.html
+  name: IPredictionRepository
+  nameWithType: IPredictionRepository
+  fullName: Diploma.Application.Predictions.Interfaces.IPredictionRepository
+- uid: Diploma.Application.Predictions.Interfaces.IPredictionSettingsService
+  commentId: T:Diploma.Application.Predictions.Interfaces.IPredictionSettingsService
+  parent: Diploma.Application.Predictions.Interfaces
+  href: Diploma.Application.Predictions.Interfaces.IPredictionSettingsService.html
+  name: IPredictionSettingsService
+  nameWithType: IPredictionSettingsService
+  fullName: Diploma.Application.Predictions.Interfaces.IPredictionSettingsService
+- uid: Diploma.Application.Predictions.Interfaces
+  commentId: N:Diploma.Application.Predictions.Interfaces
+  href: Diploma.html
+  name: Diploma.Application.Predictions.Interfaces
+  nameWithType: Diploma.Application.Predictions.Interfaces
+  fullName: Diploma.Application.Predictions.Interfaces
+  spec.csharp:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Application
+    name: Application
+    href: Diploma.Application.html
+  - name: .
+  - uid: Diploma.Application.Predictions
+    name: Predictions
+    href: Diploma.Application.Predictions.html
+  - name: .
+  - uid: Diploma.Application.Predictions.Interfaces
+    name: Interfaces
+    href: Diploma.Application.Predictions.Interfaces.html
+  spec.vb:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Application
+    name: Application
+    href: Diploma.Application.html
+  - name: .
+  - uid: Diploma.Application.Predictions
+    name: Predictions
+    href: Diploma.Application.Predictions.html
+  - name: .
+  - uid: Diploma.Application.Predictions.Interfaces
+    name: Interfaces
+    href: Diploma.Application.Predictions.Interfaces.html

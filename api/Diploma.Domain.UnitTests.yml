@@ -1,0 +1,98 @@
+### YamlMime:ManagedReference
+items:
+- uid: Diploma.Domain.UnitTests
+  id: UnitTests
+  parent: Diploma.Domain
+  children:
+  - Diploma.Domain.UnitTests.Common.Helpers
+  - Diploma.Domain.UnitTests.Models
+  langs:
+  - csharp
+  - vb
+  name: Diploma.Domain.UnitTests
+  type: Namespace
+references:
+- uid: Diploma.Domain.UnitTests.Models
+  commentId: N:Diploma.Domain.UnitTests.Models
+  href: Diploma.html
+  name: Diploma.Domain.UnitTests.Models
+  nameWithType: Diploma.Domain.UnitTests.Models
+  fullName: Diploma.Domain.UnitTests.Models
+  spec.csharp:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Domain
+    name: Domain
+    href: Diploma.Domain.html
+  - name: .
+  - uid: Diploma.Domain.UnitTests
+    name: UnitTests
+    href: Diploma.Domain.UnitTests.html
+  - name: .
+  - uid: Diploma.Domain.UnitTests.Models
+    name: Models
+    href: Diploma.Domain.UnitTests.Models.html
+  spec.vb:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Domain
+    name: Domain
+    href: Diploma.Domain.html
+  - name: .
+  - uid: Diploma.Domain.UnitTests
+    name: UnitTests
+    href: Diploma.Domain.UnitTests.html
+  - name: .
+  - uid: Diploma.Domain.UnitTests.Models
+    name: Models
+    href: Diploma.Domain.UnitTests.Models.html
+- uid: Diploma.Domain.UnitTests.Common.Helpers
+  commentId: N:Diploma.Domain.UnitTests.Common.Helpers
+  href: Diploma.html
+  name: Diploma.Domain.UnitTests.Common.Helpers
+  nameWithType: Diploma.Domain.UnitTests.Common.Helpers
+  fullName: Diploma.Domain.UnitTests.Common.Helpers
+  spec.csharp:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Domain
+    name: Domain
+    href: Diploma.Domain.html
+  - name: .
+  - uid: Diploma.Domain.UnitTests
+    name: UnitTests
+    href: Diploma.Domain.UnitTests.html
+  - name: .
+  - uid: Diploma.Domain.UnitTests.Common
+    name: Common
+    href: Diploma.Domain.UnitTests.Common.html
+  - name: .
+  - uid: Diploma.Domain.UnitTests.Common.Helpers
+    name: Helpers
+    href: Diploma.Domain.UnitTests.Common.Helpers.html
+  spec.vb:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Domain
+    name: Domain
+    href: Diploma.Domain.html
+  - name: .
+  - uid: Diploma.Domain.UnitTests
+    name: UnitTests
+    href: Diploma.Domain.UnitTests.html
+  - name: .
+  - uid: Diploma.Domain.UnitTests.Common
+    name: Common
+    href: Diploma.Domain.UnitTests.Common.html
+  - name: .
+  - uid: Diploma.Domain.UnitTests.Common.Helpers
+    name: Helpers
+    href: Diploma.Domain.UnitTests.Common.Helpers.html

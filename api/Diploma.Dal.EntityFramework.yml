@@ -1,0 +1,102 @@
+### YamlMime:ManagedReference
+items:
+- uid: Diploma.Dal.EntityFramework
+  commentId: N:Diploma.Dal.EntityFramework
+  id: EntityFramework
+  parent: Diploma.Dal
+  children:
+  - Diploma.Dal.EntityFramework.Common
+  - Diploma.Dal.EntityFramework.DependencyInjection
+  - Diploma.Dal.EntityFramework.Migrations
+  langs:
+  - csharp
+  - vb
+  name: Diploma.Dal.EntityFramework
+  nameWithType: Diploma.Dal.EntityFramework
+  fullName: Diploma.Dal.EntityFramework
+  type: Namespace
+  assemblies:
+  - Diploma.Dal.EntityFramework
+references:
+- uid: Diploma.Dal.EntityFramework.Common
+  commentId: N:Diploma.Dal.EntityFramework.Common
+  href: Diploma.html
+  name: Diploma.Dal.EntityFramework.Common
+  nameWithType: Diploma.Dal.EntityFramework.Common
+  fullName: Diploma.Dal.EntityFramework.Common
+  spec.csharp:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Dal
+    name: Dal
+    href: Diploma.Dal.html
+  - name: .
+  - uid: Diploma.Dal.EntityFramework
+    name: EntityFramework
+    href: Diploma.Dal.EntityFramework.html
+  - name: .
+  - uid: Diploma.Dal.EntityFramework.Common
+    name: Common
+    href: Diploma.Dal.EntityFramework.Common.html
+  spec.vb:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Dal
+    name: Dal
+    href: Diploma.Dal.html
+  - name: .
+  - uid: Diploma.Dal.EntityFramework
+    name: EntityFramework
+    href: Diploma.Dal.EntityFramework.html
+  - name: .
+  - uid: Diploma.Dal.EntityFramework.Common
+    name: Common
+    href: Diploma.Dal.EntityFramework.Common.html
+- uid: Diploma.Dal.EntityFramework.Migrations
+  commentId: N:Diploma.Dal.EntityFramework.Migrations
+  href: Diploma.html
+  name: Diploma.Dal.EntityFramework.Migrations
+  nameWithType: Diploma.Dal.EntityFramework.Migrations
+  fullName: Diploma.Dal.EntityFramework.Migrations
+  spec.csharp:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Dal
+    name: Dal
+    href: Diploma.Dal.html
+  - name: .
+  - uid: Diploma.Dal.EntityFramework
+    name: EntityFramework
+    href: Diploma.Dal.EntityFramework.html
+  - name: .
+  - uid: Diploma.Dal.EntityFramework.Migrations
+    name: Migrations
+    href: Diploma.Dal.EntityFramework.Migrations.html
+  spec.vb:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Dal
+    name: Dal
+    href: Diploma.Dal.html
+  - name: .
+  - uid: Diploma.Dal.EntityFramework
+    name: EntityFramework
+    href: Diploma.Dal.EntityFramework.html
+  - name: .
+  - uid: Diploma.Dal.EntityFramework.Migrations
+    name: Migrations
+    href: Diploma.Dal.EntityFramework.Migrations.html
+- uid: Diploma.Dal.EntityFramework.DependencyInjection
+  commentId: T:Diploma.Dal.EntityFramework.DependencyInjection
+  href: Diploma.Dal.EntityFramework.DependencyInjection.html
+  name: DependencyInjection
+  nameWithType: DependencyInjection
+  fullName: Diploma.Dal.EntityFramework.DependencyInjection

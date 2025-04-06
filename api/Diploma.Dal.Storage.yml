@@ -1,0 +1,24 @@
+### YamlMime:ManagedReference
+items:
+- uid: Diploma.Dal.Storage
+  commentId: N:Diploma.Dal.Storage
+  id: Storage
+  parent: Diploma.Dal
+  children:
+  - Diploma.Dal.Storage.DependencyInjection
+  langs:
+  - csharp
+  - vb
+  name: Diploma.Dal.Storage
+  nameWithType: Diploma.Dal.Storage
+  fullName: Diploma.Dal.Storage
+  type: Namespace
+  assemblies:
+  - Diploma.Dal.Storage
+references:
+- uid: Diploma.Dal.Storage.DependencyInjection
+  commentId: T:Diploma.Dal.Storage.DependencyInjection
+  href: Diploma.Dal.Storage.DependencyInjection.html
+  name: DependencyInjection
+  nameWithType: DependencyInjection
+  fullName: Diploma.Dal.Storage.DependencyInjection

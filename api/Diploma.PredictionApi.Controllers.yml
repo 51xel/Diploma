@@ -1,0 +1,62 @@
+### YamlMime:ManagedReference
+items:
+- uid: Diploma.PredictionApi.Controllers
+  commentId: N:Diploma.PredictionApi.Controllers
+  id: Controllers
+  parent: Diploma.PredictionApi
+  children:
+  - Diploma.PredictionApi.Controllers.ApiControllerBase
+  - Diploma.PredictionApi.Controllers.PredictionController
+  langs:
+  - csharp
+  - vb
+  name: Diploma.PredictionApi.Controllers
+  nameWithType: Diploma.PredictionApi.Controllers
+  fullName: Diploma.PredictionApi.Controllers
+  type: Namespace
+  assemblies:
+  - Diploma.PredictionApi
+references:
+- uid: Diploma.PredictionApi.Controllers.ApiControllerBase
+  commentId: T:Diploma.PredictionApi.Controllers.ApiControllerBase
+  parent: Diploma.PredictionApi.Controllers
+  href: Diploma.PredictionApi.Controllers.ApiControllerBase.html
+  name: ApiControllerBase
+  nameWithType: ApiControllerBase
+  fullName: Diploma.PredictionApi.Controllers.ApiControllerBase
+- uid: Diploma.PredictionApi.Controllers.PredictionController
+  commentId: T:Diploma.PredictionApi.Controllers.PredictionController
+  href: Diploma.PredictionApi.Controllers.PredictionController.html
+  name: PredictionController
+  nameWithType: PredictionController
+  fullName: Diploma.PredictionApi.Controllers.PredictionController
+- uid: Diploma.PredictionApi.Controllers
+  commentId: N:Diploma.PredictionApi.Controllers
+  href: Diploma.html
+  name: Diploma.PredictionApi.Controllers
+  nameWithType: Diploma.PredictionApi.Controllers
+  fullName: Diploma.PredictionApi.Controllers
+  spec.csharp:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.PredictionApi
+    name: PredictionApi
+    href: Diploma.PredictionApi.html
+  - name: .
+  - uid: Diploma.PredictionApi.Controllers
+    name: Controllers
+    href: Diploma.PredictionApi.Controllers.html
+  spec.vb:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.PredictionApi
+    name: PredictionApi
+    href: Diploma.PredictionApi.html
+  - name: .
+  - uid: Diploma.PredictionApi.Controllers
+    name: Controllers
+    href: Diploma.PredictionApi.Controllers.html

@@ -1,0 +1,70 @@
+### YamlMime:ManagedReference
+items:
+- uid: Diploma.Tests.Common.TestConstants
+  commentId: N:Diploma.Tests.Common.TestConstants
+  id: TestConstants
+  parent: Diploma.Tests.Common
+  children:
+  - Diploma.Tests.Common.TestConstants.Constants
+  - Diploma.Tests.Common.TestConstants.Constants.Models
+  - Diploma.Tests.Common.TestConstants.Constants.TrainingTimeRange
+  langs:
+  - csharp
+  - vb
+  name: Diploma.Tests.Common.TestConstants
+  nameWithType: Diploma.Tests.Common.TestConstants
+  fullName: Diploma.Tests.Common.TestConstants
+  type: Namespace
+  assemblies:
+  - Diploma.Tests.Common
+references:
+- uid: Diploma.Tests.Common.TestConstants.Constants
+  commentId: T:Diploma.Tests.Common.TestConstants.Constants
+  href: Diploma.Tests.Common.TestConstants.Constants.html
+  name: Constants
+  nameWithType: Constants
+  fullName: Diploma.Tests.Common.TestConstants.Constants
+- uid: Diploma.Tests.Common.TestConstants.Constants.Models
+  commentId: T:Diploma.Tests.Common.TestConstants.Constants.Models
+  href: Diploma.Tests.Common.TestConstants.Constants.html
+  name: Constants.Models
+  nameWithType: Constants.Models
+  fullName: Diploma.Tests.Common.TestConstants.Constants.Models
+  spec.csharp:
+  - uid: Diploma.Tests.Common.TestConstants.Constants
+    name: Constants
+    href: Diploma.Tests.Common.TestConstants.Constants.html
+  - name: .
+  - uid: Diploma.Tests.Common.TestConstants.Constants.Models
+    name: Models
+    href: Diploma.Tests.Common.TestConstants.Constants.Models.html
+  spec.vb:
+  - uid: Diploma.Tests.Common.TestConstants.Constants
+    name: Constants
+    href: Diploma.Tests.Common.TestConstants.Constants.html
+  - name: .
+  - uid: Diploma.Tests.Common.TestConstants.Constants.Models
+    name: Models
+    href: Diploma.Tests.Common.TestConstants.Constants.Models.html
+- uid: Diploma.Tests.Common.TestConstants.Constants.TrainingTimeRange
+  commentId: T:Diploma.Tests.Common.TestConstants.Constants.TrainingTimeRange
+  href: Diploma.Tests.Common.TestConstants.Constants.html
+  name: Constants.TrainingTimeRange
+  nameWithType: Constants.TrainingTimeRange
+  fullName: Diploma.Tests.Common.TestConstants.Constants.TrainingTimeRange
+  spec.csharp:
+  - uid: Diploma.Tests.Common.TestConstants.Constants
+    name: Constants
+    href: Diploma.Tests.Common.TestConstants.Constants.html
+  - name: .
+  - uid: Diploma.Tests.Common.TestConstants.Constants.TrainingTimeRange
+    name: TrainingTimeRange
+    href: Diploma.Tests.Common.TestConstants.Constants.TrainingTimeRange.html
+  spec.vb:
+  - uid: Diploma.Tests.Common.TestConstants.Constants
+    name: Constants
+    href: Diploma.Tests.Common.TestConstants.Constants.html
+  - name: .
+  - uid: Diploma.Tests.Common.TestConstants.Constants.TrainingTimeRange
+    name: TrainingTimeRange
+    href: Diploma.Tests.Common.TestConstants.Constants.TrainingTimeRange.html

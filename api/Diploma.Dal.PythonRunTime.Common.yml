@@ -1,0 +1,24 @@
+### YamlMime:ManagedReference
+items:
+- uid: Diploma.Dal.PythonRunTime.Common
+  commentId: N:Diploma.Dal.PythonRunTime.Common
+  id: Common
+  parent: Diploma.Dal.PythonRunTime
+  children:
+  - Diploma.Dal.PythonRunTime.Common.PythonEngineControl
+  langs:
+  - csharp
+  - vb
+  name: Diploma.Dal.PythonRunTime.Common
+  nameWithType: Diploma.Dal.PythonRunTime.Common
+  fullName: Diploma.Dal.PythonRunTime.Common
+  type: Namespace
+  assemblies:
+  - Diploma.Dal.PythonRunTime
+references:
+- uid: Diploma.Dal.PythonRunTime.Common.PythonEngineControl
+  commentId: T:Diploma.Dal.PythonRunTime.Common.PythonEngineControl
+  href: Diploma.Dal.PythonRunTime.Common.PythonEngineControl.html
+  name: PythonEngineControl
+  nameWithType: PythonEngineControl
+  fullName: Diploma.Dal.PythonRunTime.Common.PythonEngineControl

@@ -1,0 +1,63 @@
+### YamlMime:ManagedReference
+items:
+- uid: Diploma.Domain.Predictions
+  commentId: N:Diploma.Domain.Predictions
+  id: Predictions
+  parent: Diploma.Domain
+  children:
+  - Diploma.Domain.Predictions.Prediction
+  - Diploma.Domain.Predictions.Settings
+  langs:
+  - csharp
+  - vb
+  name: Diploma.Domain.Predictions
+  nameWithType: Diploma.Domain.Predictions
+  fullName: Diploma.Domain.Predictions
+  type: Namespace
+  assemblies:
+  - Diploma.Domain
+references:
+- uid: Diploma.Domain.Predictions.Settings
+  commentId: N:Diploma.Domain.Predictions.Settings
+  href: Diploma.html
+  name: Diploma.Domain.Predictions.Settings
+  nameWithType: Diploma.Domain.Predictions.Settings
+  fullName: Diploma.Domain.Predictions.Settings
+  spec.csharp:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Domain
+    name: Domain
+    href: Diploma.Domain.html
+  - name: .
+  - uid: Diploma.Domain.Predictions
+    name: Predictions
+    href: Diploma.Domain.Predictions.html
+  - name: .
+  - uid: Diploma.Domain.Predictions.Settings
+    name: Settings
+    href: Diploma.Domain.Predictions.Settings.html
+  spec.vb:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Domain
+    name: Domain
+    href: Diploma.Domain.html
+  - name: .
+  - uid: Diploma.Domain.Predictions
+    name: Predictions
+    href: Diploma.Domain.Predictions.html
+  - name: .
+  - uid: Diploma.Domain.Predictions.Settings
+    name: Settings
+    href: Diploma.Domain.Predictions.Settings.html
+- uid: Diploma.Domain.Predictions.Prediction
+  commentId: T:Diploma.Domain.Predictions.Prediction
+  href: Diploma.Domain.Predictions.Prediction.html
+  name: Prediction
+  nameWithType: Prediction
+  fullName: Diploma.Domain.Predictions.Prediction

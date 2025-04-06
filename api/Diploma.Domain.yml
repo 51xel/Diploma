@@ -1,0 +1,111 @@
+### YamlMime:ManagedReference
+items:
+- uid: Diploma.Domain
+  id: Domain
+  parent: Diploma
+  children:
+  - Diploma.Domain.Algorithms
+  - Diploma.Domain.Common
+  - Diploma.Domain.Models
+  - Diploma.Domain.Predictions
+  - Diploma.Domain.UnitTests
+  langs:
+  - csharp
+  - vb
+  name: Diploma.Domain
+  type: Namespace
+references:
+- uid: Diploma.Domain.Algorithms
+  commentId: N:Diploma.Domain.Algorithms
+  href: Diploma.html
+  name: Diploma.Domain.Algorithms
+  nameWithType: Diploma.Domain.Algorithms
+  fullName: Diploma.Domain.Algorithms
+  spec.csharp:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Domain
+    name: Domain
+    href: Diploma.Domain.html
+  - name: .
+  - uid: Diploma.Domain.Algorithms
+    name: Algorithms
+    href: Diploma.Domain.Algorithms.html
+  spec.vb:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Domain
+    name: Domain
+    href: Diploma.Domain.html
+  - name: .
+  - uid: Diploma.Domain.Algorithms
+    name: Algorithms
+    href: Diploma.Domain.Algorithms.html
+- uid: Diploma.Domain.Common
+  isExternal: true
+- uid: Diploma.Domain.Models
+  commentId: N:Diploma.Domain.Models
+  href: Diploma.html
+  name: Diploma.Domain.Models
+  nameWithType: Diploma.Domain.Models
+  fullName: Diploma.Domain.Models
+  spec.csharp:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Domain
+    name: Domain
+    href: Diploma.Domain.html
+  - name: .
+  - uid: Diploma.Domain.Models
+    name: Models
+    href: Diploma.Domain.Models.html
+  spec.vb:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Domain
+    name: Domain
+    href: Diploma.Domain.html
+  - name: .
+  - uid: Diploma.Domain.Models
+    name: Models
+    href: Diploma.Domain.Models.html
+- uid: Diploma.Domain.Predictions
+  commentId: N:Diploma.Domain.Predictions
+  href: Diploma.html
+  name: Diploma.Domain.Predictions
+  nameWithType: Diploma.Domain.Predictions
+  fullName: Diploma.Domain.Predictions
+  spec.csharp:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Domain
+    name: Domain
+    href: Diploma.Domain.html
+  - name: .
+  - uid: Diploma.Domain.Predictions
+    name: Predictions
+    href: Diploma.Domain.Predictions.html
+  spec.vb:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Domain
+    name: Domain
+    href: Diploma.Domain.html
+  - name: .
+  - uid: Diploma.Domain.Predictions
+    name: Predictions
+    href: Diploma.Domain.Predictions.html
+- uid: Diploma.Domain.UnitTests
+  isExternal: true

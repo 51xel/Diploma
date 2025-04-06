@@ -1,0 +1,24 @@
+### YamlMime:ManagedReference
+items:
+- uid: Diploma.Application.Predictions.Queries.PredictPrice
+  commentId: N:Diploma.Application.Predictions.Queries.PredictPrice
+  id: Queries.PredictPrice
+  parent: Diploma.Application.Predictions
+  children:
+  - Diploma.Application.Predictions.Queries.PredictPrice.PredictPriceQuery
+  langs:
+  - csharp
+  - vb
+  name: Diploma.Application.Predictions.Queries.PredictPrice
+  nameWithType: Diploma.Application.Predictions.Queries.PredictPrice
+  fullName: Diploma.Application.Predictions.Queries.PredictPrice
+  type: Namespace
+  assemblies:
+  - Diploma.Application
+references:
+- uid: Diploma.Application.Predictions.Queries.PredictPrice.PredictPriceQuery
+  commentId: T:Diploma.Application.Predictions.Queries.PredictPrice.PredictPriceQuery
+  href: Diploma.Application.Predictions.Queries.PredictPrice.PredictPriceQuery.html
+  name: PredictPriceQuery
+  nameWithType: PredictPriceQuery
+  fullName: Diploma.Application.Predictions.Queries.PredictPrice.PredictPriceQuery

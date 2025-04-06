@@ -1,0 +1,365 @@
+### YamlMime:ManagedReference
+items:
+- uid: Diploma.Application.Predictions.Interfaces.IPredictionRepository
+  commentId: T:Diploma.Application.Predictions.Interfaces.IPredictionRepository
+  id: IPredictionRepository
+  parent: Diploma.Application.Predictions.Interfaces
+  children:
+  - Diploma.Application.Predictions.Interfaces.IPredictionRepository.ForModelType
+  - Diploma.Application.Predictions.Interfaces.IPredictionRepository.GetPredictions(Diploma.Domain.Predictions.Settings.IPredictionSettings,System.IO.MemoryStream)
+  langs:
+  - csharp
+  - vb
+  name: IPredictionRepository
+  nameWithType: IPredictionRepository
+  fullName: Diploma.Application.Predictions.Interfaces.IPredictionRepository
+  type: Interface
+  source:
+    remote:
+      path: Diploma.Application/Predictions/Interfaces/IPredictionRepository.cs
+      branch: documantation
+      repo: https://github.com/51xel/Diploma.git
+    id: IPredictionRepository
+    path: Diploma.Application/Predictions/Interfaces/IPredictionRepository.cs
+    startLine: 9
+  assemblies:
+  - Diploma.Application
+  namespace: Diploma.Application.Predictions.Interfaces
+  summary: Defines a repository responsible for generating predictions based on a given model file
+  example: []
+  syntax:
+    content: public interface IPredictionRepository
+    content.vb: Public Interface IPredictionRepository
+- uid: Diploma.Application.Predictions.Interfaces.IPredictionRepository.ForModelType
+  commentId: P:Diploma.Application.Predictions.Interfaces.IPredictionRepository.ForModelType
+  id: ForModelType
+  parent: Diploma.Application.Predictions.Interfaces.IPredictionRepository
+  langs:
+  - csharp
+  - vb
+  name: ForModelType
+  nameWithType: IPredictionRepository.ForModelType
+  fullName: Diploma.Application.Predictions.Interfaces.IPredictionRepository.ForModelType
+  type: Property
+  source:
+    remote:
+      path: Diploma.Application/Predictions/Interfaces/IPredictionRepository.cs
+      branch: documantation
+      repo: https://github.com/51xel/Diploma.git
+    id: ForModelType
+    path: Diploma.Application/Predictions/Interfaces/IPredictionRepository.cs
+    startLine: 14
+  assemblies:
+  - Diploma.Application
+  namespace: Diploma.Application.Predictions.Interfaces
+  summary: Gets the model type associated with this prediction repository
+  example: []
+  syntax:
+    content: ModelType ForModelType { get; }
+    parameters: []
+    return:
+      type: Diploma.Domain.Models.ModelType
+    content.vb: ReadOnly Property ForModelType As ModelType
+  overload: Diploma.Application.Predictions.Interfaces.IPredictionRepository.ForModelType*
+- uid: Diploma.Application.Predictions.Interfaces.IPredictionRepository.GetPredictions(Diploma.Domain.Predictions.Settings.IPredictionSettings,System.IO.MemoryStream)
+  commentId: M:Diploma.Application.Predictions.Interfaces.IPredictionRepository.GetPredictions(Diploma.Domain.Predictions.Settings.IPredictionSettings,System.IO.MemoryStream)
+  id: GetPredictions(Diploma.Domain.Predictions.Settings.IPredictionSettings,System.IO.MemoryStream)
+  parent: Diploma.Application.Predictions.Interfaces.IPredictionRepository
+  langs:
+  - csharp
+  - vb
+  name: GetPredictions(IPredictionSettings, MemoryStream)
+  nameWithType: IPredictionRepository.GetPredictions(IPredictionSettings, MemoryStream)
+  fullName: Diploma.Application.Predictions.Interfaces.IPredictionRepository.GetPredictions(Diploma.Domain.Predictions.Settings.IPredictionSettings, System.IO.MemoryStream)
+  type: Method
+  source:
+    remote:
+      path: Diploma.Application/Predictions/Interfaces/IPredictionRepository.cs
+      branch: documantation
+      repo: https://github.com/51xel/Diploma.git
+    id: GetPredictions
+    path: Diploma.Application/Predictions/Interfaces/IPredictionRepository.cs
+    startLine: 22
+  assemblies:
+  - Diploma.Application
+  namespace: Diploma.Application.Predictions.Interfaces
+  summary: Generates predictions based on the specified settings and model file
+  example: []
+  syntax:
+    content: List<Prediction> GetPredictions(IPredictionSettings predictionSettings, MemoryStream modelFile)
+    parameters:
+    - id: predictionSettings
+      type: Diploma.Domain.Predictions.Settings.IPredictionSettings
+      description: Prediction settings matching the model type
+    - id: modelFile
+      type: System.IO.MemoryStream
+      description: The model file used for predictions
+    return:
+      type: System.Collections.Generic.List{Diploma.Domain.Predictions.Prediction}
+      description: A list of predictions
+    content.vb: Function GetPredictions(predictionSettings As IPredictionSettings, modelFile As MemoryStream) As List(Of Prediction)
+  overload: Diploma.Application.Predictions.Interfaces.IPredictionRepository.GetPredictions*
+references:
+- uid: Diploma.Application.Predictions.Interfaces
+  commentId: N:Diploma.Application.Predictions.Interfaces
+  href: Diploma.html
+  name: Diploma.Application.Predictions.Interfaces
+  nameWithType: Diploma.Application.Predictions.Interfaces
+  fullName: Diploma.Application.Predictions.Interfaces
+  spec.csharp:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Application
+    name: Application
+    href: Diploma.Application.html
+  - name: .
+  - uid: Diploma.Application.Predictions
+    name: Predictions
+    href: Diploma.Application.Predictions.html
+  - name: .
+  - uid: Diploma.Application.Predictions.Interfaces
+    name: Interfaces
+    href: Diploma.Application.Predictions.Interfaces.html
+  spec.vb:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Application
+    name: Application
+    href: Diploma.Application.html
+  - name: .
+  - uid: Diploma.Application.Predictions
+    name: Predictions
+    href: Diploma.Application.Predictions.html
+  - name: .
+  - uid: Diploma.Application.Predictions.Interfaces
+    name: Interfaces
+    href: Diploma.Application.Predictions.Interfaces.html
+- uid: Diploma.Application.Predictions.Interfaces.IPredictionRepository.ForModelType*
+  commentId: Overload:Diploma.Application.Predictions.Interfaces.IPredictionRepository.ForModelType
+  href: Diploma.Application.Predictions.Interfaces.IPredictionRepository.html#Diploma_Application_Predictions_Interfaces_IPredictionRepository_ForModelType
+  name: ForModelType
+  nameWithType: IPredictionRepository.ForModelType
+  fullName: Diploma.Application.Predictions.Interfaces.IPredictionRepository.ForModelType
+- uid: Diploma.Domain.Models.ModelType
+  commentId: T:Diploma.Domain.Models.ModelType
+  parent: Diploma.Domain.Models
+  href: Diploma.Domain.Models.ModelType.html
+  name: ModelType
+  nameWithType: ModelType
+  fullName: Diploma.Domain.Models.ModelType
+- uid: Diploma.Domain.Models
+  commentId: N:Diploma.Domain.Models
+  href: Diploma.html
+  name: Diploma.Domain.Models
+  nameWithType: Diploma.Domain.Models
+  fullName: Diploma.Domain.Models
+  spec.csharp:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Domain
+    name: Domain
+    href: Diploma.Domain.html
+  - name: .
+  - uid: Diploma.Domain.Models
+    name: Models
+    href: Diploma.Domain.Models.html
+  spec.vb:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Domain
+    name: Domain
+    href: Diploma.Domain.html
+  - name: .
+  - uid: Diploma.Domain.Models
+    name: Models
+    href: Diploma.Domain.Models.html
+- uid: Diploma.Application.Predictions.Interfaces.IPredictionRepository.GetPredictions*
+  commentId: Overload:Diploma.Application.Predictions.Interfaces.IPredictionRepository.GetPredictions
+  href: Diploma.Application.Predictions.Interfaces.IPredictionRepository.html#Diploma_Application_Predictions_Interfaces_IPredictionRepository_GetPredictions_Diploma_Domain_Predictions_Settings_IPredictionSettings_System_IO_MemoryStream_
+  name: GetPredictions
+  nameWithType: IPredictionRepository.GetPredictions
+  fullName: Diploma.Application.Predictions.Interfaces.IPredictionRepository.GetPredictions
+- uid: Diploma.Domain.Predictions.Settings.IPredictionSettings
+  commentId: T:Diploma.Domain.Predictions.Settings.IPredictionSettings
+  parent: Diploma.Domain.Predictions.Settings
+  href: Diploma.Domain.Predictions.Settings.IPredictionSettings.html
+  name: IPredictionSettings
+  nameWithType: IPredictionSettings
+  fullName: Diploma.Domain.Predictions.Settings.IPredictionSettings
+- uid: System.IO.MemoryStream
+  commentId: T:System.IO.MemoryStream
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.memorystream
+  name: MemoryStream
+  nameWithType: MemoryStream
+  fullName: System.IO.MemoryStream
+- uid: System.Collections.Generic.List{Diploma.Domain.Predictions.Prediction}
+  commentId: T:System.Collections.Generic.List{Diploma.Domain.Predictions.Prediction}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Prediction>
+  nameWithType: List<Prediction>
+  fullName: System.Collections.Generic.List<Diploma.Domain.Predictions.Prediction>
+  nameWithType.vb: List(Of Prediction)
+  fullName.vb: System.Collections.Generic.List(Of Diploma.Domain.Predictions.Prediction)
+  name.vb: List(Of Prediction)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Diploma.Domain.Predictions.Prediction
+    name: Prediction
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Diploma.Domain.Predictions.Prediction
+    name: Prediction
+  - name: )
+- uid: Diploma.Domain.Predictions.Settings
+  commentId: N:Diploma.Domain.Predictions.Settings
+  href: Diploma.html
+  name: Diploma.Domain.Predictions.Settings
+  nameWithType: Diploma.Domain.Predictions.Settings
+  fullName: Diploma.Domain.Predictions.Settings
+  spec.csharp:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Domain
+    name: Domain
+    href: Diploma.Domain.html
+  - name: .
+  - uid: Diploma.Domain.Predictions
+    name: Predictions
+    href: Diploma.Domain.Predictions.html
+  - name: .
+  - uid: Diploma.Domain.Predictions.Settings
+    name: Settings
+    href: Diploma.Domain.Predictions.Settings.html
+  spec.vb:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Domain
+    name: Domain
+    href: Diploma.Domain.html
+  - name: .
+  - uid: Diploma.Domain.Predictions
+    name: Predictions
+    href: Diploma.Domain.Predictions.html
+  - name: .
+  - uid: Diploma.Domain.Predictions.Settings
+    name: Settings
+    href: Diploma.Domain.Predictions.Settings.html
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

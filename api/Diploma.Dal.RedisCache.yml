@@ -1,0 +1,24 @@
+### YamlMime:ManagedReference
+items:
+- uid: Diploma.Dal.RedisCache
+  commentId: N:Diploma.Dal.RedisCache
+  id: RedisCache
+  parent: Diploma.Dal
+  children:
+  - Diploma.Dal.RedisCache.DependencyInjection
+  langs:
+  - csharp
+  - vb
+  name: Diploma.Dal.RedisCache
+  nameWithType: Diploma.Dal.RedisCache
+  fullName: Diploma.Dal.RedisCache
+  type: Namespace
+  assemblies:
+  - Diploma.Dal.RedisCache
+references:
+- uid: Diploma.Dal.RedisCache.DependencyInjection
+  commentId: T:Diploma.Dal.RedisCache.DependencyInjection
+  href: Diploma.Dal.RedisCache.DependencyInjection.html
+  name: DependencyInjection
+  nameWithType: DependencyInjection
+  fullName: Diploma.Dal.RedisCache.DependencyInjection

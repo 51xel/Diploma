@@ -1,0 +1,653 @@
+### YamlMime:ManagedReference
+items:
+- uid: Diploma.Application.Predictions.Queries.PredictPrice.PredictPriceQuery
+  commentId: T:Diploma.Application.Predictions.Queries.PredictPrice.PredictPriceQuery
+  id: PredictPriceQuery
+  parent: Diploma.Application.Predictions.Queries.PredictPrice
+  children:
+  - Diploma.Application.Predictions.Queries.PredictPrice.PredictPriceQuery.#ctor(System.Guid,System.DateTime,System.DateTime)
+  - Diploma.Application.Predictions.Queries.PredictPrice.PredictPriceQuery.From
+  - Diploma.Application.Predictions.Queries.PredictPrice.PredictPriceQuery.ModelId
+  - Diploma.Application.Predictions.Queries.PredictPrice.PredictPriceQuery.To
+  langs:
+  - csharp
+  - vb
+  name: PredictPriceQuery
+  nameWithType: PredictPriceQuery
+  fullName: Diploma.Application.Predictions.Queries.PredictPrice.PredictPriceQuery
+  type: Class
+  source:
+    remote:
+      path: Diploma.Application/Predictions/Queries/PredictPrice/PredictPriceQuery.cs
+      branch: documantation
+      repo: https://github.com/51xel/Diploma.git
+    id: PredictPriceQuery
+    path: Diploma.Application/Predictions/Queries/PredictPrice/PredictPriceQuery.cs
+    startLine: 6
+  assemblies:
+  - Diploma.Application
+  namespace: Diploma.Application.Predictions.Queries.PredictPrice
+  syntax:
+    content: 'public record PredictPriceQuery : IRequest<ErrorOr<IEnumerable<Prediction>>>, IBaseRequest, IEquatable<PredictPriceQuery>'
+    content.vb: Public Class PredictPriceQuery Implements IRequest(Of ErrorOr(Of IEnumerable(Of Prediction))), IBaseRequest, IEquatable(Of PredictPriceQuery)
+  inheritance:
+  - System.Object
+  implements:
+  - MediatR.IRequest{ErrorOr.ErrorOr{System.Collections.Generic.IEnumerable{Diploma.Domain.Predictions.Prediction}}}
+  - MediatR.IBaseRequest
+  - System.IEquatable{Diploma.Application.Predictions.Queries.PredictPrice.PredictPriceQuery}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Diploma.Application.Predictions.Queries.PredictPrice.PredictPriceQuery.#ctor(System.Guid,System.DateTime,System.DateTime)
+  commentId: M:Diploma.Application.Predictions.Queries.PredictPrice.PredictPriceQuery.#ctor(System.Guid,System.DateTime,System.DateTime)
+  id: '#ctor(System.Guid,System.DateTime,System.DateTime)'
+  parent: Diploma.Application.Predictions.Queries.PredictPrice.PredictPriceQuery
+  langs:
+  - csharp
+  - vb
+  name: PredictPriceQuery(Guid, DateTime, DateTime)
+  nameWithType: PredictPriceQuery.PredictPriceQuery(Guid, DateTime, DateTime)
+  fullName: Diploma.Application.Predictions.Queries.PredictPrice.PredictPriceQuery.PredictPriceQuery(System.Guid, System.DateTime, System.DateTime)
+  type: Constructor
+  source:
+    remote:
+      path: Diploma.Application/Predictions/Queries/PredictPrice/PredictPriceQuery.cs
+      branch: documantation
+      repo: https://github.com/51xel/Diploma.git
+    id: .ctor
+    path: Diploma.Application/Predictions/Queries/PredictPrice/PredictPriceQuery.cs
+    startLine: 6
+  assemblies:
+  - Diploma.Application
+  namespace: Diploma.Application.Predictions.Queries.PredictPrice
+  syntax:
+    content: public PredictPriceQuery(Guid ModelId, DateTime From, DateTime To)
+    parameters:
+    - id: ModelId
+      type: System.Guid
+    - id: From
+      type: System.DateTime
+    - id: To
+      type: System.DateTime
+    content.vb: Public Sub New(ModelId As Guid, From As Date, [To] As Date)
+  overload: Diploma.Application.Predictions.Queries.PredictPrice.PredictPriceQuery.#ctor*
+  nameWithType.vb: PredictPriceQuery.New(Guid, Date, Date)
+  fullName.vb: Diploma.Application.Predictions.Queries.PredictPrice.PredictPriceQuery.New(System.Guid, Date, Date)
+  name.vb: New(Guid, Date, Date)
+- uid: Diploma.Application.Predictions.Queries.PredictPrice.PredictPriceQuery.ModelId
+  commentId: P:Diploma.Application.Predictions.Queries.PredictPrice.PredictPriceQuery.ModelId
+  id: ModelId
+  parent: Diploma.Application.Predictions.Queries.PredictPrice.PredictPriceQuery
+  langs:
+  - csharp
+  - vb
+  name: ModelId
+  nameWithType: PredictPriceQuery.ModelId
+  fullName: Diploma.Application.Predictions.Queries.PredictPrice.PredictPriceQuery.ModelId
+  type: Property
+  source:
+    remote:
+      path: Diploma.Application/Predictions/Queries/PredictPrice/PredictPriceQuery.cs
+      branch: documantation
+      repo: https://github.com/51xel/Diploma.git
+    id: ModelId
+    path: Diploma.Application/Predictions/Queries/PredictPrice/PredictPriceQuery.cs
+    startLine: 6
+  assemblies:
+  - Diploma.Application
+  namespace: Diploma.Application.Predictions.Queries.PredictPrice
+  syntax:
+    content: public Guid ModelId { get; init; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: Public Property ModelId As Guid
+  overload: Diploma.Application.Predictions.Queries.PredictPrice.PredictPriceQuery.ModelId*
+- uid: Diploma.Application.Predictions.Queries.PredictPrice.PredictPriceQuery.From
+  commentId: P:Diploma.Application.Predictions.Queries.PredictPrice.PredictPriceQuery.From
+  id: From
+  parent: Diploma.Application.Predictions.Queries.PredictPrice.PredictPriceQuery
+  langs:
+  - csharp
+  - vb
+  name: From
+  nameWithType: PredictPriceQuery.From
+  fullName: Diploma.Application.Predictions.Queries.PredictPrice.PredictPriceQuery.From
+  type: Property
+  source:
+    remote:
+      path: Diploma.Application/Predictions/Queries/PredictPrice/PredictPriceQuery.cs
+      branch: documantation
+      repo: https://github.com/51xel/Diploma.git
+    id: From
+    path: Diploma.Application/Predictions/Queries/PredictPrice/PredictPriceQuery.cs
+    startLine: 6
+  assemblies:
+  - Diploma.Application
+  namespace: Diploma.Application.Predictions.Queries.PredictPrice
+  syntax:
+    content: public DateTime From { get; init; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property From As Date
+  overload: Diploma.Application.Predictions.Queries.PredictPrice.PredictPriceQuery.From*
+- uid: Diploma.Application.Predictions.Queries.PredictPrice.PredictPriceQuery.To
+  commentId: P:Diploma.Application.Predictions.Queries.PredictPrice.PredictPriceQuery.To
+  id: To
+  parent: Diploma.Application.Predictions.Queries.PredictPrice.PredictPriceQuery
+  langs:
+  - csharp
+  - vb
+  name: To
+  nameWithType: PredictPriceQuery.To
+  fullName: Diploma.Application.Predictions.Queries.PredictPrice.PredictPriceQuery.To
+  type: Property
+  source:
+    remote:
+      path: Diploma.Application/Predictions/Queries/PredictPrice/PredictPriceQuery.cs
+      branch: documantation
+      repo: https://github.com/51xel/Diploma.git
+    id: To
+    path: Diploma.Application/Predictions/Queries/PredictPrice/PredictPriceQuery.cs
+    startLine: 6
+  assemblies:
+  - Diploma.Application
+  namespace: Diploma.Application.Predictions.Queries.PredictPrice
+  syntax:
+    content: public DateTime To { get; init; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property [To] As Date
+  overload: Diploma.Application.Predictions.Queries.PredictPrice.PredictPriceQuery.To*
+references:
+- uid: Diploma.Application.Predictions.Queries.PredictPrice
+  commentId: N:Diploma.Application.Predictions.Queries.PredictPrice
+  href: Diploma.html
+  name: Diploma.Application.Predictions.Queries.PredictPrice
+  nameWithType: Diploma.Application.Predictions.Queries.PredictPrice
+  fullName: Diploma.Application.Predictions.Queries.PredictPrice
+  spec.csharp:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Application
+    name: Application
+    href: Diploma.Application.html
+  - name: .
+  - uid: Diploma.Application.Predictions
+    name: Predictions
+    href: Diploma.Application.Predictions.html
+  - name: .
+  - uid: Diploma.Application.Predictions.Queries
+    name: Queries
+    href: Diploma.Application.Predictions.Queries.html
+  - name: .
+  - uid: Diploma.Application.Predictions.Queries.PredictPrice
+    name: PredictPrice
+    href: Diploma.Application.Predictions.Queries.PredictPrice.html
+  spec.vb:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Application
+    name: Application
+    href: Diploma.Application.html
+  - name: .
+  - uid: Diploma.Application.Predictions
+    name: Predictions
+    href: Diploma.Application.Predictions.html
+  - name: .
+  - uid: Diploma.Application.Predictions.Queries
+    name: Queries
+    href: Diploma.Application.Predictions.Queries.html
+  - name: .
+  - uid: Diploma.Application.Predictions.Queries.PredictPrice
+    name: PredictPrice
+    href: Diploma.Application.Predictions.Queries.PredictPrice.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MediatR.IRequest{ErrorOr.ErrorOr{System.Collections.Generic.IEnumerable{Diploma.Domain.Predictions.Prediction}}}
+  commentId: T:MediatR.IRequest{ErrorOr.ErrorOr{System.Collections.Generic.IEnumerable{Diploma.Domain.Predictions.Prediction}}}
+  parent: MediatR
+  definition: MediatR.IRequest`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IRequest<ErrorOr<IEnumerable<Prediction>>>
+  nameWithType: IRequest<ErrorOr<IEnumerable<Prediction>>>
+  fullName: MediatR.IRequest<ErrorOr.ErrorOr<System.Collections.Generic.IEnumerable<Diploma.Domain.Predictions.Prediction>>>
+  nameWithType.vb: IRequest(Of ErrorOr(Of IEnumerable(Of Prediction)))
+  fullName.vb: MediatR.IRequest(Of ErrorOr.ErrorOr(Of System.Collections.Generic.IEnumerable(Of Diploma.Domain.Predictions.Prediction)))
+  name.vb: IRequest(Of ErrorOr(Of IEnumerable(Of Prediction)))
+  spec.csharp:
+  - uid: MediatR.IRequest`1
+    name: IRequest
+    isExternal: true
+  - name: <
+  - uid: ErrorOr.ErrorOr`1
+    name: ErrorOr
+    isExternal: true
+  - name: <
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Diploma.Domain.Predictions.Prediction
+    name: Prediction
+  - name: '>'
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: MediatR.IRequest`1
+    name: IRequest
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: ErrorOr.ErrorOr`1
+    name: ErrorOr
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Diploma.Domain.Predictions.Prediction
+    name: Prediction
+  - name: )
+  - name: )
+  - name: )
+- uid: MediatR.IBaseRequest
+  commentId: T:MediatR.IBaseRequest
+  parent: MediatR
+  isExternal: true
+  name: IBaseRequest
+  nameWithType: IBaseRequest
+  fullName: MediatR.IBaseRequest
+- uid: System.IEquatable{Diploma.Application.Predictions.Queries.PredictPrice.PredictPriceQuery}
+  commentId: T:System.IEquatable{Diploma.Application.Predictions.Queries.PredictPrice.PredictPriceQuery}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<PredictPriceQuery>
+  nameWithType: IEquatable<PredictPriceQuery>
+  fullName: System.IEquatable<Diploma.Application.Predictions.Queries.PredictPrice.PredictPriceQuery>
+  nameWithType.vb: IEquatable(Of PredictPriceQuery)
+  fullName.vb: System.IEquatable(Of Diploma.Application.Predictions.Queries.PredictPrice.PredictPriceQuery)
+  name.vb: IEquatable(Of PredictPriceQuery)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Diploma.Application.Predictions.Queries.PredictPrice.PredictPriceQuery
+    name: PredictPriceQuery
+    href: Diploma.Application.Predictions.Queries.PredictPrice.PredictPriceQuery.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Diploma.Application.Predictions.Queries.PredictPrice.PredictPriceQuery
+    name: PredictPriceQuery
+    href: Diploma.Application.Predictions.Queries.PredictPrice.PredictPriceQuery.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MediatR.IRequest`1
+  commentId: T:MediatR.IRequest`1
+  isExternal: true
+  name: IRequest<TResponse>
+  nameWithType: IRequest<TResponse>
+  fullName: MediatR.IRequest<TResponse>
+  nameWithType.vb: IRequest(Of TResponse)
+  fullName.vb: MediatR.IRequest(Of TResponse)
+  name.vb: IRequest(Of TResponse)
+  spec.csharp:
+  - uid: MediatR.IRequest`1
+    name: IRequest
+    isExternal: true
+  - name: <
+  - name: TResponse
+  - name: '>'
+  spec.vb:
+  - uid: MediatR.IRequest`1
+    name: IRequest
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResponse
+  - name: )
+- uid: MediatR
+  commentId: N:MediatR
+  isExternal: true
+  name: MediatR
+  nameWithType: MediatR
+  fullName: MediatR
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Diploma.Application.Predictions.Queries.PredictPrice.PredictPriceQuery.#ctor*
+  commentId: Overload:Diploma.Application.Predictions.Queries.PredictPrice.PredictPriceQuery.#ctor
+  href: Diploma.Application.Predictions.Queries.PredictPrice.PredictPriceQuery.html#Diploma_Application_Predictions_Queries_PredictPrice_PredictPriceQuery__ctor_System_Guid_System_DateTime_System_DateTime_
+  name: PredictPriceQuery
+  nameWithType: PredictPriceQuery.PredictPriceQuery
+  fullName: Diploma.Application.Predictions.Queries.PredictPrice.PredictPriceQuery.PredictPriceQuery
+  nameWithType.vb: PredictPriceQuery.New
+  fullName.vb: Diploma.Application.Predictions.Queries.PredictPrice.PredictPriceQuery.New
+  name.vb: New
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: Diploma.Application.Predictions.Queries.PredictPrice.PredictPriceQuery.ModelId*
+  commentId: Overload:Diploma.Application.Predictions.Queries.PredictPrice.PredictPriceQuery.ModelId
+  href: Diploma.Application.Predictions.Queries.PredictPrice.PredictPriceQuery.html#Diploma_Application_Predictions_Queries_PredictPrice_PredictPriceQuery_ModelId
+  name: ModelId
+  nameWithType: PredictPriceQuery.ModelId
+  fullName: Diploma.Application.Predictions.Queries.PredictPrice.PredictPriceQuery.ModelId
+- uid: Diploma.Application.Predictions.Queries.PredictPrice.PredictPriceQuery.From*
+  commentId: Overload:Diploma.Application.Predictions.Queries.PredictPrice.PredictPriceQuery.From
+  href: Diploma.Application.Predictions.Queries.PredictPrice.PredictPriceQuery.html#Diploma_Application_Predictions_Queries_PredictPrice_PredictPriceQuery_From
+  name: From
+  nameWithType: PredictPriceQuery.From
+  fullName: Diploma.Application.Predictions.Queries.PredictPrice.PredictPriceQuery.From
+- uid: Diploma.Application.Predictions.Queries.PredictPrice.PredictPriceQuery.To*
+  commentId: Overload:Diploma.Application.Predictions.Queries.PredictPrice.PredictPriceQuery.To
+  href: Diploma.Application.Predictions.Queries.PredictPrice.PredictPriceQuery.html#Diploma_Application_Predictions_Queries_PredictPrice_PredictPriceQuery_To
+  name: To
+  nameWithType: PredictPriceQuery.To
+  fullName: Diploma.Application.Predictions.Queries.PredictPrice.PredictPriceQuery.To

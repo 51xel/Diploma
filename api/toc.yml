@@ -1,0 +1,258 @@
+### YamlMime:TableOfContent
+items:
+- uid: Diploma
+  name: Diploma
+  type: Namespace
+  items:
+  - uid: Diploma.Application
+    name: Application
+    type: Namespace
+    items:
+    - uid: Diploma.Application.Models.Interfaces
+      name: Models.Interfaces
+      type: Namespace
+      items:
+      - uid: Diploma.Application.Models.Interfaces.IModelFileCacheRepository
+        name: IModelFileCacheRepository
+        type: Interface
+      - uid: Diploma.Application.Models.Interfaces.IModelFileCacheService
+        name: IModelFileCacheService
+        type: Interface
+      - uid: Diploma.Application.Models.Interfaces.IModelFileRepository
+        name: IModelFileRepository
+        type: Interface
+      - uid: Diploma.Application.Models.Interfaces.IModelRepository
+        name: IModelRepository
+        type: Interface
+    - uid: Diploma.Application.Predictions
+      name: Predictions
+      type: Namespace
+      items:
+      - uid: Diploma.Application.Predictions.Factories.Interfaces
+        name: Factories.Interfaces
+        type: Namespace
+        items:
+        - uid: Diploma.Application.Predictions.Factories.Interfaces.IPredictionRepositoryFactory
+          name: IPredictionRepositoryFactory
+          type: Interface
+        - uid: Diploma.Application.Predictions.Factories.Interfaces.IPredictionSettingsFactory
+          name: IPredictionSettingsFactory
+          type: Interface
+      - uid: Diploma.Application.Predictions.Interfaces
+        name: Interfaces
+        type: Namespace
+        items:
+        - uid: Diploma.Application.Predictions.Interfaces.IPredictionRepository
+          name: IPredictionRepository
+          type: Interface
+        - uid: Diploma.Application.Predictions.Interfaces.IPredictionSettingsService
+          name: IPredictionSettingsService
+          type: Interface
+      - uid: Diploma.Application.Predictions.Queries.PredictPrice
+        name: Queries.PredictPrice
+        type: Namespace
+        items:
+        - uid: Diploma.Application.Predictions.Queries.PredictPrice.PredictPriceQuery
+          name: PredictPriceQuery
+          type: Class
+    - uid: Diploma.Application.DependencyInjection
+      name: DependencyInjection
+      type: Class
+  - uid: Diploma.Contracts.Predictions
+    name: Contracts.Predictions
+    type: Namespace
+    items:
+    - uid: Diploma.Contracts.Predictions.PredictPriceRequest
+      name: PredictPriceRequest
+      type: Class
+    - uid: Diploma.Contracts.Predictions.PredictPriceResponse
+      name: PredictPriceResponse
+      type: Class
+  - uid: Diploma.Dal
+    name: Dal
+    type: Namespace
+    items:
+    - uid: Diploma.Dal.EntityFramework
+      name: EntityFramework
+      type: Namespace
+      items:
+      - uid: Diploma.Dal.EntityFramework.Common
+        name: Common
+        type: Namespace
+        items:
+        - uid: Diploma.Dal.EntityFramework.Common.ApplicationDbContext
+          name: ApplicationDbContext
+          type: Class
+      - uid: Diploma.Dal.EntityFramework.Migrations
+        name: Migrations
+        type: Namespace
+        items:
+        - uid: Diploma.Dal.EntityFramework.Migrations.InitialCreate
+          name: InitialCreate
+          type: Class
+      - uid: Diploma.Dal.EntityFramework.DependencyInjection
+        name: DependencyInjection
+        type: Class
+    - uid: Diploma.Dal.PythonRunTime
+      name: PythonRunTime
+      type: Namespace
+      items:
+      - uid: Diploma.Dal.PythonRunTime.Common
+        name: Common
+        type: Namespace
+        items:
+        - uid: Diploma.Dal.PythonRunTime.Common.PythonEngineControl
+          name: PythonEngineControl
+          type: Class
+      - uid: Diploma.Dal.PythonRunTime.DependencyInjection
+        name: DependencyInjection
+        type: Class
+    - uid: Diploma.Dal.RedisCache
+      name: RedisCache
+      type: Namespace
+      items:
+      - uid: Diploma.Dal.RedisCache.DependencyInjection
+        name: DependencyInjection
+        type: Class
+    - uid: Diploma.Dal.Storage
+      name: Storage
+      type: Namespace
+      items:
+      - uid: Diploma.Dal.Storage.DependencyInjection
+        name: DependencyInjection
+        type: Class
+  - uid: Diploma.Domain
+    name: Domain
+    type: Namespace
+    items:
+    - uid: Diploma.Domain.Algorithms
+      name: Algorithms
+      type: Namespace
+      items:
+      - uid: Diploma.Domain.Algorithms.Algorithm
+        name: Algorithm
+        type: Class
+      - uid: Diploma.Domain.Algorithms.AlgorithmType
+        name: AlgorithmType
+        type: Enum
+    - uid: Diploma.Domain.Common
+      name: Common
+      type: Namespace
+      items:
+      - uid: Diploma.Domain.Common.Helpers
+        name: Helpers
+        type: Namespace
+        items:
+        - uid: Diploma.Domain.Common.Helpers.DateTimeHelper
+          name: DateTimeHelper
+          type: Class
+      - uid: Diploma.Domain.Common.Models
+        name: Models
+        type: Namespace
+        items:
+        - uid: Diploma.Domain.Common.Models.TimeRangeType
+          name: TimeRangeType
+          type: Enum
+    - uid: Diploma.Domain.Models
+      name: Models
+      type: Namespace
+      items:
+      - uid: Diploma.Domain.Models.Model
+        name: Model
+        type: Class
+      - uid: Diploma.Domain.Models.ModelType
+        name: ModelType
+        type: Enum
+      - uid: Diploma.Domain.Models.TrainingTimeRange
+        name: TrainingTimeRange
+        type: Class
+    - uid: Diploma.Domain.Predictions
+      name: Predictions
+      type: Namespace
+      items:
+      - uid: Diploma.Domain.Predictions.Settings
+        name: Settings
+        type: Namespace
+        items:
+        - uid: Diploma.Domain.Predictions.Settings.IPredictionSettings
+          name: IPredictionSettings
+          type: Interface
+        - uid: Diploma.Domain.Predictions.Settings.SarimaPredictionSettings
+          name: SarimaPredictionSettings
+          type: Class
+      - uid: Diploma.Domain.Predictions.Prediction
+        name: Prediction
+        type: Class
+    - uid: Diploma.Domain.UnitTests
+      name: UnitTests
+      type: Namespace
+      items:
+      - uid: Diploma.Domain.UnitTests.Common.Helpers
+        name: Common.Helpers
+        type: Namespace
+        items:
+        - uid: Diploma.Domain.UnitTests.Common.Helpers.DateTimeHelperTests
+          name: DateTimeHelperTests
+          type: Class
+      - uid: Diploma.Domain.UnitTests.Models
+        name: Models
+        type: Namespace
+        items:
+        - uid: Diploma.Domain.UnitTests.Models.ModelTests
+          name: ModelTests
+          type: Class
+        - uid: Diploma.Domain.UnitTests.Models.TrainingTimeRangeTests
+          name: TrainingTimeRangeTests
+          type: Class
+  - uid: Diploma.PredictionApi
+    name: PredictionApi
+    type: Namespace
+    items:
+    - uid: Diploma.PredictionApi.Controllers
+      name: Controllers
+      type: Namespace
+      items:
+      - uid: Diploma.PredictionApi.Controllers.ApiControllerBase
+        name: ApiControllerBase
+        type: Class
+      - uid: Diploma.PredictionApi.Controllers.PredictionController
+        name: PredictionController
+        type: Class
+    - uid: Diploma.PredictionApi.HostedServices
+      name: HostedServices
+      type: Namespace
+      items:
+      - uid: Diploma.PredictionApi.HostedServices.RedisContainerHostedService
+        name: RedisContainerHostedService
+        type: Class
+    - uid: Diploma.PredictionApi.AutoMapperProfile
+      name: AutoMapperProfile
+      type: Class
+  - uid: Diploma.Tests.Common
+    name: Tests.Common
+    type: Namespace
+    items:
+    - uid: Diploma.Tests.Common.Models
+      name: Models
+      type: Namespace
+      items:
+      - uid: Diploma.Tests.Common.Models.ModelFactory
+        name: ModelFactory
+        type: Class
+      - uid: Diploma.Tests.Common.Models.TrainingTimeRangeFactory
+        name: TrainingTimeRangeFactory
+        type: Class
+    - uid: Diploma.Tests.Common.TestConstants
+      name: TestConstants
+      type: Namespace
+      items:
+      - uid: Diploma.Tests.Common.TestConstants.Constants
+        name: Constants
+        type: Class
+      - uid: Diploma.Tests.Common.TestConstants.Constants.Models
+        name: Constants.Models
+        type: Class
+      - uid: Diploma.Tests.Common.TestConstants.Constants.TrainingTimeRange
+        name: Constants.TrainingTimeRange
+        type: Class
+memberLayout: SamePage

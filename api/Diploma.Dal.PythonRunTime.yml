@@ -1,0 +1,63 @@
+### YamlMime:ManagedReference
+items:
+- uid: Diploma.Dal.PythonRunTime
+  commentId: N:Diploma.Dal.PythonRunTime
+  id: PythonRunTime
+  parent: Diploma.Dal
+  children:
+  - Diploma.Dal.PythonRunTime.Common
+  - Diploma.Dal.PythonRunTime.DependencyInjection
+  langs:
+  - csharp
+  - vb
+  name: Diploma.Dal.PythonRunTime
+  nameWithType: Diploma.Dal.PythonRunTime
+  fullName: Diploma.Dal.PythonRunTime
+  type: Namespace
+  assemblies:
+  - Diploma.Dal.PythonRunTime
+references:
+- uid: Diploma.Dal.PythonRunTime.Common
+  commentId: N:Diploma.Dal.PythonRunTime.Common
+  href: Diploma.html
+  name: Diploma.Dal.PythonRunTime.Common
+  nameWithType: Diploma.Dal.PythonRunTime.Common
+  fullName: Diploma.Dal.PythonRunTime.Common
+  spec.csharp:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Dal
+    name: Dal
+    href: Diploma.Dal.html
+  - name: .
+  - uid: Diploma.Dal.PythonRunTime
+    name: PythonRunTime
+    href: Diploma.Dal.PythonRunTime.html
+  - name: .
+  - uid: Diploma.Dal.PythonRunTime.Common
+    name: Common
+    href: Diploma.Dal.PythonRunTime.Common.html
+  spec.vb:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Dal
+    name: Dal
+    href: Diploma.Dal.html
+  - name: .
+  - uid: Diploma.Dal.PythonRunTime
+    name: PythonRunTime
+    href: Diploma.Dal.PythonRunTime.html
+  - name: .
+  - uid: Diploma.Dal.PythonRunTime.Common
+    name: Common
+    href: Diploma.Dal.PythonRunTime.Common.html
+- uid: Diploma.Dal.PythonRunTime.DependencyInjection
+  commentId: T:Diploma.Dal.PythonRunTime.DependencyInjection
+  href: Diploma.Dal.PythonRunTime.DependencyInjection.html
+  name: DependencyInjection
+  nameWithType: DependencyInjection
+  fullName: Diploma.Dal.PythonRunTime.DependencyInjection

@@ -1,0 +1,265 @@
+### YamlMime:ManagedReference
+items:
+- uid: Diploma.Application.Predictions.Interfaces.IPredictionSettingsService
+  commentId: T:Diploma.Application.Predictions.Interfaces.IPredictionSettingsService
+  id: IPredictionSettingsService
+  parent: Diploma.Application.Predictions.Interfaces
+  children:
+  - Diploma.Application.Predictions.Interfaces.IPredictionSettingsService.ForModelType
+  - Diploma.Application.Predictions.Interfaces.IPredictionSettingsService.GetSettings(Diploma.Domain.Models.Model,System.DateTime,System.DateTime)
+  langs:
+  - csharp
+  - vb
+  name: IPredictionSettingsService
+  nameWithType: IPredictionSettingsService
+  fullName: Diploma.Application.Predictions.Interfaces.IPredictionSettingsService
+  type: Interface
+  source:
+    remote:
+      path: Diploma.Application/Predictions/Interfaces/IPredictionSettingsService.cs
+      branch: documantation
+      repo: https://github.com/51xel/Diploma.git
+    id: IPredictionSettingsService
+    path: Diploma.Application/Predictions/Interfaces/IPredictionSettingsService.cs
+    startLine: 8
+  assemblies:
+  - Diploma.Application
+  namespace: Diploma.Application.Predictions.Interfaces
+  summary: Provides functionality to generate prediction settings for a given model and date range.
+  example: []
+  syntax:
+    content: public interface IPredictionSettingsService
+    content.vb: Public Interface IPredictionSettingsService
+- uid: Diploma.Application.Predictions.Interfaces.IPredictionSettingsService.ForModelType
+  commentId: P:Diploma.Application.Predictions.Interfaces.IPredictionSettingsService.ForModelType
+  id: ForModelType
+  parent: Diploma.Application.Predictions.Interfaces.IPredictionSettingsService
+  langs:
+  - csharp
+  - vb
+  name: ForModelType
+  nameWithType: IPredictionSettingsService.ForModelType
+  fullName: Diploma.Application.Predictions.Interfaces.IPredictionSettingsService.ForModelType
+  type: Property
+  source:
+    remote:
+      path: Diploma.Application/Predictions/Interfaces/IPredictionSettingsService.cs
+      branch: documantation
+      repo: https://github.com/51xel/Diploma.git
+    id: ForModelType
+    path: Diploma.Application/Predictions/Interfaces/IPredictionSettingsService.cs
+    startLine: 13
+  assemblies:
+  - Diploma.Application
+  namespace: Diploma.Application.Predictions.Interfaces
+  summary: Gets the model type associated with this service.
+  example: []
+  syntax:
+    content: ModelType ForModelType { get; }
+    parameters: []
+    return:
+      type: Diploma.Domain.Models.ModelType
+    content.vb: ReadOnly Property ForModelType As ModelType
+  overload: Diploma.Application.Predictions.Interfaces.IPredictionSettingsService.ForModelType*
+- uid: Diploma.Application.Predictions.Interfaces.IPredictionSettingsService.GetSettings(Diploma.Domain.Models.Model,System.DateTime,System.DateTime)
+  commentId: M:Diploma.Application.Predictions.Interfaces.IPredictionSettingsService.GetSettings(Diploma.Domain.Models.Model,System.DateTime,System.DateTime)
+  id: GetSettings(Diploma.Domain.Models.Model,System.DateTime,System.DateTime)
+  parent: Diploma.Application.Predictions.Interfaces.IPredictionSettingsService
+  langs:
+  - csharp
+  - vb
+  name: GetSettings(Model, DateTime, DateTime)
+  nameWithType: IPredictionSettingsService.GetSettings(Model, DateTime, DateTime)
+  fullName: Diploma.Application.Predictions.Interfaces.IPredictionSettingsService.GetSettings(Diploma.Domain.Models.Model, System.DateTime, System.DateTime)
+  type: Method
+  source:
+    remote:
+      path: Diploma.Application/Predictions/Interfaces/IPredictionSettingsService.cs
+      branch: documantation
+      repo: https://github.com/51xel/Diploma.git
+    id: GetSettings
+    path: Diploma.Application/Predictions/Interfaces/IPredictionSettingsService.cs
+    startLine: 22
+  assemblies:
+  - Diploma.Application
+  namespace: Diploma.Application.Predictions.Interfaces
+  summary: Creates prediction settings for the specified model and date range.
+  example: []
+  syntax:
+    content: IPredictionSettings GetSettings(Model model, DateTime predictionFrom, DateTime predictionTo)
+    parameters:
+    - id: model
+      type: Diploma.Domain.Models.Model
+      description: The model for which predictions are made.
+    - id: predictionFrom
+      type: System.DateTime
+      description: The start date of the prediction period.
+    - id: predictionTo
+      type: System.DateTime
+      description: The end date of the prediction period.
+    return:
+      type: Diploma.Domain.Predictions.Settings.IPredictionSettings
+      description: The generated prediction settings.
+    content.vb: Function GetSettings(model As Model, predictionFrom As Date, predictionTo As Date) As IPredictionSettings
+  overload: Diploma.Application.Predictions.Interfaces.IPredictionSettingsService.GetSettings*
+  nameWithType.vb: IPredictionSettingsService.GetSettings(Model, Date, Date)
+  fullName.vb: Diploma.Application.Predictions.Interfaces.IPredictionSettingsService.GetSettings(Diploma.Domain.Models.Model, Date, Date)
+  name.vb: GetSettings(Model, Date, Date)
+references:
+- uid: Diploma.Application.Predictions.Interfaces
+  commentId: N:Diploma.Application.Predictions.Interfaces
+  href: Diploma.html
+  name: Diploma.Application.Predictions.Interfaces
+  nameWithType: Diploma.Application.Predictions.Interfaces
+  fullName: Diploma.Application.Predictions.Interfaces
+  spec.csharp:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Application
+    name: Application
+    href: Diploma.Application.html
+  - name: .
+  - uid: Diploma.Application.Predictions
+    name: Predictions
+    href: Diploma.Application.Predictions.html
+  - name: .
+  - uid: Diploma.Application.Predictions.Interfaces
+    name: Interfaces
+    href: Diploma.Application.Predictions.Interfaces.html
+  spec.vb:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Application
+    name: Application
+    href: Diploma.Application.html
+  - name: .
+  - uid: Diploma.Application.Predictions
+    name: Predictions
+    href: Diploma.Application.Predictions.html
+  - name: .
+  - uid: Diploma.Application.Predictions.Interfaces
+    name: Interfaces
+    href: Diploma.Application.Predictions.Interfaces.html
+- uid: Diploma.Application.Predictions.Interfaces.IPredictionSettingsService.ForModelType*
+  commentId: Overload:Diploma.Application.Predictions.Interfaces.IPredictionSettingsService.ForModelType
+  href: Diploma.Application.Predictions.Interfaces.IPredictionSettingsService.html#Diploma_Application_Predictions_Interfaces_IPredictionSettingsService_ForModelType
+  name: ForModelType
+  nameWithType: IPredictionSettingsService.ForModelType
+  fullName: Diploma.Application.Predictions.Interfaces.IPredictionSettingsService.ForModelType
+- uid: Diploma.Domain.Models.ModelType
+  commentId: T:Diploma.Domain.Models.ModelType
+  parent: Diploma.Domain.Models
+  href: Diploma.Domain.Models.ModelType.html
+  name: ModelType
+  nameWithType: ModelType
+  fullName: Diploma.Domain.Models.ModelType
+- uid: Diploma.Domain.Models
+  commentId: N:Diploma.Domain.Models
+  href: Diploma.html
+  name: Diploma.Domain.Models
+  nameWithType: Diploma.Domain.Models
+  fullName: Diploma.Domain.Models
+  spec.csharp:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Domain
+    name: Domain
+    href: Diploma.Domain.html
+  - name: .
+  - uid: Diploma.Domain.Models
+    name: Models
+    href: Diploma.Domain.Models.html
+  spec.vb:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Domain
+    name: Domain
+    href: Diploma.Domain.html
+  - name: .
+  - uid: Diploma.Domain.Models
+    name: Models
+    href: Diploma.Domain.Models.html
+- uid: Diploma.Application.Predictions.Interfaces.IPredictionSettingsService.GetSettings*
+  commentId: Overload:Diploma.Application.Predictions.Interfaces.IPredictionSettingsService.GetSettings
+  href: Diploma.Application.Predictions.Interfaces.IPredictionSettingsService.html#Diploma_Application_Predictions_Interfaces_IPredictionSettingsService_GetSettings_Diploma_Domain_Models_Model_System_DateTime_System_DateTime_
+  name: GetSettings
+  nameWithType: IPredictionSettingsService.GetSettings
+  fullName: Diploma.Application.Predictions.Interfaces.IPredictionSettingsService.GetSettings
+- uid: Diploma.Domain.Models.Model
+  commentId: T:Diploma.Domain.Models.Model
+  parent: Diploma.Domain.Models
+  href: Diploma.Domain.Models.Model.html
+  name: Model
+  nameWithType: Model
+  fullName: Diploma.Domain.Models.Model
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: Diploma.Domain.Predictions.Settings.IPredictionSettings
+  commentId: T:Diploma.Domain.Predictions.Settings.IPredictionSettings
+  parent: Diploma.Domain.Predictions.Settings
+  href: Diploma.Domain.Predictions.Settings.IPredictionSettings.html
+  name: IPredictionSettings
+  nameWithType: IPredictionSettings
+  fullName: Diploma.Domain.Predictions.Settings.IPredictionSettings
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Diploma.Domain.Predictions.Settings
+  commentId: N:Diploma.Domain.Predictions.Settings
+  href: Diploma.html
+  name: Diploma.Domain.Predictions.Settings
+  nameWithType: Diploma.Domain.Predictions.Settings
+  fullName: Diploma.Domain.Predictions.Settings
+  spec.csharp:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Domain
+    name: Domain
+    href: Diploma.Domain.html
+  - name: .
+  - uid: Diploma.Domain.Predictions
+    name: Predictions
+    href: Diploma.Domain.Predictions.html
+  - name: .
+  - uid: Diploma.Domain.Predictions.Settings
+    name: Settings
+    href: Diploma.Domain.Predictions.Settings.html
+  spec.vb:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Domain
+    name: Domain
+    href: Diploma.Domain.html
+  - name: .
+  - uid: Diploma.Domain.Predictions
+    name: Predictions
+    href: Diploma.Domain.Predictions.html
+  - name: .
+  - uid: Diploma.Domain.Predictions.Settings
+    name: Settings
+    href: Diploma.Domain.Predictions.Settings.html

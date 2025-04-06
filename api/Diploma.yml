@@ -1,0 +1,97 @@
+### YamlMime:ManagedReference
+items:
+- uid: Diploma
+  id: Diploma
+  children:
+  - Diploma.Application
+  - Diploma.Contracts.Predictions
+  - Diploma.Dal
+  - Diploma.Domain
+  - Diploma.PredictionApi
+  - Diploma.Tests.Common
+  langs:
+  - csharp
+  - vb
+  name: Diploma
+  type: Namespace
+references:
+- uid: Diploma.Application
+  commentId: N:Diploma.Application
+  href: Diploma.html
+  name: Diploma.Application
+  nameWithType: Diploma.Application
+  fullName: Diploma.Application
+  spec.csharp:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Application
+    name: Application
+    href: Diploma.Application.html
+  spec.vb:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Application
+    name: Application
+    href: Diploma.Application.html
+- uid: Diploma.Dal
+  isExternal: true
+- uid: Diploma.Domain
+  isExternal: true
+- uid: Diploma.PredictionApi
+  commentId: N:Diploma.PredictionApi
+  href: Diploma.html
+  name: Diploma.PredictionApi
+  nameWithType: Diploma.PredictionApi
+  fullName: Diploma.PredictionApi
+  spec.csharp:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.PredictionApi
+    name: PredictionApi
+    href: Diploma.PredictionApi.html
+  spec.vb:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.PredictionApi
+    name: PredictionApi
+    href: Diploma.PredictionApi.html
+- uid: Diploma.Contracts.Predictions
+  commentId: N:Diploma.Contracts.Predictions
+  href: Diploma.html
+  name: Diploma.Contracts.Predictions
+  nameWithType: Diploma.Contracts.Predictions
+  fullName: Diploma.Contracts.Predictions
+  spec.csharp:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Contracts
+    name: Contracts
+    href: Diploma.Contracts.html
+  - name: .
+  - uid: Diploma.Contracts.Predictions
+    name: Predictions
+    href: Diploma.Contracts.Predictions.html
+  spec.vb:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Contracts
+    name: Contracts
+    href: Diploma.Contracts.html
+  - name: .
+  - uid: Diploma.Contracts.Predictions
+    name: Predictions
+    href: Diploma.Contracts.Predictions.html
+- uid: Diploma.Tests.Common
+  isExternal: true

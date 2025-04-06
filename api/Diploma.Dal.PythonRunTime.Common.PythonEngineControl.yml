@@ -1,0 +1,424 @@
+### YamlMime:ManagedReference
+items:
+- uid: Diploma.Dal.PythonRunTime.Common.PythonEngineControl
+  commentId: T:Diploma.Dal.PythonRunTime.Common.PythonEngineControl
+  id: PythonEngineControl
+  parent: Diploma.Dal.PythonRunTime.Common
+  children:
+  - Diploma.Dal.PythonRunTime.Common.PythonEngineControl.Execute(System.Action)
+  - Diploma.Dal.PythonRunTime.Common.PythonEngineControl.Initialize
+  - Diploma.Dal.PythonRunTime.Common.PythonEngineControl.Shutdown
+  langs:
+  - csharp
+  - vb
+  name: PythonEngineControl
+  nameWithType: PythonEngineControl
+  fullName: Diploma.Dal.PythonRunTime.Common.PythonEngineControl
+  type: Class
+  source:
+    remote:
+      path: Diploma.Dal.PythonRunTime/Common/PythonEngineControl.cs
+      branch: documantation
+      repo: https://github.com/51xel/Diploma.git
+    id: PythonEngineControl
+    path: Diploma.Dal.PythonRunTime/Common/PythonEngineControl.cs
+    startLine: 4
+  assemblies:
+  - Diploma.Dal.PythonRunTime
+  namespace: Diploma.Dal.PythonRunTime.Common
+  syntax:
+    content: public static class PythonEngineControl
+    content.vb: Public Module PythonEngineControl
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Diploma.Dal.PythonRunTime.Common.PythonEngineControl.Initialize
+  commentId: M:Diploma.Dal.PythonRunTime.Common.PythonEngineControl.Initialize
+  id: Initialize
+  parent: Diploma.Dal.PythonRunTime.Common.PythonEngineControl
+  langs:
+  - csharp
+  - vb
+  name: Initialize()
+  nameWithType: PythonEngineControl.Initialize()
+  fullName: Diploma.Dal.PythonRunTime.Common.PythonEngineControl.Initialize()
+  type: Method
+  source:
+    remote:
+      path: Diploma.Dal.PythonRunTime/Common/PythonEngineControl.cs
+      branch: documantation
+      repo: https://github.com/51xel/Diploma.git
+    id: Initialize
+    path: Diploma.Dal.PythonRunTime/Common/PythonEngineControl.cs
+    startLine: 6
+  assemblies:
+  - Diploma.Dal.PythonRunTime
+  namespace: Diploma.Dal.PythonRunTime.Common
+  syntax:
+    content: public static void Initialize()
+    content.vb: Public Shared Sub Initialize()
+  overload: Diploma.Dal.PythonRunTime.Common.PythonEngineControl.Initialize*
+- uid: Diploma.Dal.PythonRunTime.Common.PythonEngineControl.Execute(System.Action)
+  commentId: M:Diploma.Dal.PythonRunTime.Common.PythonEngineControl.Execute(System.Action)
+  id: Execute(System.Action)
+  parent: Diploma.Dal.PythonRunTime.Common.PythonEngineControl
+  langs:
+  - csharp
+  - vb
+  name: Execute(Action)
+  nameWithType: PythonEngineControl.Execute(Action)
+  fullName: Diploma.Dal.PythonRunTime.Common.PythonEngineControl.Execute(System.Action)
+  type: Method
+  source:
+    remote:
+      path: Diploma.Dal.PythonRunTime/Common/PythonEngineControl.cs
+      branch: documantation
+      repo: https://github.com/51xel/Diploma.git
+    id: Execute
+    path: Diploma.Dal.PythonRunTime/Common/PythonEngineControl.cs
+    startLine: 18
+  assemblies:
+  - Diploma.Dal.PythonRunTime
+  namespace: Diploma.Dal.PythonRunTime.Common
+  syntax:
+    content: public static void Execute(Action action)
+    parameters:
+    - id: action
+      type: System.Action
+    content.vb: Public Shared Sub Execute(action As Action)
+  overload: Diploma.Dal.PythonRunTime.Common.PythonEngineControl.Execute*
+- uid: Diploma.Dal.PythonRunTime.Common.PythonEngineControl.Shutdown
+  commentId: M:Diploma.Dal.PythonRunTime.Common.PythonEngineControl.Shutdown
+  id: Shutdown
+  parent: Diploma.Dal.PythonRunTime.Common.PythonEngineControl
+  langs:
+  - csharp
+  - vb
+  name: Shutdown()
+  nameWithType: PythonEngineControl.Shutdown()
+  fullName: Diploma.Dal.PythonRunTime.Common.PythonEngineControl.Shutdown()
+  type: Method
+  source:
+    remote:
+      path: Diploma.Dal.PythonRunTime/Common/PythonEngineControl.cs
+      branch: documantation
+      repo: https://github.com/51xel/Diploma.git
+    id: Shutdown
+    path: Diploma.Dal.PythonRunTime/Common/PythonEngineControl.cs
+    startLine: 28
+  assemblies:
+  - Diploma.Dal.PythonRunTime
+  namespace: Diploma.Dal.PythonRunTime.Common
+  syntax:
+    content: public static void Shutdown()
+    content.vb: Public Shared Sub Shutdown()
+  overload: Diploma.Dal.PythonRunTime.Common.PythonEngineControl.Shutdown*
+references:
+- uid: Diploma.Dal.PythonRunTime.Common
+  commentId: N:Diploma.Dal.PythonRunTime.Common
+  href: Diploma.html
+  name: Diploma.Dal.PythonRunTime.Common
+  nameWithType: Diploma.Dal.PythonRunTime.Common
+  fullName: Diploma.Dal.PythonRunTime.Common
+  spec.csharp:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Dal
+    name: Dal
+    href: Diploma.Dal.html
+  - name: .
+  - uid: Diploma.Dal.PythonRunTime
+    name: PythonRunTime
+    href: Diploma.Dal.PythonRunTime.html
+  - name: .
+  - uid: Diploma.Dal.PythonRunTime.Common
+    name: Common
+    href: Diploma.Dal.PythonRunTime.Common.html
+  spec.vb:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Dal
+    name: Dal
+    href: Diploma.Dal.html
+  - name: .
+  - uid: Diploma.Dal.PythonRunTime
+    name: PythonRunTime
+    href: Diploma.Dal.PythonRunTime.html
+  - name: .
+  - uid: Diploma.Dal.PythonRunTime.Common
+    name: Common
+    href: Diploma.Dal.PythonRunTime.Common.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Diploma.Dal.PythonRunTime.Common.PythonEngineControl.Initialize*
+  commentId: Overload:Diploma.Dal.PythonRunTime.Common.PythonEngineControl.Initialize
+  href: Diploma.Dal.PythonRunTime.Common.PythonEngineControl.html#Diploma_Dal_PythonRunTime_Common_PythonEngineControl_Initialize
+  name: Initialize
+  nameWithType: PythonEngineControl.Initialize
+  fullName: Diploma.Dal.PythonRunTime.Common.PythonEngineControl.Initialize
+- uid: Diploma.Dal.PythonRunTime.Common.PythonEngineControl.Execute*
+  commentId: Overload:Diploma.Dal.PythonRunTime.Common.PythonEngineControl.Execute
+  href: Diploma.Dal.PythonRunTime.Common.PythonEngineControl.html#Diploma_Dal_PythonRunTime_Common_PythonEngineControl_Execute_System_Action_
+  name: Execute
+  nameWithType: PythonEngineControl.Execute
+  fullName: Diploma.Dal.PythonRunTime.Common.PythonEngineControl.Execute
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: Diploma.Dal.PythonRunTime.Common.PythonEngineControl.Shutdown*
+  commentId: Overload:Diploma.Dal.PythonRunTime.Common.PythonEngineControl.Shutdown
+  href: Diploma.Dal.PythonRunTime.Common.PythonEngineControl.html#Diploma_Dal_PythonRunTime_Common_PythonEngineControl_Shutdown
+  name: Shutdown
+  nameWithType: PythonEngineControl.Shutdown
+  fullName: Diploma.Dal.PythonRunTime.Common.PythonEngineControl.Shutdown

@@ -1,0 +1,66 @@
+### YamlMime:ManagedReference
+items:
+- uid: Diploma.Application
+  commentId: N:Diploma.Application
+  id: Application
+  parent: Diploma
+  children:
+  - Diploma.Application.DependencyInjection
+  - Diploma.Application.Models.Interfaces
+  - Diploma.Application.Predictions
+  langs:
+  - csharp
+  - vb
+  name: Diploma.Application
+  nameWithType: Diploma.Application
+  fullName: Diploma.Application
+  type: Namespace
+  assemblies:
+  - Diploma.Application
+references:
+- uid: Diploma.Application.Predictions
+  isExternal: true
+- uid: Diploma.Application.DependencyInjection
+  commentId: T:Diploma.Application.DependencyInjection
+  href: Diploma.Application.DependencyInjection.html
+  name: DependencyInjection
+  nameWithType: DependencyInjection
+  fullName: Diploma.Application.DependencyInjection
+- uid: Diploma.Application.Models.Interfaces
+  commentId: N:Diploma.Application.Models.Interfaces
+  href: Diploma.html
+  name: Diploma.Application.Models.Interfaces
+  nameWithType: Diploma.Application.Models.Interfaces
+  fullName: Diploma.Application.Models.Interfaces
+  spec.csharp:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Application
+    name: Application
+    href: Diploma.Application.html
+  - name: .
+  - uid: Diploma.Application.Models
+    name: Models
+    href: Diploma.Application.Models.html
+  - name: .
+  - uid: Diploma.Application.Models.Interfaces
+    name: Interfaces
+    href: Diploma.Application.Models.Interfaces.html
+  spec.vb:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Application
+    name: Application
+    href: Diploma.Application.html
+  - name: .
+  - uid: Diploma.Application.Models
+    name: Models
+    href: Diploma.Application.Models.html
+  - name: .
+  - uid: Diploma.Application.Models.Interfaces
+    name: Interfaces
+    href: Diploma.Application.Models.Interfaces.html

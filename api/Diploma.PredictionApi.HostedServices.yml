@@ -1,0 +1,24 @@
+### YamlMime:ManagedReference
+items:
+- uid: Diploma.PredictionApi.HostedServices
+  commentId: N:Diploma.PredictionApi.HostedServices
+  id: HostedServices
+  parent: Diploma.PredictionApi
+  children:
+  - Diploma.PredictionApi.HostedServices.RedisContainerHostedService
+  langs:
+  - csharp
+  - vb
+  name: Diploma.PredictionApi.HostedServices
+  nameWithType: Diploma.PredictionApi.HostedServices
+  fullName: Diploma.PredictionApi.HostedServices
+  type: Namespace
+  assemblies:
+  - Diploma.PredictionApi
+references:
+- uid: Diploma.PredictionApi.HostedServices.RedisContainerHostedService
+  commentId: T:Diploma.PredictionApi.HostedServices.RedisContainerHostedService
+  href: Diploma.PredictionApi.HostedServices.RedisContainerHostedService.html
+  name: RedisContainerHostedService
+  nameWithType: RedisContainerHostedService
+  fullName: Diploma.PredictionApi.HostedServices.RedisContainerHostedService
