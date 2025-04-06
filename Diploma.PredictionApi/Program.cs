@@ -35,7 +35,8 @@ if (isDevelopment)
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+
+builder.Services.AddSwaggerGen(options => options.EnableAnnotations());
 
 var app = builder.Build();
 

@@ -3,6 +3,7 @@ using Diploma.Application.Predictions.Queries.PredictPrice;
 using Diploma.Contracts.Predictions;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using Swashbuckle.AspNetCore.Annotations;
 using System.ComponentModel.DataAnnotations;
 
 namespace Diploma.PredictionApi.Controllers
@@ -20,15 +21,8 @@ namespace Diploma.PredictionApi.Controllers
             _mapper = mapper;
         }
 
-        /// <summary>
-        /// Predicts the price of an asset based on the provided model and time range.
-        /// </summary>
-        /// <param name="predictPriceRequest">The request containing the model ID and time range.</param>
-        /// <param name="cancellationToken">A token to cancel the operation.</param>
-        /// <returns>
-        /// Returns a list of predicted prices or an error response.
-        /// </returns>
         [HttpPost]
+        [SwaggerOperation("Predicts the price of an asset based on the provided model and time range.")]
         [ProducesResponseType(typeof(IEnumerable<PredictPriceResponse>), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
