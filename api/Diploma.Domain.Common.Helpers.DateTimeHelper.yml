@@ -1,0 +1,612 @@
+### YamlMime:ManagedReference
+items:
+- uid: Diploma.Domain.Common.Helpers.DateTimeHelper
+  commentId: T:Diploma.Domain.Common.Helpers.DateTimeHelper
+  id: DateTimeHelper
+  parent: Diploma.Domain.Common.Helpers
+  children:
+  - Diploma.Domain.Common.Helpers.DateTimeHelper.AddTime(System.DateTime,Diploma.Domain.Common.Models.TimeRangeType,System.Double)
+  - Diploma.Domain.Common.Helpers.DateTimeHelper.CalculateDuration(Diploma.Domain.Common.Models.TimeRangeType,System.TimeSpan)
+  - Diploma.Domain.Common.Helpers.DateTimeHelper.CalculateInterval(Diploma.Domain.Predictions.Settings.SarimaPredictionSettings)
+  - Diploma.Domain.Common.Helpers.DateTimeHelper.GetMonthDifference(System.DateTime,System.DateTime)
+  langs:
+  - csharp
+  - vb
+  name: DateTimeHelper
+  nameWithType: DateTimeHelper
+  fullName: Diploma.Domain.Common.Helpers.DateTimeHelper
+  type: Class
+  source:
+    remote:
+      path: Diploma.Domain/Common/Helpers/DateTimeHelper.cs
+      branch: documantation
+      repo: https://github.com/51xel/Diploma.git
+    id: DateTimeHelper
+    path: Diploma.Domain/Common/Helpers/DateTimeHelper.cs
+    startLine: 5
+  assemblies:
+  - Diploma.Domain
+  namespace: Diploma.Domain.Common.Helpers
+  syntax:
+    content: public static class DateTimeHelper
+    content.vb: Public Module DateTimeHelper
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Diploma.Domain.Common.Helpers.DateTimeHelper.GetMonthDifference(System.DateTime,System.DateTime)
+  commentId: M:Diploma.Domain.Common.Helpers.DateTimeHelper.GetMonthDifference(System.DateTime,System.DateTime)
+  id: GetMonthDifference(System.DateTime,System.DateTime)
+  parent: Diploma.Domain.Common.Helpers.DateTimeHelper
+  langs:
+  - csharp
+  - vb
+  name: GetMonthDifference(DateTime, DateTime)
+  nameWithType: DateTimeHelper.GetMonthDifference(DateTime, DateTime)
+  fullName: Diploma.Domain.Common.Helpers.DateTimeHelper.GetMonthDifference(System.DateTime, System.DateTime)
+  type: Method
+  source:
+    remote:
+      path: Diploma.Domain/Common/Helpers/DateTimeHelper.cs
+      branch: documantation
+      repo: https://github.com/51xel/Diploma.git
+    id: GetMonthDifference
+    path: Diploma.Domain/Common/Helpers/DateTimeHelper.cs
+    startLine: 7
+  assemblies:
+  - Diploma.Domain
+  namespace: Diploma.Domain.Common.Helpers
+  syntax:
+    content: public static int GetMonthDifference(DateTime from, DateTime to)
+    parameters:
+    - id: from
+      type: System.DateTime
+    - id: to
+      type: System.DateTime
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function GetMonthDifference(from As Date, [to] As Date) As Integer
+  overload: Diploma.Domain.Common.Helpers.DateTimeHelper.GetMonthDifference*
+  nameWithType.vb: DateTimeHelper.GetMonthDifference(Date, Date)
+  fullName.vb: Diploma.Domain.Common.Helpers.DateTimeHelper.GetMonthDifference(Date, Date)
+  name.vb: GetMonthDifference(Date, Date)
+- uid: Diploma.Domain.Common.Helpers.DateTimeHelper.CalculateDuration(Diploma.Domain.Common.Models.TimeRangeType,System.TimeSpan)
+  commentId: M:Diploma.Domain.Common.Helpers.DateTimeHelper.CalculateDuration(Diploma.Domain.Common.Models.TimeRangeType,System.TimeSpan)
+  id: CalculateDuration(Diploma.Domain.Common.Models.TimeRangeType,System.TimeSpan)
+  parent: Diploma.Domain.Common.Helpers.DateTimeHelper
+  langs:
+  - csharp
+  - vb
+  name: CalculateDuration(TimeRangeType, TimeSpan)
+  nameWithType: DateTimeHelper.CalculateDuration(TimeRangeType, TimeSpan)
+  fullName: Diploma.Domain.Common.Helpers.DateTimeHelper.CalculateDuration(Diploma.Domain.Common.Models.TimeRangeType, System.TimeSpan)
+  type: Method
+  source:
+    remote:
+      path: Diploma.Domain/Common/Helpers/DateTimeHelper.cs
+      branch: documantation
+      repo: https://github.com/51xel/Diploma.git
+    id: CalculateDuration
+    path: Diploma.Domain/Common/Helpers/DateTimeHelper.cs
+    startLine: 12
+  assemblies:
+  - Diploma.Domain
+  namespace: Diploma.Domain.Common.Helpers
+  syntax:
+    content: public static double CalculateDuration(TimeRangeType timeRangeType, TimeSpan timeDifference)
+    parameters:
+    - id: timeRangeType
+      type: Diploma.Domain.Common.Models.TimeRangeType
+    - id: timeDifference
+      type: System.TimeSpan
+    return:
+      type: System.Double
+    content.vb: Public Shared Function CalculateDuration(timeRangeType As TimeRangeType, timeDifference As TimeSpan) As Double
+  overload: Diploma.Domain.Common.Helpers.DateTimeHelper.CalculateDuration*
+- uid: Diploma.Domain.Common.Helpers.DateTimeHelper.AddTime(System.DateTime,Diploma.Domain.Common.Models.TimeRangeType,System.Double)
+  commentId: M:Diploma.Domain.Common.Helpers.DateTimeHelper.AddTime(System.DateTime,Diploma.Domain.Common.Models.TimeRangeType,System.Double)
+  id: AddTime(System.DateTime,Diploma.Domain.Common.Models.TimeRangeType,System.Double)
+  isExtensionMethod: true
+  parent: Diploma.Domain.Common.Helpers.DateTimeHelper
+  langs:
+  - csharp
+  - vb
+  name: AddTime(DateTime, TimeRangeType, double)
+  nameWithType: DateTimeHelper.AddTime(DateTime, TimeRangeType, double)
+  fullName: Diploma.Domain.Common.Helpers.DateTimeHelper.AddTime(System.DateTime, Diploma.Domain.Common.Models.TimeRangeType, double)
+  type: Method
+  source:
+    remote:
+      path: Diploma.Domain/Common/Helpers/DateTimeHelper.cs
+      branch: documantation
+      repo: https://github.com/51xel/Diploma.git
+    id: AddTime
+    path: Diploma.Domain/Common/Helpers/DateTimeHelper.cs
+    startLine: 27
+  assemblies:
+  - Diploma.Domain
+  namespace: Diploma.Domain.Common.Helpers
+  syntax:
+    content: public static DateTime AddTime(this DateTime dateTime, TimeRangeType timeRangeType, double amount)
+    parameters:
+    - id: dateTime
+      type: System.DateTime
+    - id: timeRangeType
+      type: Diploma.Domain.Common.Models.TimeRangeType
+    - id: amount
+      type: System.Double
+    return:
+      type: System.DateTime
+    content.vb: Public Shared Function AddTime(dateTime As Date, timeRangeType As TimeRangeType, amount As Double) As Date
+  overload: Diploma.Domain.Common.Helpers.DateTimeHelper.AddTime*
+  nameWithType.vb: DateTimeHelper.AddTime(Date, TimeRangeType, Double)
+  fullName.vb: Diploma.Domain.Common.Helpers.DateTimeHelper.AddTime(Date, Diploma.Domain.Common.Models.TimeRangeType, Double)
+  name.vb: AddTime(Date, TimeRangeType, Double)
+- uid: Diploma.Domain.Common.Helpers.DateTimeHelper.CalculateInterval(Diploma.Domain.Predictions.Settings.SarimaPredictionSettings)
+  commentId: M:Diploma.Domain.Common.Helpers.DateTimeHelper.CalculateInterval(Diploma.Domain.Predictions.Settings.SarimaPredictionSettings)
+  id: CalculateInterval(Diploma.Domain.Predictions.Settings.SarimaPredictionSettings)
+  parent: Diploma.Domain.Common.Helpers.DateTimeHelper
+  langs:
+  - csharp
+  - vb
+  name: CalculateInterval(SarimaPredictionSettings)
+  nameWithType: DateTimeHelper.CalculateInterval(SarimaPredictionSettings)
+  fullName: Diploma.Domain.Common.Helpers.DateTimeHelper.CalculateInterval(Diploma.Domain.Predictions.Settings.SarimaPredictionSettings)
+  type: Method
+  source:
+    remote:
+      path: Diploma.Domain/Common/Helpers/DateTimeHelper.cs
+      branch: documantation
+      repo: https://github.com/51xel/Diploma.git
+    id: CalculateInterval
+    path: Diploma.Domain/Common/Helpers/DateTimeHelper.cs
+    startLine: 42
+  assemblies:
+  - Diploma.Domain
+  namespace: Diploma.Domain.Common.Helpers
+  syntax:
+    content: public static double CalculateInterval(SarimaPredictionSettings sarimaSettings)
+    parameters:
+    - id: sarimaSettings
+      type: Diploma.Domain.Predictions.Settings.SarimaPredictionSettings
+    return:
+      type: System.Double
+    content.vb: Public Shared Function CalculateInterval(sarimaSettings As SarimaPredictionSettings) As Double
+  overload: Diploma.Domain.Common.Helpers.DateTimeHelper.CalculateInterval*
+references:
+- uid: Diploma.Domain.Common.Helpers
+  commentId: N:Diploma.Domain.Common.Helpers
+  href: Diploma.html
+  name: Diploma.Domain.Common.Helpers
+  nameWithType: Diploma.Domain.Common.Helpers
+  fullName: Diploma.Domain.Common.Helpers
+  spec.csharp:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Domain
+    name: Domain
+    href: Diploma.Domain.html
+  - name: .
+  - uid: Diploma.Domain.Common
+    name: Common
+    href: Diploma.Domain.Common.html
+  - name: .
+  - uid: Diploma.Domain.Common.Helpers
+    name: Helpers
+    href: Diploma.Domain.Common.Helpers.html
+  spec.vb:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Domain
+    name: Domain
+    href: Diploma.Domain.html
+  - name: .
+  - uid: Diploma.Domain.Common
+    name: Common
+    href: Diploma.Domain.Common.html
+  - name: .
+  - uid: Diploma.Domain.Common.Helpers
+    name: Helpers
+    href: Diploma.Domain.Common.Helpers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Diploma.Domain.Common.Helpers.DateTimeHelper.GetMonthDifference*
+  commentId: Overload:Diploma.Domain.Common.Helpers.DateTimeHelper.GetMonthDifference
+  href: Diploma.Domain.Common.Helpers.DateTimeHelper.html#Diploma_Domain_Common_Helpers_DateTimeHelper_GetMonthDifference_System_DateTime_System_DateTime_
+  name: GetMonthDifference
+  nameWithType: DateTimeHelper.GetMonthDifference
+  fullName: Diploma.Domain.Common.Helpers.DateTimeHelper.GetMonthDifference
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Diploma.Domain.Common.Helpers.DateTimeHelper.CalculateDuration*
+  commentId: Overload:Diploma.Domain.Common.Helpers.DateTimeHelper.CalculateDuration
+  href: Diploma.Domain.Common.Helpers.DateTimeHelper.html#Diploma_Domain_Common_Helpers_DateTimeHelper_CalculateDuration_Diploma_Domain_Common_Models_TimeRangeType_System_TimeSpan_
+  name: CalculateDuration
+  nameWithType: DateTimeHelper.CalculateDuration
+  fullName: Diploma.Domain.Common.Helpers.DateTimeHelper.CalculateDuration
+- uid: Diploma.Domain.Common.Models.TimeRangeType
+  commentId: T:Diploma.Domain.Common.Models.TimeRangeType
+  parent: Diploma.Domain.Common.Models
+  href: Diploma.Domain.Common.Models.TimeRangeType.html
+  name: TimeRangeType
+  nameWithType: TimeRangeType
+  fullName: Diploma.Domain.Common.Models.TimeRangeType
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.timespan
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: Diploma.Domain.Common.Models
+  commentId: N:Diploma.Domain.Common.Models
+  href: Diploma.html
+  name: Diploma.Domain.Common.Models
+  nameWithType: Diploma.Domain.Common.Models
+  fullName: Diploma.Domain.Common.Models
+  spec.csharp:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Domain
+    name: Domain
+    href: Diploma.Domain.html
+  - name: .
+  - uid: Diploma.Domain.Common
+    name: Common
+    href: Diploma.Domain.Common.html
+  - name: .
+  - uid: Diploma.Domain.Common.Models
+    name: Models
+    href: Diploma.Domain.Common.Models.html
+  spec.vb:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Domain
+    name: Domain
+    href: Diploma.Domain.html
+  - name: .
+  - uid: Diploma.Domain.Common
+    name: Common
+    href: Diploma.Domain.Common.html
+  - name: .
+  - uid: Diploma.Domain.Common.Models
+    name: Models
+    href: Diploma.Domain.Common.Models.html
+- uid: Diploma.Domain.Common.Helpers.DateTimeHelper.AddTime*
+  commentId: Overload:Diploma.Domain.Common.Helpers.DateTimeHelper.AddTime
+  href: Diploma.Domain.Common.Helpers.DateTimeHelper.html#Diploma_Domain_Common_Helpers_DateTimeHelper_AddTime_System_DateTime_Diploma_Domain_Common_Models_TimeRangeType_System_Double_
+  name: AddTime
+  nameWithType: DateTimeHelper.AddTime
+  fullName: Diploma.Domain.Common.Helpers.DateTimeHelper.AddTime
+- uid: Diploma.Domain.Common.Helpers.DateTimeHelper.CalculateInterval*
+  commentId: Overload:Diploma.Domain.Common.Helpers.DateTimeHelper.CalculateInterval
+  href: Diploma.Domain.Common.Helpers.DateTimeHelper.html#Diploma_Domain_Common_Helpers_DateTimeHelper_CalculateInterval_Diploma_Domain_Predictions_Settings_SarimaPredictionSettings_
+  name: CalculateInterval
+  nameWithType: DateTimeHelper.CalculateInterval
+  fullName: Diploma.Domain.Common.Helpers.DateTimeHelper.CalculateInterval
+- uid: Diploma.Domain.Predictions.Settings.SarimaPredictionSettings
+  commentId: T:Diploma.Domain.Predictions.Settings.SarimaPredictionSettings
+  parent: Diploma.Domain.Predictions.Settings
+  href: Diploma.Domain.Predictions.Settings.SarimaPredictionSettings.html
+  name: SarimaPredictionSettings
+  nameWithType: SarimaPredictionSettings
+  fullName: Diploma.Domain.Predictions.Settings.SarimaPredictionSettings
+- uid: Diploma.Domain.Predictions.Settings
+  commentId: N:Diploma.Domain.Predictions.Settings
+  href: Diploma.html
+  name: Diploma.Domain.Predictions.Settings
+  nameWithType: Diploma.Domain.Predictions.Settings
+  fullName: Diploma.Domain.Predictions.Settings
+  spec.csharp:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Domain
+    name: Domain
+    href: Diploma.Domain.html
+  - name: .
+  - uid: Diploma.Domain.Predictions
+    name: Predictions
+    href: Diploma.Domain.Predictions.html
+  - name: .
+  - uid: Diploma.Domain.Predictions.Settings
+    name: Settings
+    href: Diploma.Domain.Predictions.Settings.html
+  spec.vb:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Domain
+    name: Domain
+    href: Diploma.Domain.html
+  - name: .
+  - uid: Diploma.Domain.Predictions
+    name: Predictions
+    href: Diploma.Domain.Predictions.html
+  - name: .
+  - uid: Diploma.Domain.Predictions.Settings
+    name: Settings
+    href: Diploma.Domain.Predictions.Settings.html

@@ -1,0 +1,62 @@
+### YamlMime:ManagedReference
+items:
+- uid: Diploma.Domain.Algorithms
+  commentId: N:Diploma.Domain.Algorithms
+  id: Algorithms
+  parent: Diploma.Domain
+  children:
+  - Diploma.Domain.Algorithms.Algorithm
+  - Diploma.Domain.Algorithms.AlgorithmType
+  langs:
+  - csharp
+  - vb
+  name: Diploma.Domain.Algorithms
+  nameWithType: Diploma.Domain.Algorithms
+  fullName: Diploma.Domain.Algorithms
+  type: Namespace
+  assemblies:
+  - Diploma.Domain
+references:
+- uid: Diploma.Domain.Algorithms.Algorithm
+  commentId: T:Diploma.Domain.Algorithms.Algorithm
+  href: Diploma.Domain.Algorithms.Algorithm.html
+  name: Algorithm
+  nameWithType: Algorithm
+  fullName: Diploma.Domain.Algorithms.Algorithm
+- uid: Diploma.Domain.Algorithms.AlgorithmType
+  commentId: T:Diploma.Domain.Algorithms.AlgorithmType
+  parent: Diploma.Domain.Algorithms
+  href: Diploma.Domain.Algorithms.AlgorithmType.html
+  name: AlgorithmType
+  nameWithType: AlgorithmType
+  fullName: Diploma.Domain.Algorithms.AlgorithmType
+- uid: Diploma.Domain.Algorithms
+  commentId: N:Diploma.Domain.Algorithms
+  href: Diploma.html
+  name: Diploma.Domain.Algorithms
+  nameWithType: Diploma.Domain.Algorithms
+  fullName: Diploma.Domain.Algorithms
+  spec.csharp:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Domain
+    name: Domain
+    href: Diploma.Domain.html
+  - name: .
+  - uid: Diploma.Domain.Algorithms
+    name: Algorithms
+    href: Diploma.Domain.Algorithms.html
+  spec.vb:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Domain
+    name: Domain
+    href: Diploma.Domain.html
+  - name: .
+  - uid: Diploma.Domain.Algorithms
+    name: Algorithms
+    href: Diploma.Domain.Algorithms.html

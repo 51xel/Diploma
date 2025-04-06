@@ -1,0 +1,290 @@
+### YamlMime:ManagedReference
+items:
+- uid: Diploma.Domain.Common.Models.TimeRangeType
+  commentId: T:Diploma.Domain.Common.Models.TimeRangeType
+  id: TimeRangeType
+  parent: Diploma.Domain.Common.Models
+  children:
+  - Diploma.Domain.Common.Models.TimeRangeType.ByDays
+  - Diploma.Domain.Common.Models.TimeRangeType.ByHours
+  - Diploma.Domain.Common.Models.TimeRangeType.ByMinutes
+  - Diploma.Domain.Common.Models.TimeRangeType.ByMonths
+  - Diploma.Domain.Common.Models.TimeRangeType.BySeconds
+  - Diploma.Domain.Common.Models.TimeRangeType.ByWeeks
+  - Diploma.Domain.Common.Models.TimeRangeType.ByYears
+  - Diploma.Domain.Common.Models.TimeRangeType.None
+  langs:
+  - csharp
+  - vb
+  name: TimeRangeType
+  nameWithType: TimeRangeType
+  fullName: Diploma.Domain.Common.Models.TimeRangeType
+  type: Enum
+  source:
+    remote:
+      path: Diploma.Domain/Common/Models/TimeRangeType.cs
+      branch: documantation
+      repo: https://github.com/51xel/Diploma.git
+    id: TimeRangeType
+    path: Diploma.Domain/Common/Models/TimeRangeType.cs
+    startLine: 2
+  assemblies:
+  - Diploma.Domain
+  namespace: Diploma.Domain.Common.Models
+  syntax:
+    content: public enum TimeRangeType
+    content.vb: Public Enum TimeRangeType
+- uid: Diploma.Domain.Common.Models.TimeRangeType.None
+  commentId: F:Diploma.Domain.Common.Models.TimeRangeType.None
+  id: None
+  parent: Diploma.Domain.Common.Models.TimeRangeType
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: TimeRangeType.None
+  fullName: Diploma.Domain.Common.Models.TimeRangeType.None
+  type: Field
+  source:
+    remote:
+      path: Diploma.Domain/Common/Models/TimeRangeType.cs
+      branch: documantation
+      repo: https://github.com/51xel/Diploma.git
+    id: None
+    path: Diploma.Domain/Common/Models/TimeRangeType.cs
+    startLine: 4
+  assemblies:
+  - Diploma.Domain
+  namespace: Diploma.Domain.Common.Models
+  syntax:
+    content: None = 0
+    return:
+      type: Diploma.Domain.Common.Models.TimeRangeType
+- uid: Diploma.Domain.Common.Models.TimeRangeType.BySeconds
+  commentId: F:Diploma.Domain.Common.Models.TimeRangeType.BySeconds
+  id: BySeconds
+  parent: Diploma.Domain.Common.Models.TimeRangeType
+  langs:
+  - csharp
+  - vb
+  name: BySeconds
+  nameWithType: TimeRangeType.BySeconds
+  fullName: Diploma.Domain.Common.Models.TimeRangeType.BySeconds
+  type: Field
+  source:
+    remote:
+      path: Diploma.Domain/Common/Models/TimeRangeType.cs
+      branch: documantation
+      repo: https://github.com/51xel/Diploma.git
+    id: BySeconds
+    path: Diploma.Domain/Common/Models/TimeRangeType.cs
+    startLine: 5
+  assemblies:
+  - Diploma.Domain
+  namespace: Diploma.Domain.Common.Models
+  syntax:
+    content: BySeconds = 1
+    return:
+      type: Diploma.Domain.Common.Models.TimeRangeType
+- uid: Diploma.Domain.Common.Models.TimeRangeType.ByMinutes
+  commentId: F:Diploma.Domain.Common.Models.TimeRangeType.ByMinutes
+  id: ByMinutes
+  parent: Diploma.Domain.Common.Models.TimeRangeType
+  langs:
+  - csharp
+  - vb
+  name: ByMinutes
+  nameWithType: TimeRangeType.ByMinutes
+  fullName: Diploma.Domain.Common.Models.TimeRangeType.ByMinutes
+  type: Field
+  source:
+    remote:
+      path: Diploma.Domain/Common/Models/TimeRangeType.cs
+      branch: documantation
+      repo: https://github.com/51xel/Diploma.git
+    id: ByMinutes
+    path: Diploma.Domain/Common/Models/TimeRangeType.cs
+    startLine: 6
+  assemblies:
+  - Diploma.Domain
+  namespace: Diploma.Domain.Common.Models
+  syntax:
+    content: ByMinutes = 2
+    return:
+      type: Diploma.Domain.Common.Models.TimeRangeType
+- uid: Diploma.Domain.Common.Models.TimeRangeType.ByHours
+  commentId: F:Diploma.Domain.Common.Models.TimeRangeType.ByHours
+  id: ByHours
+  parent: Diploma.Domain.Common.Models.TimeRangeType
+  langs:
+  - csharp
+  - vb
+  name: ByHours
+  nameWithType: TimeRangeType.ByHours
+  fullName: Diploma.Domain.Common.Models.TimeRangeType.ByHours
+  type: Field
+  source:
+    remote:
+      path: Diploma.Domain/Common/Models/TimeRangeType.cs
+      branch: documantation
+      repo: https://github.com/51xel/Diploma.git
+    id: ByHours
+    path: Diploma.Domain/Common/Models/TimeRangeType.cs
+    startLine: 7
+  assemblies:
+  - Diploma.Domain
+  namespace: Diploma.Domain.Common.Models
+  syntax:
+    content: ByHours = 3
+    return:
+      type: Diploma.Domain.Common.Models.TimeRangeType
+- uid: Diploma.Domain.Common.Models.TimeRangeType.ByDays
+  commentId: F:Diploma.Domain.Common.Models.TimeRangeType.ByDays
+  id: ByDays
+  parent: Diploma.Domain.Common.Models.TimeRangeType
+  langs:
+  - csharp
+  - vb
+  name: ByDays
+  nameWithType: TimeRangeType.ByDays
+  fullName: Diploma.Domain.Common.Models.TimeRangeType.ByDays
+  type: Field
+  source:
+    remote:
+      path: Diploma.Domain/Common/Models/TimeRangeType.cs
+      branch: documantation
+      repo: https://github.com/51xel/Diploma.git
+    id: ByDays
+    path: Diploma.Domain/Common/Models/TimeRangeType.cs
+    startLine: 8
+  assemblies:
+  - Diploma.Domain
+  namespace: Diploma.Domain.Common.Models
+  syntax:
+    content: ByDays = 4
+    return:
+      type: Diploma.Domain.Common.Models.TimeRangeType
+- uid: Diploma.Domain.Common.Models.TimeRangeType.ByWeeks
+  commentId: F:Diploma.Domain.Common.Models.TimeRangeType.ByWeeks
+  id: ByWeeks
+  parent: Diploma.Domain.Common.Models.TimeRangeType
+  langs:
+  - csharp
+  - vb
+  name: ByWeeks
+  nameWithType: TimeRangeType.ByWeeks
+  fullName: Diploma.Domain.Common.Models.TimeRangeType.ByWeeks
+  type: Field
+  source:
+    remote:
+      path: Diploma.Domain/Common/Models/TimeRangeType.cs
+      branch: documantation
+      repo: https://github.com/51xel/Diploma.git
+    id: ByWeeks
+    path: Diploma.Domain/Common/Models/TimeRangeType.cs
+    startLine: 9
+  assemblies:
+  - Diploma.Domain
+  namespace: Diploma.Domain.Common.Models
+  syntax:
+    content: ByWeeks = 5
+    return:
+      type: Diploma.Domain.Common.Models.TimeRangeType
+- uid: Diploma.Domain.Common.Models.TimeRangeType.ByMonths
+  commentId: F:Diploma.Domain.Common.Models.TimeRangeType.ByMonths
+  id: ByMonths
+  parent: Diploma.Domain.Common.Models.TimeRangeType
+  langs:
+  - csharp
+  - vb
+  name: ByMonths
+  nameWithType: TimeRangeType.ByMonths
+  fullName: Diploma.Domain.Common.Models.TimeRangeType.ByMonths
+  type: Field
+  source:
+    remote:
+      path: Diploma.Domain/Common/Models/TimeRangeType.cs
+      branch: documantation
+      repo: https://github.com/51xel/Diploma.git
+    id: ByMonths
+    path: Diploma.Domain/Common/Models/TimeRangeType.cs
+    startLine: 10
+  assemblies:
+  - Diploma.Domain
+  namespace: Diploma.Domain.Common.Models
+  syntax:
+    content: ByMonths = 6
+    return:
+      type: Diploma.Domain.Common.Models.TimeRangeType
+- uid: Diploma.Domain.Common.Models.TimeRangeType.ByYears
+  commentId: F:Diploma.Domain.Common.Models.TimeRangeType.ByYears
+  id: ByYears
+  parent: Diploma.Domain.Common.Models.TimeRangeType
+  langs:
+  - csharp
+  - vb
+  name: ByYears
+  nameWithType: TimeRangeType.ByYears
+  fullName: Diploma.Domain.Common.Models.TimeRangeType.ByYears
+  type: Field
+  source:
+    remote:
+      path: Diploma.Domain/Common/Models/TimeRangeType.cs
+      branch: documantation
+      repo: https://github.com/51xel/Diploma.git
+    id: ByYears
+    path: Diploma.Domain/Common/Models/TimeRangeType.cs
+    startLine: 11
+  assemblies:
+  - Diploma.Domain
+  namespace: Diploma.Domain.Common.Models
+  syntax:
+    content: ByYears = 7
+    return:
+      type: Diploma.Domain.Common.Models.TimeRangeType
+references:
+- uid: Diploma.Domain.Common.Models
+  commentId: N:Diploma.Domain.Common.Models
+  href: Diploma.html
+  name: Diploma.Domain.Common.Models
+  nameWithType: Diploma.Domain.Common.Models
+  fullName: Diploma.Domain.Common.Models
+  spec.csharp:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Domain
+    name: Domain
+    href: Diploma.Domain.html
+  - name: .
+  - uid: Diploma.Domain.Common
+    name: Common
+    href: Diploma.Domain.Common.html
+  - name: .
+  - uid: Diploma.Domain.Common.Models
+    name: Models
+    href: Diploma.Domain.Common.Models.html
+  spec.vb:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Domain
+    name: Domain
+    href: Diploma.Domain.html
+  - name: .
+  - uid: Diploma.Domain.Common
+    name: Common
+    href: Diploma.Domain.Common.html
+  - name: .
+  - uid: Diploma.Domain.Common.Models
+    name: Models
+    href: Diploma.Domain.Common.Models.html
+- uid: Diploma.Domain.Common.Models.TimeRangeType
+  commentId: T:Diploma.Domain.Common.Models.TimeRangeType
+  parent: Diploma.Domain.Common.Models
+  href: Diploma.Domain.Common.Models.TimeRangeType.html
+  name: TimeRangeType
+  nameWithType: TimeRangeType
+  fullName: Diploma.Domain.Common.Models.TimeRangeType

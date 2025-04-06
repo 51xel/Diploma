@@ -1,0 +1,126 @@
+### YamlMime:ManagedReference
+items:
+- uid: Diploma.Domain.Algorithms.AlgorithmType
+  commentId: T:Diploma.Domain.Algorithms.AlgorithmType
+  id: AlgorithmType
+  parent: Diploma.Domain.Algorithms
+  children:
+  - Diploma.Domain.Algorithms.AlgorithmType.BTC
+  - Diploma.Domain.Algorithms.AlgorithmType.None
+  langs:
+  - csharp
+  - vb
+  name: AlgorithmType
+  nameWithType: AlgorithmType
+  fullName: Diploma.Domain.Algorithms.AlgorithmType
+  type: Enum
+  source:
+    remote:
+      path: Diploma.Domain/Algorithms/AlgorithmType.cs
+      branch: documantation
+      repo: https://github.com/51xel/Diploma.git
+    id: AlgorithmType
+    path: Diploma.Domain/Algorithms/AlgorithmType.cs
+    startLine: 5
+  assemblies:
+  - Diploma.Domain
+  namespace: Diploma.Domain.Algorithms
+  summary: Represents the type of algorithm used for processing or predictions
+  example: []
+  syntax:
+    content: public enum AlgorithmType
+    content.vb: Public Enum AlgorithmType
+- uid: Diploma.Domain.Algorithms.AlgorithmType.None
+  commentId: F:Diploma.Domain.Algorithms.AlgorithmType.None
+  id: None
+  parent: Diploma.Domain.Algorithms.AlgorithmType
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: AlgorithmType.None
+  fullName: Diploma.Domain.Algorithms.AlgorithmType.None
+  type: Field
+  source:
+    remote:
+      path: Diploma.Domain/Algorithms/AlgorithmType.cs
+      branch: documantation
+      repo: https://github.com/51xel/Diploma.git
+    id: None
+    path: Diploma.Domain/Algorithms/AlgorithmType.cs
+    startLine: 10
+  assemblies:
+  - Diploma.Domain
+  namespace: Diploma.Domain.Algorithms
+  summary: No algorithm specified
+  example: []
+  syntax:
+    content: None = 0
+    return:
+      type: Diploma.Domain.Algorithms.AlgorithmType
+- uid: Diploma.Domain.Algorithms.AlgorithmType.BTC
+  commentId: F:Diploma.Domain.Algorithms.AlgorithmType.BTC
+  id: BTC
+  parent: Diploma.Domain.Algorithms.AlgorithmType
+  langs:
+  - csharp
+  - vb
+  name: BTC
+  nameWithType: AlgorithmType.BTC
+  fullName: Diploma.Domain.Algorithms.AlgorithmType.BTC
+  type: Field
+  source:
+    remote:
+      path: Diploma.Domain/Algorithms/AlgorithmType.cs
+      branch: documantation
+      repo: https://github.com/51xel/Diploma.git
+    id: BTC
+    path: Diploma.Domain/Algorithms/AlgorithmType.cs
+    startLine: 15
+  assemblies:
+  - Diploma.Domain
+  namespace: Diploma.Domain.Algorithms
+  summary: Algorithm for processing Bitcoin (BTC) data
+  example: []
+  syntax:
+    content: BTC = 1
+    return:
+      type: Diploma.Domain.Algorithms.AlgorithmType
+references:
+- uid: Diploma.Domain.Algorithms
+  commentId: N:Diploma.Domain.Algorithms
+  href: Diploma.html
+  name: Diploma.Domain.Algorithms
+  nameWithType: Diploma.Domain.Algorithms
+  fullName: Diploma.Domain.Algorithms
+  spec.csharp:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Domain
+    name: Domain
+    href: Diploma.Domain.html
+  - name: .
+  - uid: Diploma.Domain.Algorithms
+    name: Algorithms
+    href: Diploma.Domain.Algorithms.html
+  spec.vb:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Domain
+    name: Domain
+    href: Diploma.Domain.html
+  - name: .
+  - uid: Diploma.Domain.Algorithms
+    name: Algorithms
+    href: Diploma.Domain.Algorithms.html
+- uid: Diploma.Domain.Algorithms.AlgorithmType
+  commentId: T:Diploma.Domain.Algorithms.AlgorithmType
+  parent: Diploma.Domain.Algorithms
+  href: Diploma.Domain.Algorithms.AlgorithmType.html
+  name: AlgorithmType
+  nameWithType: AlgorithmType
+  fullName: Diploma.Domain.Algorithms.AlgorithmType

@@ -1,0 +1,195 @@
+### YamlMime:ManagedReference
+items:
+- uid: Diploma.Application.Predictions.Factories.Interfaces.IPredictionSettingsFactory
+  commentId: T:Diploma.Application.Predictions.Factories.Interfaces.IPredictionSettingsFactory
+  id: IPredictionSettingsFactory
+  parent: Diploma.Application.Predictions.Factories.Interfaces
+  children:
+  - Diploma.Application.Predictions.Factories.Interfaces.IPredictionSettingsFactory.GetPredictionSettingsService(Diploma.Domain.Models.ModelType)
+  langs:
+  - csharp
+  - vb
+  name: IPredictionSettingsFactory
+  nameWithType: IPredictionSettingsFactory
+  fullName: Diploma.Application.Predictions.Factories.Interfaces.IPredictionSettingsFactory
+  type: Interface
+  source:
+    remote:
+      path: Diploma.Application/Predictions/Factories/Interfaces/IPredictionSettingsFactory.cs
+      branch: documantation
+      repo: https://github.com/51xel/Diploma.git
+    id: IPredictionSettingsFactory
+    path: Diploma.Application/Predictions/Factories/Interfaces/IPredictionSettingsFactory.cs
+    startLine: 5
+  assemblies:
+  - Diploma.Application
+  namespace: Diploma.Application.Predictions.Factories.Interfaces
+  syntax:
+    content: public interface IPredictionSettingsFactory
+    content.vb: Public Interface IPredictionSettingsFactory
+- uid: Diploma.Application.Predictions.Factories.Interfaces.IPredictionSettingsFactory.GetPredictionSettingsService(Diploma.Domain.Models.ModelType)
+  commentId: M:Diploma.Application.Predictions.Factories.Interfaces.IPredictionSettingsFactory.GetPredictionSettingsService(Diploma.Domain.Models.ModelType)
+  id: GetPredictionSettingsService(Diploma.Domain.Models.ModelType)
+  parent: Diploma.Application.Predictions.Factories.Interfaces.IPredictionSettingsFactory
+  langs:
+  - csharp
+  - vb
+  name: GetPredictionSettingsService(ModelType)
+  nameWithType: IPredictionSettingsFactory.GetPredictionSettingsService(ModelType)
+  fullName: Diploma.Application.Predictions.Factories.Interfaces.IPredictionSettingsFactory.GetPredictionSettingsService(Diploma.Domain.Models.ModelType)
+  type: Method
+  source:
+    remote:
+      path: Diploma.Application/Predictions/Factories/Interfaces/IPredictionSettingsFactory.cs
+      branch: documantation
+      repo: https://github.com/51xel/Diploma.git
+    id: GetPredictionSettingsService
+    path: Diploma.Application/Predictions/Factories/Interfaces/IPredictionSettingsFactory.cs
+    startLine: 7
+  assemblies:
+  - Diploma.Application
+  namespace: Diploma.Application.Predictions.Factories.Interfaces
+  syntax:
+    content: IPredictionSettingsService GetPredictionSettingsService(ModelType modelType)
+    parameters:
+    - id: modelType
+      type: Diploma.Domain.Models.ModelType
+    return:
+      type: Diploma.Application.Predictions.Interfaces.IPredictionSettingsService
+    content.vb: Function GetPredictionSettingsService(modelType As ModelType) As IPredictionSettingsService
+  overload: Diploma.Application.Predictions.Factories.Interfaces.IPredictionSettingsFactory.GetPredictionSettingsService*
+references:
+- uid: Diploma.Application.Predictions.Factories.Interfaces
+  commentId: N:Diploma.Application.Predictions.Factories.Interfaces
+  href: Diploma.html
+  name: Diploma.Application.Predictions.Factories.Interfaces
+  nameWithType: Diploma.Application.Predictions.Factories.Interfaces
+  fullName: Diploma.Application.Predictions.Factories.Interfaces
+  spec.csharp:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Application
+    name: Application
+    href: Diploma.Application.html
+  - name: .
+  - uid: Diploma.Application.Predictions
+    name: Predictions
+    href: Diploma.Application.Predictions.html
+  - name: .
+  - uid: Diploma.Application.Predictions.Factories
+    name: Factories
+    href: Diploma.Application.Predictions.Factories.html
+  - name: .
+  - uid: Diploma.Application.Predictions.Factories.Interfaces
+    name: Interfaces
+    href: Diploma.Application.Predictions.Factories.Interfaces.html
+  spec.vb:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Application
+    name: Application
+    href: Diploma.Application.html
+  - name: .
+  - uid: Diploma.Application.Predictions
+    name: Predictions
+    href: Diploma.Application.Predictions.html
+  - name: .
+  - uid: Diploma.Application.Predictions.Factories
+    name: Factories
+    href: Diploma.Application.Predictions.Factories.html
+  - name: .
+  - uid: Diploma.Application.Predictions.Factories.Interfaces
+    name: Interfaces
+    href: Diploma.Application.Predictions.Factories.Interfaces.html
+- uid: Diploma.Application.Predictions.Factories.Interfaces.IPredictionSettingsFactory.GetPredictionSettingsService*
+  commentId: Overload:Diploma.Application.Predictions.Factories.Interfaces.IPredictionSettingsFactory.GetPredictionSettingsService
+  href: Diploma.Application.Predictions.Factories.Interfaces.IPredictionSettingsFactory.html#Diploma_Application_Predictions_Factories_Interfaces_IPredictionSettingsFactory_GetPredictionSettingsService_Diploma_Domain_Models_ModelType_
+  name: GetPredictionSettingsService
+  nameWithType: IPredictionSettingsFactory.GetPredictionSettingsService
+  fullName: Diploma.Application.Predictions.Factories.Interfaces.IPredictionSettingsFactory.GetPredictionSettingsService
+- uid: Diploma.Domain.Models.ModelType
+  commentId: T:Diploma.Domain.Models.ModelType
+  parent: Diploma.Domain.Models
+  href: Diploma.Domain.Models.ModelType.html
+  name: ModelType
+  nameWithType: ModelType
+  fullName: Diploma.Domain.Models.ModelType
+- uid: Diploma.Application.Predictions.Interfaces.IPredictionSettingsService
+  commentId: T:Diploma.Application.Predictions.Interfaces.IPredictionSettingsService
+  parent: Diploma.Application.Predictions.Interfaces
+  href: Diploma.Application.Predictions.Interfaces.IPredictionSettingsService.html
+  name: IPredictionSettingsService
+  nameWithType: IPredictionSettingsService
+  fullName: Diploma.Application.Predictions.Interfaces.IPredictionSettingsService
+- uid: Diploma.Domain.Models
+  commentId: N:Diploma.Domain.Models
+  href: Diploma.html
+  name: Diploma.Domain.Models
+  nameWithType: Diploma.Domain.Models
+  fullName: Diploma.Domain.Models
+  spec.csharp:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Domain
+    name: Domain
+    href: Diploma.Domain.html
+  - name: .
+  - uid: Diploma.Domain.Models
+    name: Models
+    href: Diploma.Domain.Models.html
+  spec.vb:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Domain
+    name: Domain
+    href: Diploma.Domain.html
+  - name: .
+  - uid: Diploma.Domain.Models
+    name: Models
+    href: Diploma.Domain.Models.html
+- uid: Diploma.Application.Predictions.Interfaces
+  commentId: N:Diploma.Application.Predictions.Interfaces
+  href: Diploma.html
+  name: Diploma.Application.Predictions.Interfaces
+  nameWithType: Diploma.Application.Predictions.Interfaces
+  fullName: Diploma.Application.Predictions.Interfaces
+  spec.csharp:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Application
+    name: Application
+    href: Diploma.Application.html
+  - name: .
+  - uid: Diploma.Application.Predictions
+    name: Predictions
+    href: Diploma.Application.Predictions.html
+  - name: .
+  - uid: Diploma.Application.Predictions.Interfaces
+    name: Interfaces
+    href: Diploma.Application.Predictions.Interfaces.html
+  spec.vb:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Application
+    name: Application
+    href: Diploma.Application.html
+  - name: .
+  - uid: Diploma.Application.Predictions
+    name: Predictions
+    href: Diploma.Application.Predictions.html
+  - name: .
+  - uid: Diploma.Application.Predictions.Interfaces
+    name: Interfaces
+    href: Diploma.Application.Predictions.Interfaces.html

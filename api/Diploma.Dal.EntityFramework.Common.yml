@@ -1,0 +1,63 @@
+### YamlMime:ManagedReference
+items:
+- uid: Diploma.Dal.EntityFramework.Common
+  commentId: N:Diploma.Dal.EntityFramework.Common
+  id: Common
+  parent: Diploma.Dal.EntityFramework
+  children:
+  - Diploma.Dal.EntityFramework.Common.ApplicationDbContext
+  langs:
+  - csharp
+  - vb
+  name: Diploma.Dal.EntityFramework.Common
+  nameWithType: Diploma.Dal.EntityFramework.Common
+  fullName: Diploma.Dal.EntityFramework.Common
+  type: Namespace
+  assemblies:
+  - Diploma.Dal.EntityFramework
+references:
+- uid: Diploma.Dal.EntityFramework.Common.ApplicationDbContext
+  commentId: T:Diploma.Dal.EntityFramework.Common.ApplicationDbContext
+  parent: Diploma.Dal.EntityFramework.Common
+  href: Diploma.Dal.EntityFramework.Common.ApplicationDbContext.html
+  name: ApplicationDbContext
+  nameWithType: ApplicationDbContext
+  fullName: Diploma.Dal.EntityFramework.Common.ApplicationDbContext
+- uid: Diploma.Dal.EntityFramework.Common
+  commentId: N:Diploma.Dal.EntityFramework.Common
+  href: Diploma.html
+  name: Diploma.Dal.EntityFramework.Common
+  nameWithType: Diploma.Dal.EntityFramework.Common
+  fullName: Diploma.Dal.EntityFramework.Common
+  spec.csharp:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Dal
+    name: Dal
+    href: Diploma.Dal.html
+  - name: .
+  - uid: Diploma.Dal.EntityFramework
+    name: EntityFramework
+    href: Diploma.Dal.EntityFramework.html
+  - name: .
+  - uid: Diploma.Dal.EntityFramework.Common
+    name: Common
+    href: Diploma.Dal.EntityFramework.Common.html
+  spec.vb:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Dal
+    name: Dal
+    href: Diploma.Dal.html
+  - name: .
+  - uid: Diploma.Dal.EntityFramework
+    name: EntityFramework
+    href: Diploma.Dal.EntityFramework.html
+  - name: .
+  - uid: Diploma.Dal.EntityFramework.Common
+    name: Common
+    href: Diploma.Dal.EntityFramework.Common.html

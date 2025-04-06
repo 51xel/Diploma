@@ -1,0 +1,86 @@
+### YamlMime:ManagedReference
+items:
+- uid: Diploma.PredictionApi
+  commentId: N:Diploma.PredictionApi
+  id: PredictionApi
+  parent: Diploma
+  children:
+  - Diploma.PredictionApi.AutoMapperProfile
+  - Diploma.PredictionApi.Controllers
+  - Diploma.PredictionApi.HostedServices
+  langs:
+  - csharp
+  - vb
+  name: Diploma.PredictionApi
+  nameWithType: Diploma.PredictionApi
+  fullName: Diploma.PredictionApi
+  type: Namespace
+  assemblies:
+  - Diploma.PredictionApi
+references:
+- uid: Diploma.PredictionApi.Controllers
+  commentId: N:Diploma.PredictionApi.Controllers
+  href: Diploma.html
+  name: Diploma.PredictionApi.Controllers
+  nameWithType: Diploma.PredictionApi.Controllers
+  fullName: Diploma.PredictionApi.Controllers
+  spec.csharp:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.PredictionApi
+    name: PredictionApi
+    href: Diploma.PredictionApi.html
+  - name: .
+  - uid: Diploma.PredictionApi.Controllers
+    name: Controllers
+    href: Diploma.PredictionApi.Controllers.html
+  spec.vb:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.PredictionApi
+    name: PredictionApi
+    href: Diploma.PredictionApi.html
+  - name: .
+  - uid: Diploma.PredictionApi.Controllers
+    name: Controllers
+    href: Diploma.PredictionApi.Controllers.html
+- uid: Diploma.PredictionApi.HostedServices
+  commentId: N:Diploma.PredictionApi.HostedServices
+  href: Diploma.html
+  name: Diploma.PredictionApi.HostedServices
+  nameWithType: Diploma.PredictionApi.HostedServices
+  fullName: Diploma.PredictionApi.HostedServices
+  spec.csharp:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.PredictionApi
+    name: PredictionApi
+    href: Diploma.PredictionApi.html
+  - name: .
+  - uid: Diploma.PredictionApi.HostedServices
+    name: HostedServices
+    href: Diploma.PredictionApi.HostedServices.html
+  spec.vb:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.PredictionApi
+    name: PredictionApi
+    href: Diploma.PredictionApi.html
+  - name: .
+  - uid: Diploma.PredictionApi.HostedServices
+    name: HostedServices
+    href: Diploma.PredictionApi.HostedServices.html
+- uid: Diploma.PredictionApi.AutoMapperProfile
+  commentId: T:Diploma.PredictionApi.AutoMapperProfile
+  href: Diploma.PredictionApi.AutoMapperProfile.html
+  name: AutoMapperProfile
+  nameWithType: AutoMapperProfile
+  fullName: Diploma.PredictionApi.AutoMapperProfile

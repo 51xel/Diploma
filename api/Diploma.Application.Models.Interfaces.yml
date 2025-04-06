@@ -1,0 +1,45 @@
+### YamlMime:ManagedReference
+items:
+- uid: Diploma.Application.Models.Interfaces
+  commentId: N:Diploma.Application.Models.Interfaces
+  id: Models.Interfaces
+  parent: Diploma.Application
+  children:
+  - Diploma.Application.Models.Interfaces.IModelFileCacheRepository
+  - Diploma.Application.Models.Interfaces.IModelFileCacheService
+  - Diploma.Application.Models.Interfaces.IModelFileRepository
+  - Diploma.Application.Models.Interfaces.IModelRepository
+  langs:
+  - csharp
+  - vb
+  name: Diploma.Application.Models.Interfaces
+  nameWithType: Diploma.Application.Models.Interfaces
+  fullName: Diploma.Application.Models.Interfaces
+  type: Namespace
+  assemblies:
+  - Diploma.Application
+references:
+- uid: Diploma.Application.Models.Interfaces.IModelFileCacheRepository
+  commentId: T:Diploma.Application.Models.Interfaces.IModelFileCacheRepository
+  href: Diploma.Application.Models.Interfaces.IModelFileCacheRepository.html
+  name: IModelFileCacheRepository
+  nameWithType: IModelFileCacheRepository
+  fullName: Diploma.Application.Models.Interfaces.IModelFileCacheRepository
+- uid: Diploma.Application.Models.Interfaces.IModelFileCacheService
+  commentId: T:Diploma.Application.Models.Interfaces.IModelFileCacheService
+  href: Diploma.Application.Models.Interfaces.IModelFileCacheService.html
+  name: IModelFileCacheService
+  nameWithType: IModelFileCacheService
+  fullName: Diploma.Application.Models.Interfaces.IModelFileCacheService
+- uid: Diploma.Application.Models.Interfaces.IModelFileRepository
+  commentId: T:Diploma.Application.Models.Interfaces.IModelFileRepository
+  href: Diploma.Application.Models.Interfaces.IModelFileRepository.html
+  name: IModelFileRepository
+  nameWithType: IModelFileRepository
+  fullName: Diploma.Application.Models.Interfaces.IModelFileRepository
+- uid: Diploma.Application.Models.Interfaces.IModelRepository
+  commentId: T:Diploma.Application.Models.Interfaces.IModelRepository
+  href: Diploma.Application.Models.Interfaces.IModelRepository.html
+  name: IModelRepository
+  nameWithType: IModelRepository
+  fullName: Diploma.Application.Models.Interfaces.IModelRepository

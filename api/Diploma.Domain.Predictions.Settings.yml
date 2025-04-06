@@ -1,0 +1,71 @@
+### YamlMime:ManagedReference
+items:
+- uid: Diploma.Domain.Predictions.Settings
+  commentId: N:Diploma.Domain.Predictions.Settings
+  id: Settings
+  parent: Diploma.Domain.Predictions
+  children:
+  - Diploma.Domain.Predictions.Settings.IPredictionSettings
+  - Diploma.Domain.Predictions.Settings.SarimaPredictionSettings
+  langs:
+  - csharp
+  - vb
+  name: Diploma.Domain.Predictions.Settings
+  nameWithType: Diploma.Domain.Predictions.Settings
+  fullName: Diploma.Domain.Predictions.Settings
+  type: Namespace
+  assemblies:
+  - Diploma.Domain
+references:
+- uid: Diploma.Domain.Predictions.Settings.IPredictionSettings
+  commentId: T:Diploma.Domain.Predictions.Settings.IPredictionSettings
+  parent: Diploma.Domain.Predictions.Settings
+  href: Diploma.Domain.Predictions.Settings.IPredictionSettings.html
+  name: IPredictionSettings
+  nameWithType: IPredictionSettings
+  fullName: Diploma.Domain.Predictions.Settings.IPredictionSettings
+- uid: Diploma.Domain.Predictions.Settings.SarimaPredictionSettings
+  commentId: T:Diploma.Domain.Predictions.Settings.SarimaPredictionSettings
+  parent: Diploma.Domain.Predictions.Settings
+  href: Diploma.Domain.Predictions.Settings.SarimaPredictionSettings.html
+  name: SarimaPredictionSettings
+  nameWithType: SarimaPredictionSettings
+  fullName: Diploma.Domain.Predictions.Settings.SarimaPredictionSettings
+- uid: Diploma.Domain.Predictions.Settings
+  commentId: N:Diploma.Domain.Predictions.Settings
+  href: Diploma.html
+  name: Diploma.Domain.Predictions.Settings
+  nameWithType: Diploma.Domain.Predictions.Settings
+  fullName: Diploma.Domain.Predictions.Settings
+  spec.csharp:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Domain
+    name: Domain
+    href: Diploma.Domain.html
+  - name: .
+  - uid: Diploma.Domain.Predictions
+    name: Predictions
+    href: Diploma.Domain.Predictions.html
+  - name: .
+  - uid: Diploma.Domain.Predictions.Settings
+    name: Settings
+    href: Diploma.Domain.Predictions.Settings.html
+  spec.vb:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Domain
+    name: Domain
+    href: Diploma.Domain.html
+  - name: .
+  - uid: Diploma.Domain.Predictions
+    name: Predictions
+    href: Diploma.Domain.Predictions.html
+  - name: .
+  - uid: Diploma.Domain.Predictions.Settings
+    name: Settings
+    href: Diploma.Domain.Predictions.Settings.html

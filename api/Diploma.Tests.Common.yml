@@ -1,0 +1,90 @@
+### YamlMime:ManagedReference
+items:
+- uid: Diploma.Tests.Common
+  id: Tests.Common
+  parent: Diploma
+  children:
+  - Diploma.Tests.Common.Models
+  - Diploma.Tests.Common.TestConstants
+  langs:
+  - csharp
+  - vb
+  name: Diploma.Tests.Common
+  type: Namespace
+references:
+- uid: Diploma.Tests.Common.Models
+  commentId: N:Diploma.Tests.Common.Models
+  href: Diploma.html
+  name: Diploma.Tests.Common.Models
+  nameWithType: Diploma.Tests.Common.Models
+  fullName: Diploma.Tests.Common.Models
+  spec.csharp:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Tests
+    name: Tests
+    href: Diploma.Tests.html
+  - name: .
+  - uid: Diploma.Tests.Common
+    name: Common
+    href: Diploma.Tests.Common.html
+  - name: .
+  - uid: Diploma.Tests.Common.Models
+    name: Models
+    href: Diploma.Tests.Common.Models.html
+  spec.vb:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Tests
+    name: Tests
+    href: Diploma.Tests.html
+  - name: .
+  - uid: Diploma.Tests.Common
+    name: Common
+    href: Diploma.Tests.Common.html
+  - name: .
+  - uid: Diploma.Tests.Common.Models
+    name: Models
+    href: Diploma.Tests.Common.Models.html
+- uid: Diploma.Tests.Common.TestConstants
+  commentId: N:Diploma.Tests.Common.TestConstants
+  href: Diploma.html
+  name: Diploma.Tests.Common.TestConstants
+  nameWithType: Diploma.Tests.Common.TestConstants
+  fullName: Diploma.Tests.Common.TestConstants
+  spec.csharp:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Tests
+    name: Tests
+    href: Diploma.Tests.html
+  - name: .
+  - uid: Diploma.Tests.Common
+    name: Common
+    href: Diploma.Tests.Common.html
+  - name: .
+  - uid: Diploma.Tests.Common.TestConstants
+    name: TestConstants
+    href: Diploma.Tests.Common.TestConstants.html
+  spec.vb:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Tests
+    name: Tests
+    href: Diploma.Tests.html
+  - name: .
+  - uid: Diploma.Tests.Common
+    name: Common
+    href: Diploma.Tests.Common.html
+  - name: .
+  - uid: Diploma.Tests.Common.TestConstants
+    name: TestConstants
+    href: Diploma.Tests.Common.TestConstants.html

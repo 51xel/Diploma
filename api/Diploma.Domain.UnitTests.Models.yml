@@ -1,0 +1,31 @@
+### YamlMime:ManagedReference
+items:
+- uid: Diploma.Domain.UnitTests.Models
+  commentId: N:Diploma.Domain.UnitTests.Models
+  id: Models
+  parent: Diploma.Domain.UnitTests
+  children:
+  - Diploma.Domain.UnitTests.Models.ModelTests
+  - Diploma.Domain.UnitTests.Models.TrainingTimeRangeTests
+  langs:
+  - csharp
+  - vb
+  name: Diploma.Domain.UnitTests.Models
+  nameWithType: Diploma.Domain.UnitTests.Models
+  fullName: Diploma.Domain.UnitTests.Models
+  type: Namespace
+  assemblies:
+  - Diploma.Domain.UnitTests
+references:
+- uid: Diploma.Domain.UnitTests.Models.ModelTests
+  commentId: T:Diploma.Domain.UnitTests.Models.ModelTests
+  href: Diploma.Domain.UnitTests.Models.ModelTests.html
+  name: ModelTests
+  nameWithType: ModelTests
+  fullName: Diploma.Domain.UnitTests.Models.ModelTests
+- uid: Diploma.Domain.UnitTests.Models.TrainingTimeRangeTests
+  commentId: T:Diploma.Domain.UnitTests.Models.TrainingTimeRangeTests
+  href: Diploma.Domain.UnitTests.Models.TrainingTimeRangeTests.html
+  name: TrainingTimeRangeTests
+  nameWithType: TrainingTimeRangeTests
+  fullName: Diploma.Domain.UnitTests.Models.TrainingTimeRangeTests

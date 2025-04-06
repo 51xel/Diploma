@@ -1,0 +1,31 @@
+### YamlMime:ManagedReference
+items:
+- uid: Diploma.Application.Predictions.Factories.Interfaces
+  commentId: N:Diploma.Application.Predictions.Factories.Interfaces
+  id: Factories.Interfaces
+  parent: Diploma.Application.Predictions
+  children:
+  - Diploma.Application.Predictions.Factories.Interfaces.IPredictionRepositoryFactory
+  - Diploma.Application.Predictions.Factories.Interfaces.IPredictionSettingsFactory
+  langs:
+  - csharp
+  - vb
+  name: Diploma.Application.Predictions.Factories.Interfaces
+  nameWithType: Diploma.Application.Predictions.Factories.Interfaces
+  fullName: Diploma.Application.Predictions.Factories.Interfaces
+  type: Namespace
+  assemblies:
+  - Diploma.Application
+references:
+- uid: Diploma.Application.Predictions.Factories.Interfaces.IPredictionRepositoryFactory
+  commentId: T:Diploma.Application.Predictions.Factories.Interfaces.IPredictionRepositoryFactory
+  href: Diploma.Application.Predictions.Factories.Interfaces.IPredictionRepositoryFactory.html
+  name: IPredictionRepositoryFactory
+  nameWithType: IPredictionRepositoryFactory
+  fullName: Diploma.Application.Predictions.Factories.Interfaces.IPredictionRepositoryFactory
+- uid: Diploma.Application.Predictions.Factories.Interfaces.IPredictionSettingsFactory
+  commentId: T:Diploma.Application.Predictions.Factories.Interfaces.IPredictionSettingsFactory
+  href: Diploma.Application.Predictions.Factories.Interfaces.IPredictionSettingsFactory.html
+  name: IPredictionSettingsFactory
+  nameWithType: IPredictionSettingsFactory
+  fullName: Diploma.Application.Predictions.Factories.Interfaces.IPredictionSettingsFactory

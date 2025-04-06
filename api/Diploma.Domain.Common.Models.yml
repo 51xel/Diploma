@@ -1,0 +1,63 @@
+### YamlMime:ManagedReference
+items:
+- uid: Diploma.Domain.Common.Models
+  commentId: N:Diploma.Domain.Common.Models
+  id: Models
+  parent: Diploma.Domain.Common
+  children:
+  - Diploma.Domain.Common.Models.TimeRangeType
+  langs:
+  - csharp
+  - vb
+  name: Diploma.Domain.Common.Models
+  nameWithType: Diploma.Domain.Common.Models
+  fullName: Diploma.Domain.Common.Models
+  type: Namespace
+  assemblies:
+  - Diploma.Domain
+references:
+- uid: Diploma.Domain.Common.Models.TimeRangeType
+  commentId: T:Diploma.Domain.Common.Models.TimeRangeType
+  parent: Diploma.Domain.Common.Models
+  href: Diploma.Domain.Common.Models.TimeRangeType.html
+  name: TimeRangeType
+  nameWithType: TimeRangeType
+  fullName: Diploma.Domain.Common.Models.TimeRangeType
+- uid: Diploma.Domain.Common.Models
+  commentId: N:Diploma.Domain.Common.Models
+  href: Diploma.html
+  name: Diploma.Domain.Common.Models
+  nameWithType: Diploma.Domain.Common.Models
+  fullName: Diploma.Domain.Common.Models
+  spec.csharp:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Domain
+    name: Domain
+    href: Diploma.Domain.html
+  - name: .
+  - uid: Diploma.Domain.Common
+    name: Common
+    href: Diploma.Domain.Common.html
+  - name: .
+  - uid: Diploma.Domain.Common.Models
+    name: Models
+    href: Diploma.Domain.Common.Models.html
+  spec.vb:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Domain
+    name: Domain
+    href: Diploma.Domain.html
+  - name: .
+  - uid: Diploma.Domain.Common
+    name: Common
+    href: Diploma.Domain.Common.html
+  - name: .
+  - uid: Diploma.Domain.Common.Models
+    name: Models
+    href: Diploma.Domain.Common.Models.html

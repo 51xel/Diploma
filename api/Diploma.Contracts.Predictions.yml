@@ -1,0 +1,62 @@
+### YamlMime:ManagedReference
+items:
+- uid: Diploma.Contracts.Predictions
+  commentId: N:Diploma.Contracts.Predictions
+  id: Contracts.Predictions
+  parent: Diploma
+  children:
+  - Diploma.Contracts.Predictions.PredictPriceRequest
+  - Diploma.Contracts.Predictions.PredictPriceResponse
+  langs:
+  - csharp
+  - vb
+  name: Diploma.Contracts.Predictions
+  nameWithType: Diploma.Contracts.Predictions
+  fullName: Diploma.Contracts.Predictions
+  type: Namespace
+  assemblies:
+  - Diploma.Contracts
+references:
+- uid: Diploma.Contracts.Predictions.PredictPriceRequest
+  commentId: T:Diploma.Contracts.Predictions.PredictPriceRequest
+  parent: Diploma.Contracts.Predictions
+  href: Diploma.Contracts.Predictions.PredictPriceRequest.html
+  name: PredictPriceRequest
+  nameWithType: PredictPriceRequest
+  fullName: Diploma.Contracts.Predictions.PredictPriceRequest
+- uid: Diploma.Contracts.Predictions.PredictPriceResponse
+  commentId: T:Diploma.Contracts.Predictions.PredictPriceResponse
+  href: Diploma.Contracts.Predictions.PredictPriceResponse.html
+  name: PredictPriceResponse
+  nameWithType: PredictPriceResponse
+  fullName: Diploma.Contracts.Predictions.PredictPriceResponse
+- uid: Diploma.Contracts.Predictions
+  commentId: N:Diploma.Contracts.Predictions
+  href: Diploma.html
+  name: Diploma.Contracts.Predictions
+  nameWithType: Diploma.Contracts.Predictions
+  fullName: Diploma.Contracts.Predictions
+  spec.csharp:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Contracts
+    name: Contracts
+    href: Diploma.Contracts.html
+  - name: .
+  - uid: Diploma.Contracts.Predictions
+    name: Predictions
+    href: Diploma.Contracts.Predictions.html
+  spec.vb:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Contracts
+    name: Contracts
+    href: Diploma.Contracts.html
+  - name: .
+  - uid: Diploma.Contracts.Predictions
+    name: Predictions
+    href: Diploma.Contracts.Predictions.html

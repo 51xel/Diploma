@@ -1,0 +1,260 @@
+### YamlMime:ManagedReference
+items:
+- uid: Diploma.Application.Models.Interfaces.IModelRepository
+  commentId: T:Diploma.Application.Models.Interfaces.IModelRepository
+  id: IModelRepository
+  parent: Diploma.Application.Models.Interfaces
+  children:
+  - Diploma.Application.Models.Interfaces.IModelRepository.GetAsync(System.Guid,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IModelRepository
+  nameWithType: IModelRepository
+  fullName: Diploma.Application.Models.Interfaces.IModelRepository
+  type: Interface
+  source:
+    remote:
+      path: Diploma.Application/Models/Interfaces/IModelRepository.cs
+      branch: documantation
+      repo: https://github.com/51xel/Diploma.git
+    id: IModelRepository
+    path: Diploma.Application/Models/Interfaces/IModelRepository.cs
+    startLine: 7
+  assemblies:
+  - Diploma.Application
+  namespace: Diploma.Application.Models.Interfaces
+  summary: Provides access to model entities.
+  example: []
+  syntax:
+    content: public interface IModelRepository
+    content.vb: Public Interface IModelRepository
+- uid: Diploma.Application.Models.Interfaces.IModelRepository.GetAsync(System.Guid,System.Threading.CancellationToken)
+  commentId: M:Diploma.Application.Models.Interfaces.IModelRepository.GetAsync(System.Guid,System.Threading.CancellationToken)
+  id: GetAsync(System.Guid,System.Threading.CancellationToken)
+  parent: Diploma.Application.Models.Interfaces.IModelRepository
+  langs:
+  - csharp
+  - vb
+  name: GetAsync(Guid, CancellationToken)
+  nameWithType: IModelRepository.GetAsync(Guid, CancellationToken)
+  fullName: Diploma.Application.Models.Interfaces.IModelRepository.GetAsync(System.Guid, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: Diploma.Application/Models/Interfaces/IModelRepository.cs
+      branch: documantation
+      repo: https://github.com/51xel/Diploma.git
+    id: GetAsync
+    path: Diploma.Application/Models/Interfaces/IModelRepository.cs
+    startLine: 15
+  assemblies:
+  - Diploma.Application
+  namespace: Diploma.Application.Models.Interfaces
+  summary: Retrieves a model entity by its unique identifier
+  example: []
+  syntax:
+    content: Task<Model?> GetAsync(Guid modelId, CancellationToken cancellationToken)
+    parameters:
+    - id: modelId
+      type: System.Guid
+      description: The unique identifier of the model
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: Token to monitor for cancellation requests
+    return:
+      type: System.Threading.Tasks.Task{Diploma.Domain.Models.Model}
+      description: The model entity, or null if not found
+    content.vb: Function GetAsync(modelId As Guid, cancellationToken As CancellationToken) As Task(Of Model)
+  overload: Diploma.Application.Models.Interfaces.IModelRepository.GetAsync*
+references:
+- uid: Diploma.Application.Models.Interfaces
+  commentId: N:Diploma.Application.Models.Interfaces
+  href: Diploma.html
+  name: Diploma.Application.Models.Interfaces
+  nameWithType: Diploma.Application.Models.Interfaces
+  fullName: Diploma.Application.Models.Interfaces
+  spec.csharp:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Application
+    name: Application
+    href: Diploma.Application.html
+  - name: .
+  - uid: Diploma.Application.Models
+    name: Models
+    href: Diploma.Application.Models.html
+  - name: .
+  - uid: Diploma.Application.Models.Interfaces
+    name: Interfaces
+    href: Diploma.Application.Models.Interfaces.html
+  spec.vb:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Application
+    name: Application
+    href: Diploma.Application.html
+  - name: .
+  - uid: Diploma.Application.Models
+    name: Models
+    href: Diploma.Application.Models.html
+  - name: .
+  - uid: Diploma.Application.Models.Interfaces
+    name: Interfaces
+    href: Diploma.Application.Models.Interfaces.html
+- uid: Diploma.Application.Models.Interfaces.IModelRepository.GetAsync*
+  commentId: Overload:Diploma.Application.Models.Interfaces.IModelRepository.GetAsync
+  href: Diploma.Application.Models.Interfaces.IModelRepository.html#Diploma_Application_Models_Interfaces_IModelRepository_GetAsync_System_Guid_System_Threading_CancellationToken_
+  name: GetAsync
+  nameWithType: IModelRepository.GetAsync
+  fullName: Diploma.Application.Models.Interfaces.IModelRepository.GetAsync
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Diploma.Domain.Models.Model}
+  commentId: T:System.Threading.Tasks.Task{Diploma.Domain.Models.Model}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Model>
+  nameWithType: Task<Model>
+  fullName: System.Threading.Tasks.Task<Diploma.Domain.Models.Model>
+  nameWithType.vb: Task(Of Model)
+  fullName.vb: System.Threading.Tasks.Task(Of Diploma.Domain.Models.Model)
+  name.vb: Task(Of Model)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Diploma.Domain.Models.Model
+    name: Model
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Diploma.Domain.Models.Model
+    name: Model
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

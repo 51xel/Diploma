@@ -1,0 +1,24 @@
+### YamlMime:ManagedReference
+items:
+- uid: Diploma.Domain.Common.Helpers
+  commentId: N:Diploma.Domain.Common.Helpers
+  id: Helpers
+  parent: Diploma.Domain.Common
+  children:
+  - Diploma.Domain.Common.Helpers.DateTimeHelper
+  langs:
+  - csharp
+  - vb
+  name: Diploma.Domain.Common.Helpers
+  nameWithType: Diploma.Domain.Common.Helpers
+  fullName: Diploma.Domain.Common.Helpers
+  type: Namespace
+  assemblies:
+  - Diploma.Domain
+references:
+- uid: Diploma.Domain.Common.Helpers.DateTimeHelper
+  commentId: T:Diploma.Domain.Common.Helpers.DateTimeHelper
+  href: Diploma.Domain.Common.Helpers.DateTimeHelper.html
+  name: DateTimeHelper
+  nameWithType: DateTimeHelper
+  fullName: Diploma.Domain.Common.Helpers.DateTimeHelper

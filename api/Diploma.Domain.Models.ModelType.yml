@@ -1,0 +1,129 @@
+### YamlMime:ManagedReference
+items:
+- uid: Diploma.Domain.Models.ModelType
+  commentId: T:Diploma.Domain.Models.ModelType
+  id: ModelType
+  parent: Diploma.Domain.Models
+  children:
+  - Diploma.Domain.Models.ModelType.None
+  - Diploma.Domain.Models.ModelType.SARIMA
+  langs:
+  - csharp
+  - vb
+  name: ModelType
+  nameWithType: ModelType
+  fullName: Diploma.Domain.Models.ModelType
+  type: Enum
+  source:
+    remote:
+      path: Diploma.Domain/Models/ModelType.cs
+      branch: documantation
+      repo: https://github.com/51xel/Diploma.git
+    id: ModelType
+    path: Diploma.Domain/Models/ModelType.cs
+    startLine: 5
+  assemblies:
+  - Diploma.Domain
+  namespace: Diploma.Domain.Models
+  summary: Represents different types of models used in predictions or analysis.
+  example: []
+  syntax:
+    content: public enum ModelType
+    content.vb: Public Enum ModelType
+- uid: Diploma.Domain.Models.ModelType.None
+  commentId: F:Diploma.Domain.Models.ModelType.None
+  id: None
+  parent: Diploma.Domain.Models.ModelType
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: ModelType.None
+  fullName: Diploma.Domain.Models.ModelType.None
+  type: Field
+  source:
+    remote:
+      path: Diploma.Domain/Models/ModelType.cs
+      branch: documantation
+      repo: https://github.com/51xel/Diploma.git
+    id: None
+    path: Diploma.Domain/Models/ModelType.cs
+    startLine: 10
+  assemblies:
+  - Diploma.Domain
+  namespace: Diploma.Domain.Models
+  summary: No specific model type assigned.
+  example: []
+  syntax:
+    content: None = 0
+    return:
+      type: Diploma.Domain.Models.ModelType
+- uid: Diploma.Domain.Models.ModelType.SARIMA
+  commentId: F:Diploma.Domain.Models.ModelType.SARIMA
+  id: SARIMA
+  parent: Diploma.Domain.Models.ModelType
+  langs:
+  - csharp
+  - vb
+  name: SARIMA
+  nameWithType: ModelType.SARIMA
+  fullName: Diploma.Domain.Models.ModelType.SARIMA
+  type: Field
+  source:
+    remote:
+      path: Diploma.Domain/Models/ModelType.cs
+      branch: documantation
+      repo: https://github.com/51xel/Diploma.git
+    id: SARIMA
+    path: Diploma.Domain/Models/ModelType.cs
+    startLine: 16
+  assemblies:
+  - Diploma.Domain
+  namespace: Diploma.Domain.Models
+  summary: >-
+    Seasonal Autoregressive Integrated Moving Average (SARIMA) model.
+
+    Used for time series forecasting with seasonality considerations.
+  example: []
+  syntax:
+    content: SARIMA = 1
+    return:
+      type: Diploma.Domain.Models.ModelType
+references:
+- uid: Diploma.Domain.Models
+  commentId: N:Diploma.Domain.Models
+  href: Diploma.html
+  name: Diploma.Domain.Models
+  nameWithType: Diploma.Domain.Models
+  fullName: Diploma.Domain.Models
+  spec.csharp:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Domain
+    name: Domain
+    href: Diploma.Domain.html
+  - name: .
+  - uid: Diploma.Domain.Models
+    name: Models
+    href: Diploma.Domain.Models.html
+  spec.vb:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Domain
+    name: Domain
+    href: Diploma.Domain.html
+  - name: .
+  - uid: Diploma.Domain.Models
+    name: Models
+    href: Diploma.Domain.Models.html
+- uid: Diploma.Domain.Models.ModelType
+  commentId: T:Diploma.Domain.Models.ModelType
+  parent: Diploma.Domain.Models
+  href: Diploma.Domain.Models.ModelType.html
+  name: ModelType
+  nameWithType: ModelType
+  fullName: Diploma.Domain.Models.ModelType

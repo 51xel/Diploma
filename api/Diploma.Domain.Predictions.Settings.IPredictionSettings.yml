@@ -1,0 +1,246 @@
+### YamlMime:ManagedReference
+items:
+- uid: Diploma.Domain.Predictions.Settings.IPredictionSettings
+  commentId: T:Diploma.Domain.Predictions.Settings.IPredictionSettings
+  id: IPredictionSettings
+  parent: Diploma.Domain.Predictions.Settings
+  children:
+  - Diploma.Domain.Predictions.Settings.IPredictionSettings.From
+  - Diploma.Domain.Predictions.Settings.IPredictionSettings.TimeRangeType
+  - Diploma.Domain.Predictions.Settings.IPredictionSettings.To
+  langs:
+  - csharp
+  - vb
+  name: IPredictionSettings
+  nameWithType: IPredictionSettings
+  fullName: Diploma.Domain.Predictions.Settings.IPredictionSettings
+  type: Interface
+  source:
+    remote:
+      path: Diploma.Domain/Predictions/Settings/IPredictionSettings.cs
+      branch: documantation
+      repo: https://github.com/51xel/Diploma.git
+    id: IPredictionSettings
+    path: Diploma.Domain/Predictions/Settings/IPredictionSettings.cs
+    startLine: 7
+  assemblies:
+  - Diploma.Domain
+  namespace: Diploma.Domain.Predictions.Settings
+  summary: Represents the settings required for generating predictions within a specific time range.
+  example: []
+  syntax:
+    content: public interface IPredictionSettings
+    content.vb: Public Interface IPredictionSettings
+- uid: Diploma.Domain.Predictions.Settings.IPredictionSettings.From
+  commentId: P:Diploma.Domain.Predictions.Settings.IPredictionSettings.From
+  id: From
+  parent: Diploma.Domain.Predictions.Settings.IPredictionSettings
+  langs:
+  - csharp
+  - vb
+  name: From
+  nameWithType: IPredictionSettings.From
+  fullName: Diploma.Domain.Predictions.Settings.IPredictionSettings.From
+  type: Property
+  source:
+    remote:
+      path: Diploma.Domain/Predictions/Settings/IPredictionSettings.cs
+      branch: documantation
+      repo: https://github.com/51xel/Diploma.git
+    id: From
+    path: Diploma.Domain/Predictions/Settings/IPredictionSettings.cs
+    startLine: 12
+  assemblies:
+  - Diploma.Domain
+  namespace: Diploma.Domain.Predictions.Settings
+  summary: Gets the start date of the prediction period.
+  example: []
+  syntax:
+    content: DateTime From { get; init; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Property From As Date
+  overload: Diploma.Domain.Predictions.Settings.IPredictionSettings.From*
+- uid: Diploma.Domain.Predictions.Settings.IPredictionSettings.To
+  commentId: P:Diploma.Domain.Predictions.Settings.IPredictionSettings.To
+  id: To
+  parent: Diploma.Domain.Predictions.Settings.IPredictionSettings
+  langs:
+  - csharp
+  - vb
+  name: To
+  nameWithType: IPredictionSettings.To
+  fullName: Diploma.Domain.Predictions.Settings.IPredictionSettings.To
+  type: Property
+  source:
+    remote:
+      path: Diploma.Domain/Predictions/Settings/IPredictionSettings.cs
+      branch: documantation
+      repo: https://github.com/51xel/Diploma.git
+    id: To
+    path: Diploma.Domain/Predictions/Settings/IPredictionSettings.cs
+    startLine: 17
+  assemblies:
+  - Diploma.Domain
+  namespace: Diploma.Domain.Predictions.Settings
+  summary: Gets the end date of the prediction period.
+  example: []
+  syntax:
+    content: DateTime To { get; init; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Property [To] As Date
+  overload: Diploma.Domain.Predictions.Settings.IPredictionSettings.To*
+- uid: Diploma.Domain.Predictions.Settings.IPredictionSettings.TimeRangeType
+  commentId: P:Diploma.Domain.Predictions.Settings.IPredictionSettings.TimeRangeType
+  id: TimeRangeType
+  parent: Diploma.Domain.Predictions.Settings.IPredictionSettings
+  langs:
+  - csharp
+  - vb
+  name: TimeRangeType
+  nameWithType: IPredictionSettings.TimeRangeType
+  fullName: Diploma.Domain.Predictions.Settings.IPredictionSettings.TimeRangeType
+  type: Property
+  source:
+    remote:
+      path: Diploma.Domain/Predictions/Settings/IPredictionSettings.cs
+      branch: documantation
+      repo: https://github.com/51xel/Diploma.git
+    id: TimeRangeType
+    path: Diploma.Domain/Predictions/Settings/IPredictionSettings.cs
+    startLine: 22
+  assemblies:
+  - Diploma.Domain
+  namespace: Diploma.Domain.Predictions.Settings
+  summary: Gets the type of time range used for predictions.
+  example: []
+  syntax:
+    content: TimeRangeType TimeRangeType { get; init; }
+    parameters: []
+    return:
+      type: Diploma.Domain.Common.Models.TimeRangeType
+    content.vb: Property TimeRangeType As TimeRangeType
+  overload: Diploma.Domain.Predictions.Settings.IPredictionSettings.TimeRangeType*
+references:
+- uid: Diploma.Domain.Predictions.Settings
+  commentId: N:Diploma.Domain.Predictions.Settings
+  href: Diploma.html
+  name: Diploma.Domain.Predictions.Settings
+  nameWithType: Diploma.Domain.Predictions.Settings
+  fullName: Diploma.Domain.Predictions.Settings
+  spec.csharp:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Domain
+    name: Domain
+    href: Diploma.Domain.html
+  - name: .
+  - uid: Diploma.Domain.Predictions
+    name: Predictions
+    href: Diploma.Domain.Predictions.html
+  - name: .
+  - uid: Diploma.Domain.Predictions.Settings
+    name: Settings
+    href: Diploma.Domain.Predictions.Settings.html
+  spec.vb:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Domain
+    name: Domain
+    href: Diploma.Domain.html
+  - name: .
+  - uid: Diploma.Domain.Predictions
+    name: Predictions
+    href: Diploma.Domain.Predictions.html
+  - name: .
+  - uid: Diploma.Domain.Predictions.Settings
+    name: Settings
+    href: Diploma.Domain.Predictions.Settings.html
+- uid: Diploma.Domain.Predictions.Settings.IPredictionSettings.From*
+  commentId: Overload:Diploma.Domain.Predictions.Settings.IPredictionSettings.From
+  href: Diploma.Domain.Predictions.Settings.IPredictionSettings.html#Diploma_Domain_Predictions_Settings_IPredictionSettings_From
+  name: From
+  nameWithType: IPredictionSettings.From
+  fullName: Diploma.Domain.Predictions.Settings.IPredictionSettings.From
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Diploma.Domain.Predictions.Settings.IPredictionSettings.To*
+  commentId: Overload:Diploma.Domain.Predictions.Settings.IPredictionSettings.To
+  href: Diploma.Domain.Predictions.Settings.IPredictionSettings.html#Diploma_Domain_Predictions_Settings_IPredictionSettings_To
+  name: To
+  nameWithType: IPredictionSettings.To
+  fullName: Diploma.Domain.Predictions.Settings.IPredictionSettings.To
+- uid: Diploma.Domain.Predictions.Settings.IPredictionSettings.TimeRangeType*
+  commentId: Overload:Diploma.Domain.Predictions.Settings.IPredictionSettings.TimeRangeType
+  href: Diploma.Domain.Predictions.Settings.IPredictionSettings.html#Diploma_Domain_Predictions_Settings_IPredictionSettings_TimeRangeType
+  name: TimeRangeType
+  nameWithType: IPredictionSettings.TimeRangeType
+  fullName: Diploma.Domain.Predictions.Settings.IPredictionSettings.TimeRangeType
+- uid: Diploma.Domain.Common.Models.TimeRangeType
+  commentId: T:Diploma.Domain.Common.Models.TimeRangeType
+  parent: Diploma.Domain.Common.Models
+  href: Diploma.Domain.Common.Models.TimeRangeType.html
+  name: TimeRangeType
+  nameWithType: TimeRangeType
+  fullName: Diploma.Domain.Common.Models.TimeRangeType
+- uid: Diploma.Domain.Common.Models
+  commentId: N:Diploma.Domain.Common.Models
+  href: Diploma.html
+  name: Diploma.Domain.Common.Models
+  nameWithType: Diploma.Domain.Common.Models
+  fullName: Diploma.Domain.Common.Models
+  spec.csharp:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Domain
+    name: Domain
+    href: Diploma.Domain.html
+  - name: .
+  - uid: Diploma.Domain.Common
+    name: Common
+    href: Diploma.Domain.Common.html
+  - name: .
+  - uid: Diploma.Domain.Common.Models
+    name: Models
+    href: Diploma.Domain.Common.Models.html
+  spec.vb:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Domain
+    name: Domain
+    href: Diploma.Domain.html
+  - name: .
+  - uid: Diploma.Domain.Common
+    name: Common
+    href: Diploma.Domain.Common.html
+  - name: .
+  - uid: Diploma.Domain.Common.Models
+    name: Models
+    href: Diploma.Domain.Common.Models.html

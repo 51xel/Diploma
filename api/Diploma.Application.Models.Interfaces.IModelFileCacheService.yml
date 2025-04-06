@@ -1,0 +1,286 @@
+### YamlMime:ManagedReference
+items:
+- uid: Diploma.Application.Models.Interfaces.IModelFileCacheService
+  commentId: T:Diploma.Application.Models.Interfaces.IModelFileCacheService
+  id: IModelFileCacheService
+  parent: Diploma.Application.Models.Interfaces
+  children:
+  - Diploma.Application.Models.Interfaces.IModelFileCacheService.GetOrAddAsync(Diploma.Domain.Models.Model,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IModelFileCacheService
+  nameWithType: IModelFileCacheService
+  fullName: Diploma.Application.Models.Interfaces.IModelFileCacheService
+  type: Interface
+  source:
+    remote:
+      path: Diploma.Application/Models/Interfaces/IModelFileCacheService.cs
+      branch: documantation
+      repo: https://github.com/51xel/Diploma.git
+    id: IModelFileCacheService
+    path: Diploma.Application/Models/Interfaces/IModelFileCacheService.cs
+    startLine: 7
+  assemblies:
+  - Diploma.Application
+  namespace: Diploma.Application.Models.Interfaces
+  summary: Provides a caching mechanism for model files, ensuring retrieval or storage when necessary.
+  example: []
+  syntax:
+    content: public interface IModelFileCacheService
+    content.vb: Public Interface IModelFileCacheService
+- uid: Diploma.Application.Models.Interfaces.IModelFileCacheService.GetOrAddAsync(Diploma.Domain.Models.Model,System.Threading.CancellationToken)
+  commentId: M:Diploma.Application.Models.Interfaces.IModelFileCacheService.GetOrAddAsync(Diploma.Domain.Models.Model,System.Threading.CancellationToken)
+  id: GetOrAddAsync(Diploma.Domain.Models.Model,System.Threading.CancellationToken)
+  parent: Diploma.Application.Models.Interfaces.IModelFileCacheService
+  langs:
+  - csharp
+  - vb
+  name: GetOrAddAsync(Model, CancellationToken)
+  nameWithType: IModelFileCacheService.GetOrAddAsync(Model, CancellationToken)
+  fullName: Diploma.Application.Models.Interfaces.IModelFileCacheService.GetOrAddAsync(Diploma.Domain.Models.Model, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: Diploma.Application/Models/Interfaces/IModelFileCacheService.cs
+      branch: documantation
+      repo: https://github.com/51xel/Diploma.git
+    id: GetOrAddAsync
+    path: Diploma.Application/Models/Interfaces/IModelFileCacheService.cs
+    startLine: 15
+  assemblies:
+  - Diploma.Application
+  namespace: Diploma.Application.Models.Interfaces
+  summary: Retrieves a model file from the cache or stores it if not already present.
+  example: []
+  syntax:
+    content: Task<MemoryStream?> GetOrAddAsync(Model model, CancellationToken cancellationToken)
+    parameters:
+    - id: model
+      type: Diploma.Domain.Models.Model
+      description: The model entity to retrieve or store.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: Token to monitor for cancellation requests.
+    return:
+      type: System.Threading.Tasks.Task{System.IO.MemoryStream}
+      description: The model file as a MemoryStream, or null if not found.
+    content.vb: Function GetOrAddAsync(model As Model, cancellationToken As CancellationToken) As Task(Of MemoryStream)
+  overload: Diploma.Application.Models.Interfaces.IModelFileCacheService.GetOrAddAsync*
+references:
+- uid: Diploma.Application.Models.Interfaces
+  commentId: N:Diploma.Application.Models.Interfaces
+  href: Diploma.html
+  name: Diploma.Application.Models.Interfaces
+  nameWithType: Diploma.Application.Models.Interfaces
+  fullName: Diploma.Application.Models.Interfaces
+  spec.csharp:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Application
+    name: Application
+    href: Diploma.Application.html
+  - name: .
+  - uid: Diploma.Application.Models
+    name: Models
+    href: Diploma.Application.Models.html
+  - name: .
+  - uid: Diploma.Application.Models.Interfaces
+    name: Interfaces
+    href: Diploma.Application.Models.Interfaces.html
+  spec.vb:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Application
+    name: Application
+    href: Diploma.Application.html
+  - name: .
+  - uid: Diploma.Application.Models
+    name: Models
+    href: Diploma.Application.Models.html
+  - name: .
+  - uid: Diploma.Application.Models.Interfaces
+    name: Interfaces
+    href: Diploma.Application.Models.Interfaces.html
+- uid: Diploma.Application.Models.Interfaces.IModelFileCacheService.GetOrAddAsync*
+  commentId: Overload:Diploma.Application.Models.Interfaces.IModelFileCacheService.GetOrAddAsync
+  href: Diploma.Application.Models.Interfaces.IModelFileCacheService.html#Diploma_Application_Models_Interfaces_IModelFileCacheService_GetOrAddAsync_Diploma_Domain_Models_Model_System_Threading_CancellationToken_
+  name: GetOrAddAsync
+  nameWithType: IModelFileCacheService.GetOrAddAsync
+  fullName: Diploma.Application.Models.Interfaces.IModelFileCacheService.GetOrAddAsync
+- uid: Diploma.Domain.Models.Model
+  commentId: T:Diploma.Domain.Models.Model
+  parent: Diploma.Domain.Models
+  href: Diploma.Domain.Models.Model.html
+  name: Model
+  nameWithType: Model
+  fullName: Diploma.Domain.Models.Model
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{System.IO.MemoryStream}
+  commentId: T:System.Threading.Tasks.Task{System.IO.MemoryStream}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<MemoryStream>
+  nameWithType: Task<MemoryStream>
+  fullName: System.Threading.Tasks.Task<System.IO.MemoryStream>
+  nameWithType.vb: Task(Of MemoryStream)
+  fullName.vb: System.Threading.Tasks.Task(Of System.IO.MemoryStream)
+  name.vb: Task(Of MemoryStream)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.IO.MemoryStream
+    name: MemoryStream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.memorystream
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.IO.MemoryStream
+    name: MemoryStream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.memorystream
+  - name: )
+- uid: Diploma.Domain.Models
+  commentId: N:Diploma.Domain.Models
+  href: Diploma.html
+  name: Diploma.Domain.Models
+  nameWithType: Diploma.Domain.Models
+  fullName: Diploma.Domain.Models
+  spec.csharp:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Domain
+    name: Domain
+    href: Diploma.Domain.html
+  - name: .
+  - uid: Diploma.Domain.Models
+    name: Models
+    href: Diploma.Domain.Models.html
+  spec.vb:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Domain
+    name: Domain
+    href: Diploma.Domain.html
+  - name: .
+  - uid: Diploma.Domain.Models
+    name: Models
+    href: Diploma.Domain.Models.html
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

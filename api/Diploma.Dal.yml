@@ -1,0 +1,136 @@
+### YamlMime:ManagedReference
+items:
+- uid: Diploma.Dal
+  id: Dal
+  parent: Diploma
+  children:
+  - Diploma.Dal.EntityFramework
+  - Diploma.Dal.PythonRunTime
+  - Diploma.Dal.RedisCache
+  - Diploma.Dal.Storage
+  langs:
+  - csharp
+  - vb
+  name: Diploma.Dal
+  type: Namespace
+references:
+- uid: Diploma.Dal.EntityFramework
+  commentId: N:Diploma.Dal.EntityFramework
+  href: Diploma.html
+  name: Diploma.Dal.EntityFramework
+  nameWithType: Diploma.Dal.EntityFramework
+  fullName: Diploma.Dal.EntityFramework
+  spec.csharp:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Dal
+    name: Dal
+    href: Diploma.Dal.html
+  - name: .
+  - uid: Diploma.Dal.EntityFramework
+    name: EntityFramework
+    href: Diploma.Dal.EntityFramework.html
+  spec.vb:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Dal
+    name: Dal
+    href: Diploma.Dal.html
+  - name: .
+  - uid: Diploma.Dal.EntityFramework
+    name: EntityFramework
+    href: Diploma.Dal.EntityFramework.html
+- uid: Diploma.Dal.PythonRunTime
+  commentId: N:Diploma.Dal.PythonRunTime
+  href: Diploma.html
+  name: Diploma.Dal.PythonRunTime
+  nameWithType: Diploma.Dal.PythonRunTime
+  fullName: Diploma.Dal.PythonRunTime
+  spec.csharp:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Dal
+    name: Dal
+    href: Diploma.Dal.html
+  - name: .
+  - uid: Diploma.Dal.PythonRunTime
+    name: PythonRunTime
+    href: Diploma.Dal.PythonRunTime.html
+  spec.vb:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Dal
+    name: Dal
+    href: Diploma.Dal.html
+  - name: .
+  - uid: Diploma.Dal.PythonRunTime
+    name: PythonRunTime
+    href: Diploma.Dal.PythonRunTime.html
+- uid: Diploma.Dal.RedisCache
+  commentId: N:Diploma.Dal.RedisCache
+  href: Diploma.html
+  name: Diploma.Dal.RedisCache
+  nameWithType: Diploma.Dal.RedisCache
+  fullName: Diploma.Dal.RedisCache
+  spec.csharp:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Dal
+    name: Dal
+    href: Diploma.Dal.html
+  - name: .
+  - uid: Diploma.Dal.RedisCache
+    name: RedisCache
+    href: Diploma.Dal.RedisCache.html
+  spec.vb:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Dal
+    name: Dal
+    href: Diploma.Dal.html
+  - name: .
+  - uid: Diploma.Dal.RedisCache
+    name: RedisCache
+    href: Diploma.Dal.RedisCache.html
+- uid: Diploma.Dal.Storage
+  commentId: N:Diploma.Dal.Storage
+  href: Diploma.html
+  name: Diploma.Dal.Storage
+  nameWithType: Diploma.Dal.Storage
+  fullName: Diploma.Dal.Storage
+  spec.csharp:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Dal
+    name: Dal
+    href: Diploma.Dal.html
+  - name: .
+  - uid: Diploma.Dal.Storage
+    name: Storage
+    href: Diploma.Dal.Storage.html
+  spec.vb:
+  - uid: Diploma
+    name: Diploma
+    href: Diploma.html
+  - name: .
+  - uid: Diploma.Dal
+    name: Dal
+    href: Diploma.Dal.html
+  - name: .
+  - uid: Diploma.Dal.Storage
+    name: Storage
+    href: Diploma.Dal.Storage.html

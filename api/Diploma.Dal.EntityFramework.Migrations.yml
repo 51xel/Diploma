@@ -1,0 +1,24 @@
+### YamlMime:ManagedReference
+items:
+- uid: Diploma.Dal.EntityFramework.Migrations
+  commentId: N:Diploma.Dal.EntityFramework.Migrations
+  id: Migrations
+  parent: Diploma.Dal.EntityFramework
+  children:
+  - Diploma.Dal.EntityFramework.Migrations.InitialCreate
+  langs:
+  - csharp
+  - vb
+  name: Diploma.Dal.EntityFramework.Migrations
+  nameWithType: Diploma.Dal.EntityFramework.Migrations
+  fullName: Diploma.Dal.EntityFramework.Migrations
+  type: Namespace
+  assemblies:
+  - Diploma.Dal.EntityFramework
+references:
+- uid: Diploma.Dal.EntityFramework.Migrations.InitialCreate
+  commentId: T:Diploma.Dal.EntityFramework.Migrations.InitialCreate
+  href: Diploma.Dal.EntityFramework.Migrations.InitialCreate.html
+  name: InitialCreate
+  nameWithType: InitialCreate
+  fullName: Diploma.Dal.EntityFramework.Migrations.InitialCreate

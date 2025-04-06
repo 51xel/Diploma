@@ -3,18 +3,42 @@ using Diploma.Domain.Common.Models;
 
 namespace Diploma.Domain.Models
 {
+    /// <summary>
+    /// Represents a time range used for training models
+    /// </summary>
     public class TrainingTimeRange
     {
+        /// <summary>
+        /// Gets the type of time range (e.g., seconds, minutes, days, etc.)
+        /// </summary>
         public TimeRangeType Type { get; init; }
+
+        /// <summary>
+        /// Gets the start date and time of the training period
+        /// </summary>
         public DateTime From { get; init; }
+
+        /// <summary>
+        /// Gets the end date and time of the training period
+        /// </summary>
         public DateTime To { get; init; }
 
-        // EF
+        /// <summary>
+        /// Parameterless constructor required by Entity Framework
+        /// </summary>
         public TrainingTimeRange() { }
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="TrainingTimeRange"/> class
+        /// </summary>
+        /// <param name="trainingTimeRangeType">The type of time range used for training</param>
+        /// <param name="from">The start date and time of the training period</param>
+        /// <param name="to">The end date and time of the training period</param>
+        /// <exception cref="ArgumentException">Thrown if <paramref name="from"/> is greater than or equal to <paramref name="to"/> 
+        /// or if the specified time range type is invalid for the given dates</exception>
         public TrainingTimeRange(
-            TimeRangeType trainingTimeRangeType, 
-            DateTime from, 
+            TimeRangeType trainingTimeRangeType,
+            DateTime from,
             DateTime to)
         {
             if (from >= to)
@@ -37,23 +61,16 @@ namespace Diploma.Domain.Models
             DateTime from,
             DateTime to)
         {
-            switch (trainingTimeRangeType)
+            return trainingTimeRangeType switch
             {
-                case TimeRangeType.BySeconds:
-                    return (to - from).TotalSeconds >= 1;
-                case TimeRangeType.ByMinutes:
-                    return (to - from).TotalMinutes >= 1;
-                case TimeRangeType.ByHours:
-                    return (to - from).TotalHours >= 1;
-                case TimeRangeType.ByDays:
-                    return (to - from).TotalDays >= 1;
-                case TimeRangeType.ByMonths:
-                    return DateTimeHelper.GetMonthDifference(from, to) >= 1;
-                case TimeRangeType.ByYears:
-                    return (to.Year - from.Year) >= 1;
-                default:
-                    throw new InvalidOperationException($"Unsupported time range type: {trainingTimeRangeType}");
-            }
+                TimeRangeType.BySeconds => (to - from).TotalSeconds >= 1,
+                TimeRangeType.ByMinutes => (to - from).TotalMinutes >= 1,
+                TimeRangeType.ByHours => (to - from).TotalHours >= 1,
+                TimeRangeType.ByDays => (to - from).TotalDays >= 1,
+                TimeRangeType.ByMonths => DateTimeHelper.GetMonthDifference(from, to) >= 1,
+                TimeRangeType.ByYears => (to.Year - from.Year) >= 1,
+                _ => throw new InvalidOperationException($"Unsupported time range type: {trainingTimeRangeType}")
+            };
         }
     }
 }

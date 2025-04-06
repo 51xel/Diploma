@@ -1,0 +1,31 @@
+### YamlMime:ManagedReference
+items:
+- uid: Diploma.Tests.Common.Models
+  commentId: N:Diploma.Tests.Common.Models
+  id: Models
+  parent: Diploma.Tests.Common
+  children:
+  - Diploma.Tests.Common.Models.ModelFactory
+  - Diploma.Tests.Common.Models.TrainingTimeRangeFactory
+  langs:
+  - csharp
+  - vb
+  name: Diploma.Tests.Common.Models
+  nameWithType: Diploma.Tests.Common.Models
+  fullName: Diploma.Tests.Common.Models
+  type: Namespace
+  assemblies:
+  - Diploma.Tests.Common
+references:
+- uid: Diploma.Tests.Common.Models.ModelFactory
+  commentId: T:Diploma.Tests.Common.Models.ModelFactory
+  href: Diploma.Tests.Common.Models.ModelFactory.html
+  name: ModelFactory
+  nameWithType: ModelFactory
+  fullName: Diploma.Tests.Common.Models.ModelFactory
+- uid: Diploma.Tests.Common.Models.TrainingTimeRangeFactory
+  commentId: T:Diploma.Tests.Common.Models.TrainingTimeRangeFactory
+  href: Diploma.Tests.Common.Models.TrainingTimeRangeFactory.html
+  name: TrainingTimeRangeFactory
+  nameWithType: TrainingTimeRangeFactory
+  fullName: Diploma.Tests.Common.Models.TrainingTimeRangeFactory
