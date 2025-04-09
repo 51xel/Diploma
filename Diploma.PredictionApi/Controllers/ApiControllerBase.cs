@@ -9,11 +9,6 @@ namespace Diploma.PredictionApi.Controllers
     {
         protected IActionResult Problem(IEnumerable<Error> errors)
         {
-            if (errors.Any())
-            {
-                return Problem();
-            }
-
             if (errors.All(error => error.Type == ErrorType.Validation))
             {
                 return ValidationProblem(errors);
