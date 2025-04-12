@@ -13,14 +13,17 @@ namespace Diploma.Dal.RedisCache
             IConfiguration configuration,
             bool isDevelopment)
         {
-            services.AddStackExchangeRedisCache(options =>
+            if (isDevelopment)
             {
-                options.Configuration = configuration.GetConnectionString(isDevelopment ? "LocalRedis" : "Redis")!;
-            });
+                services.AddStackExchangeRedisCache(options =>
+                {
+                    options.Configuration = configuration.GetConnectionString("LocalRedis")!;
+                });
 
-            services.Configure<RedisCacheSettings>(configuration.GetSection("RedisCacheSettings"));
+                services.Configure<RedisCacheSettings>(configuration.GetSection("RedisCacheSettings"));
 
-            services.AddTransient<IModelFileCacheRepository, ModelFileCacheRepository>();
+                services.AddTransient<IModelFileCacheRepository, ModelFileRedisCacheRepository>();
+            }
 
             return services;
         }

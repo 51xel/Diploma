@@ -6,12 +6,12 @@ using System.Text.Json;
 
 namespace Diploma.Dal.RedisCache.Models
 {
-    internal class ModelFileCacheRepository : IModelFileCacheRepository
+    internal class ModelFileRedisCacheRepository : IModelFileCacheRepository
     {
         private readonly IDistributedCache _distributedCache;
         private readonly RedisCacheSettings _redisCacheSettings;
 
-        public ModelFileCacheRepository(
+        public ModelFileRedisCacheRepository(
             IDistributedCache distributedCache, 
             IOptions<RedisCacheSettings> redisCacheSettings)
         {

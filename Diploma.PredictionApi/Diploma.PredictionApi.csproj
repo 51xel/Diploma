@@ -26,6 +26,7 @@
     <ProjectReference Include="..\Diploma.Application\Diploma.Application.csproj" />
     <ProjectReference Include="..\Diploma.Contracts\Diploma.Contracts.csproj" />
     <ProjectReference Include="..\Diploma.Dal.EntityFramework\Diploma.Dal.EntityFramework.csproj" />
+    <ProjectReference Include="..\Diploma.Dal.MemoryCache\Diploma.Dal.MemoryCache.csproj" />
     <ProjectReference Include="..\Diploma.Dal.PythonRunTime\Diploma.Dal.PythonRunTime.csproj" />
     <ProjectReference Include="..\Diploma.Dal.RedisCache\Diploma.Dal.RedisCache.csproj" />
     <ProjectReference Include="..\Diploma.Dal.Storage\Diploma.Dal.Storage.csproj" />
