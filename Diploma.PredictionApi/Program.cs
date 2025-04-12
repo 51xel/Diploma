@@ -7,6 +7,7 @@ using Diploma.Dal.PythonRunTime.Common;
 using Diploma.Dal.RedisCache;
 using Diploma.Dal.Storage;
 using Diploma.PredictionApi.HostedServices;
+using Diploma.PredictionApi.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -52,6 +53,8 @@ if (isDevelopment)
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseMiddleware<ExceptionMiddleware>();
 
 app.UseHttpsRedirection();
 
