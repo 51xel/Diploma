@@ -19,13 +19,22 @@ namespace Diploma.PredictionApi.Middlewares
             {
                 await _next(context);
             }
-            catch (Exception ex) when (ex is ArgumentException or ArgumentNullException or InvalidOperationException)
+            catch (Exception ex) when (ex is ArgumentException or ArgumentNullException)
             {
                 _logger.LogWarning(ex, "Client error occurred");
 
                 await GenerateResultWithProblemAsync(
                     context,
                     StatusCodes.Status400BadRequest);
+            }
+            catch (Exception ex) when (ex is InvalidOperationException)
+            {
+                _logger.LogWarning(ex, "Client error occurred");
+
+                await GenerateResultWithProblemAsync(
+                    context,
+                    StatusCodes.Status400BadRequest,
+                    ex.Message);
             }
             catch (Exception ex)
             {
