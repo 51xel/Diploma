@@ -30,6 +30,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{8EC462FD-D
 		Docs\linting.md = Docs\linting.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diploma.Dal.MemoryCache", "Diploma.Dal.MemoryCache\Diploma.Dal.MemoryCache.csproj", "{BE6DBC79-C108-4888-A78B-43C5EBAF0346}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -76,6 +78,10 @@ Global
 		{6E0878A0-35CE-4DFA-ADA3-AA0BA5C4B423}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E0878A0-35CE-4DFA-ADA3-AA0BA5C4B423}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E0878A0-35CE-4DFA-ADA3-AA0BA5C4B423}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE6DBC79-C108-4888-A78B-43C5EBAF0346}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE6DBC79-C108-4888-A78B-43C5EBAF0346}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE6DBC79-C108-4888-A78B-43C5EBAF0346}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE6DBC79-C108-4888-A78B-43C5EBAF0346}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
