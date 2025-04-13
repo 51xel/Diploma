@@ -7,16 +7,10 @@ namespace Diploma.Dal.PythonRunTime
 {
     public static class DependencyInjection
     {
-        public static IServiceCollection AddDalMemorysCache(
-            this IServiceCollection services,
-            IConfiguration configuration,
-            bool isDevelopment)
+        public static IServiceCollection AddDalMemorysCache(this IServiceCollection services)
         {
-            if (!isDevelopment)
-            {
-                services.AddDistributedMemoryCache();
-                services.AddTransient<IModelFileCacheRepository, ModelFileMemoryCacheRepository>();
-            }
+            services.AddDistributedMemoryCache();
+            services.AddTransient<IModelFileCacheRepository, ModelFileMemoryCacheRepository>();
 
             return services;
         }

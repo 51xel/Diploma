@@ -26,13 +26,7 @@ builder.Services
     .AddDalEntityFramework(builder.Configuration)
     .AddDalStorage(builder.Configuration)
     .AddDalPythonRunTime()
-    .AddDalRedisCache(builder.Configuration, isDevelopment)
-    .AddDalMemorysCache(builder.Configuration, isDevelopment);
-
-if (isDevelopment)
-{
-    builder.Services.AddHostedService<RedisContainerHostedService>();
-}
+    .AddDalMemorysCache();
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddControllers();
