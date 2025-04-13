@@ -7,6 +7,8 @@
     <InvariantGlobalization>false</InvariantGlobalization>
 	<GenerateDocumentationFile>true</GenerateDocumentationFile>
 	<NoWarn>$(NoWarn);1591</NoWarn>
+	<UserSecretsId>ce4a2e64-2808-440b-b012-6e97c229289b</UserSecretsId>
+	<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
   </PropertyGroup>
 
   <ItemGroup>
@@ -17,6 +19,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="8.1.0" />
     <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="8.1.0" />
     <PackageReference Include="Testcontainers.Redis" Version="4.1.0" />
@@ -31,6 +34,12 @@
     <ProjectReference Include="..\Diploma.Dal.RedisCache\Diploma.Dal.RedisCache.csproj" />
     <ProjectReference Include="..\Diploma.Dal.Storage\Diploma.Dal.Storage.csproj" />
     <ProjectReference Include="..\Diploma.Domain\Diploma.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>
