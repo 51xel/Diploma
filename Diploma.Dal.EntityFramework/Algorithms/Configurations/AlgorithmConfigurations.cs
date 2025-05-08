@@ -3,11 +3,10 @@ using Diploma.Domain.Algorithms;
 using Diploma.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using System.Reflection.Emit;
 
 namespace Diploma.Dal.EntityFramework.Algorithms.Configurations
 {
-    internal class AlgorithmConfigurations : IEntityTypeConfiguration<Algorithm>
+    class AlgorithmConfigurations : IEntityTypeConfiguration<Algorithm>
     {
         public void Configure(EntityTypeBuilder<Algorithm> builder)
         {

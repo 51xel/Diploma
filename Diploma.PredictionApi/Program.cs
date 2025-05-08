@@ -2,11 +2,10 @@ using Azure.Extensions.AspNetCore.Configuration.Secrets;
 using Azure.Identity;
 using Diploma.Application;
 using Diploma.Dal.EntityFramework;
+using Diploma.Dal.HttpClient;
 using Diploma.Dal.PythonRunTime;
 using Diploma.Dal.PythonRunTime.Common;
-using Diploma.Dal.RedisCache;
 using Diploma.Dal.Storage;
-using Diploma.PredictionApi.HostedServices;
 using Diploma.PredictionApi.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -26,7 +25,8 @@ builder.Services
     .AddDalEntityFramework(builder.Configuration)
     .AddDalStorage(builder.Configuration)
     .AddDalPythonRunTime()
-    .AddDalMemorysCache();
+    .AddDalMemorysCache()
+    .AddDalHttpClient(builder.Configuration);
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddControllers();

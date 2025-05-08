@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Diploma.Dal.EntityFramework.Models.Configurations
 {
-    internal class ModelConfigurations : IEntityTypeConfiguration<Model>
+    class ModelConfigurations : IEntityTypeConfiguration<Model>
     {
         public void Configure(EntityTypeBuilder<Model> builder)
         {
