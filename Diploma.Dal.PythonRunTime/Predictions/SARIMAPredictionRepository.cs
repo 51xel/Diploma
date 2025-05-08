@@ -48,6 +48,7 @@ namespace Diploma.Dal.PythonRunTime.Predictions
             {
                 byte[] modelBytes = modelFile.ToArray();
                 using PyObject pyStream = _io!.BytesIO(modelBytes.ToPython());
+                //TODO save this in memory, speed up?
                 var model = _joblib!.load(pyStream);
 
                 var predictedPrices = model.predict(

@@ -1,5 +1,5 @@
 ﻿using Diploma.Application.Models.Interfaces;
-using Diploma.Application.Predictions.Factories.Interfaces;
+using Diploma.Application.Predictions.Interfaces;
 using Diploma.Domain.Predictions;
 using ErrorOr;
 using MediatR;

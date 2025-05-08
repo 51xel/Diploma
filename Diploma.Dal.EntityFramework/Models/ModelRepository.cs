@@ -5,18 +5,18 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Diploma.Dal.EntityFramework.Models
 {
-    internal class ModelRepository : IModelRepository
+    class ModelRepository : IModelRepository
     {
-        private readonly ApplicationDbContext _cosmosDbContext;
+        private readonly ApplicationDbContext _applicationDbContext;
 
-        public ModelRepository(ApplicationDbContext cosmosDbContext)
+        public ModelRepository(ApplicationDbContext applicationDbContext)
         {
-            _cosmosDbContext = cosmosDbContext;
+            _applicationDbContext = applicationDbContext;
         }
 
         public async Task<Model?> GetAsync(Guid modelId, CancellationToken cancellationToken)
         {
-            return await _cosmosDbContext.Models.FirstOrDefaultAsync(x => x.Id == modelId, cancellationToken);
+            return await _applicationDbContext.Models.FirstOrDefaultAsync(x => x.Id == modelId, cancellationToken);
         }
     }
 }

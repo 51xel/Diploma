@@ -1,5 +1,4 @@
-﻿using Diploma.Application.Predictions.Factories.Interfaces;
-using Diploma.Application.Predictions.Interfaces;
+﻿using Diploma.Application.Predictions.Interfaces;
 using Diploma.Domain.Models;
 
 namespace Diploma.Application.Predictions.Factories

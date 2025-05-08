@@ -1,7 +1,6 @@
-﻿using Diploma.Application.Predictions.Interfaces;
-using Diploma.Domain.Models;
+﻿using Diploma.Domain.Models;
 
-namespace Diploma.Application.Predictions.Factories.Interfaces
+namespace Diploma.Application.Predictions.Interfaces
 {
     public interface IPredictionRepositoryFactory
     {
