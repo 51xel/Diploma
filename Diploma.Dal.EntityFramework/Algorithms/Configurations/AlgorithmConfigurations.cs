@@ -26,6 +26,10 @@ namespace Diploma.Dal.EntityFramework.Algorithms.Configurations
                 .IsRequired();
 
             builder
+                .HasIndex(algorithm => algorithm.Type)
+                .IsUnique();
+
+            builder
                 .HasMany(algorithm => algorithm.Models)
                 .WithMany(model => model.Algorithms)
                 .UsingEntity<Dictionary<string, object>>(
