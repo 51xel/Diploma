@@ -1,0 +1,102 @@
+﻿@page "/register"
+
+@inject ISender Mediator
+@inject ILogger<Register> Logger
+@inject AccountHelper AccountHelper
+@inject NavigationManager NavigationManager
+
+<PageTitle>Register</PageTitle>
+
+<h1>Register</h1>
+<div class="row">
+    <div class="col-md-4">
+        <section>
+            <EditForm Model="Input" method="post" OnValidSubmit="RegisterUser" FormName="register" Enhance="true">
+                <DataAnnotationsValidator />
+                <h2>Create a new account</h2>
+                <hr />
+                <Microsoft.AspNetCore.Components.Forms.ValidationSummary class="text-danger" role="alert" />
+
+                <div class="form-floating mb-3">
+                    <InputText @bind-Value="Input.Email" class="form-control" placeholder="name@example.com" />
+                    <label>Email</label>
+                    <ValidationMessage For="() => Input.Email" class="text-danger" />
+                </div>
+                <div class="form-floating mb-3">
+                    <InputText type="password" @bind-Value="Input.Password" class="form-control" placeholder="Password" />
+                    <label>Password</label>
+                    <ValidationMessage For="() => Input.Password" class="text-danger" />
+                </div>
+                <div class="form-floating mb-3">
+                    <InputText type="password" @bind-Value="Input.ConfirmPassword" class="form-control" placeholder="Confirm Password" />
+                    <label>Confirm Password</label>
+                    <ValidationMessage For="() => Input.ConfirmPassword" class="text-danger" />
+                </div>
+
+                <div class="mb-3 text-center">
+                    <span class="text-danger">@errorMessage</span>
+                </div>
+                <div>
+                    <Button Color="Color.Primary" Block Type="ButtonType.Submit">Register</Button>
+                </div>
+            </EditForm>
+        </section>
+    </div>
+</div>
+
+@code {
+    [SupplyParameterFromForm]
+    private RegisterInputModel Input { get; set; } = new();
+
+    private string? errorMessage;
+
+    private async Task RegisterUser()
+    {
+        if (Input.Password != Input.ConfirmPassword)
+        {
+            errorMessage = "Passwords do not match.";
+            return;
+        }
+
+        var command = new RegisterWithEmailAndPasswordCommand(Input.Email, Input.Password);
+
+        var result = await Mediator.Send(command);
+
+        if (result.IsError)
+        {
+            var error = result.ErrorsOrEmptyList.FirstOrDefault();
+            errorMessage = error.Description;
+
+            if (string.IsNullOrEmpty(errorMessage))
+            {
+                errorMessage = "Something unexpected happend";
+
+                Logger.LogError($"Error while email and password authentication for {Input.Email}. Password {Input.Password}");
+            }
+        }
+        else
+        {
+            await AccountHelper.SignInUserAsync(result.Value);
+            NavigationManager.NavigateTo("/");
+        }
+    }
+
+    private sealed class RegisterInputModel
+    {
+        [Required]
+        [EmailAddress]
+        [StringLength(255)]
+        public string Email { get; set; } = string.Empty;
+
+        [Required]
+        [DataType(DataType.Password)]
+        [MinLength(8)]
+        [MaxLength(20)]
+        public string Password { get; set; } = string.Empty;
+
+        [Required]
+        [DataType(DataType.Password)]
+        [Compare(nameof(Password), ErrorMessage = "Passwords do not match.")]
+        public string ConfirmPassword { get; set; } = string.Empty;
+    }
+}

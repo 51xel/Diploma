@@ -18,11 +18,14 @@
     <link rel="stylesheet" href="Diploma.Services.UserPanel.styles.css" />
     <link rel="icon" type="image/png" href="favicon.png" />
 
-    <HeadOutlet @rendermode="@InteractiveServer" />
+    <HeadOutlet/>
 </head>
 
 <body>
-    <Routes @rendermode="@InteractiveServer" />
+    <Routes />
+
+    <ApplicationLoadingIndicator />
+
     <script src="_framework/blazor.web.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
 </body>

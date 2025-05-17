@@ -7,11 +7,24 @@
 
     <main>
         <div class="top-row px-4">
-            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
+            <AuthorizeView>
+                <NotAuthorized>
+                    <Link To="/login">Login</Link>
+                </NotAuthorized>
+                <Authorized>
+                    <Link To="/account/settings">
+                        <Icon Name="IconName.Settings" />
+                    </Link>
+
+                    <Link To="/logout">
+                        <Icon Name="@("fa-sign-out-alt")" />
+                    </Link>
+                </Authorized>
+            </AuthorizeView>
         </div>
 
         <article class="content px-4">
-            @Body
+                @Body
         </article>
     </main>
 </div>

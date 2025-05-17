@@ -1,10 +1,12 @@
 ﻿using Diploma.Application.Algotihms.Interfaces;
 using Diploma.Application.Models.Interfaces;
 using Diploma.Application.TradeActions.Interfaces;
+using Diploma.Application.Users.Interfaces;
 using Diploma.Dal.EntityFramework.Algorithms;
 using Diploma.Dal.EntityFramework.Common;
 using Diploma.Dal.EntityFramework.Models;
 using Diploma.Dal.EntityFramework.TradeActions;
+using Diploma.Dal.EntityFramework.Users;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -23,6 +25,8 @@ namespace Diploma.Dal.EntityFramework
             services.AddTransient<IAlgorithmRepository, AlgorithmRepository>();
             services.AddTransient<ITradeActionRepository, TradeActionRepository>();
             services.AddTransient<ITradePairRepository, TradePairRepository>();
+            services.AddTransient<IUserRepository, UserRepository>();
+            services.AddTransient<IAuthenticateWithEmailAndPasswordRepository, AuthenticateWithEmailAndPasswordRepository>();
 
             return services;
         }

@@ -2,7 +2,7 @@
 
 namespace Diploma.Application.Predictions.Queries.PredictPrice
 {
-    internal class PredictPriceValidator : AbstractValidator<PredictPriceQuery>
+    class PredictPriceValidator : AbstractValidator<PredictPriceQuery>
     {
         public PredictPriceValidator()
         {

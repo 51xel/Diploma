@@ -1,0 +1,55 @@
+﻿@using Microsoft.AspNetCore.Components
+
+<Modal @ref="_modalRef" Closing="@OnClosing">
+    <ModalContent Centered>
+        <ModalHeader>
+            <ModalTitle>@Title</ModalTitle>
+        </ModalHeader>
+        <ModalBody>
+            @if (!string.IsNullOrWhiteSpace(Message))
+            {
+                <p>@Message</p>
+            }
+
+            @ChildContent
+
+            @if (!string.IsNullOrWhiteSpace(Warning))
+            {
+                <p class="text-danger">@Warning</p>
+            }
+        </ModalBody>
+        <ModalFooter>
+            <Button Color="Color.Secondary" Clicked="@Cancel">Cancel</Button>
+            <Button Color="Color.Primary" Clicked="@Confirm">Confirm</Button>
+        </ModalFooter>
+    </ModalContent>
+</Modal>
+
+@code {
+    private Modal _modalRef;
+
+    [Parameter, EditorRequired] public string Title { get; set; } = null!;
+    [Parameter, EditorRequired] public string Message { get; set; } = null!;
+    [Parameter, EditorRequired] public string Warning { get; set; } = null!;
+
+    [Parameter, EditorRequired] public EventCallback OnConfirm { get; set; }
+    [Parameter, EditorRequired] public EventCallback OnCancel { get; set; }
+    [Parameter, EditorRequired] public Func<ModalClosingEventArgs, Task> OnClosing { get; set; }
+
+    [Parameter, EditorRequired] public RenderFragment ChildContent { get; set; }
+
+    public async Task ShowAsync() => await _modalRef.Show();
+    public async Task HideAsync() => await _modalRef.Hide();
+
+    private async Task Confirm()
+    {
+        await HideAsync();
+        await OnConfirm.InvokeAsync();
+    }
+
+    private async Task Cancel()
+    {
+        await HideAsync();
+        await OnCancel.InvokeAsync();
+    }
+}

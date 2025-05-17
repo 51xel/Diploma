@@ -17,7 +17,7 @@ namespace Diploma.Dal.EntityFramework.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "9.0.1")
+                .HasAnnotation("ProductVersion", "8.0.0")
                 .HasAnnotation("Proxies:ChangeTracking", false)
                 .HasAnnotation("Proxies:CheckEquality", false)
                 .HasAnnotation("Proxies:LazyLoading", true)
@@ -67,6 +67,9 @@ namespace Diploma.Dal.EntityFramework.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("Type")
+                        .IsUnique();
+
                     b.ToTable("algorithm", (string)null);
                 });
 
@@ -111,6 +114,51 @@ namespace Diploma.Dal.EntityFramework.Migrations
                     b.HasIndex("sellActionId");
 
                     b.ToTable("tradePair", (string)null);
+                });
+
+            modelBuilder.Entity("Diploma.Domain.Users.AuthenticationTypes.EmailAndPasswordAuthType", b =>
+                {
+                    b.Property<Guid>("UserId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier")
+                        .HasColumnName("userId");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)")
+                        .HasColumnName("email");
+
+                    b.Property<string>("PasswordHash")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("passwordHash");
+
+                    b.HasKey("UserId");
+
+                    b.ToTable("email_password_auth", (string)null);
+                });
+
+            modelBuilder.Entity("Diploma.Domain.Users.User", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier")
+                        .HasColumnName("id");
+
+                    b.Property<int>("AuthenticationTypes")
+                        .HasColumnType("int")
+                        .HasColumnName("authenticationTypes");
+
+                    b.Property<string>("UserName")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)")
+                        .HasColumnName("username");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("user", (string)null);
                 });
 
             modelBuilder.Entity("algorithm_model", b =>

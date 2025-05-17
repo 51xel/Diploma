@@ -1,0 +1,17 @@
+﻿@page "/logout"
+@using Diploma.Services.UserPanel.Common
+
+@inject AccountHelper AccountHelper
+
+<p>
+    Logout
+</p>
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        await AccountHelper.SignOutAsync();
+
+        await base.OnInitializedAsync();
+    }
+}
