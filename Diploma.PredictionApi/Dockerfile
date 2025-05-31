@@ -4,6 +4,7 @@ FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
 RUN apt-get update && apt-get install -y python3 python3-pip python3-dev python3-venv
 
 RUN pip install joblib --break-system-packages
+RUN pip install statsmodels --break-system-packages
 
 ENV PYTHONNET_PYDLL=/usr/lib/x86_64-linux-gnu/libpython3.11.so
 
@@ -17,7 +18,7 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 
-COPY ["Diploma.PredictionApi/Diploma.PredictionApi.csproj", "Diploma.PredictionApi/"]
+COPY ["Diploma.PredictionApi/Diploma.Services.PredictionApi.csproj", "Diploma.PredictionApi/"]
 COPY ["Diploma.Application/Diploma.Application.csproj", "Diploma.Application/"]
 COPY ["Diploma.Domain/Diploma.Domain.csproj", "Diploma.Domain/"]
 COPY ["Diploma.Contracts/Diploma.Contracts.csproj", "Diploma.Contracts/"]
@@ -26,19 +27,19 @@ COPY ["Diploma.Dal.MemoryCache/Diploma.Dal.MemoryCache.csproj", "Diploma.Dal.Mem
 COPY ["Diploma.Dal.PythonRunTime/Diploma.Dal.PythonRunTime.csproj", "Diploma.Dal.PythonRunTime/"]
 COPY ["Diploma.Dal.RedisCache/Diploma.Dal.RedisCache.csproj", "Diploma.Dal.RedisCache/"]
 COPY ["Diploma.Dal.Storage/Diploma.Dal.Storage.csproj", "Diploma.Dal.Storage/"]
-RUN dotnet restore "./Diploma.PredictionApi/Diploma.PredictionApi.csproj"
+RUN dotnet restore "./Diploma.PredictionApi/Diploma.Services.PredictionApi.csproj"
 COPY . . 
 WORKDIR "/src/Diploma.PredictionApi"
-RUN dotnet build "./Diploma.PredictionApi.csproj" -c $BUILD_CONFIGURATION -o /app/build
+RUN dotnet build "./Diploma.Services.PredictionApi.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 # This stage is used to publish the service project to be copied to the final stage
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "./Diploma.PredictionApi.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "./Diploma.Services.PredictionApi.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
 # This stage is used in production or when running from VS in regular mode (Default when not using the Debug configuration)
 FROM base AS final
 
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "Diploma.PredictionApi.dll"]
+ENTRYPOINT ["dotnet", "Diploma.Services.PredictionApi.dll"]
