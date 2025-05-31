@@ -1,0 +1,25 @@
+﻿@page "/account/settings"
+@attribute [Authorize]
+
+@using Diploma.Services.UserPanel.Components.Account.Common
+
+@inject AccountHelper AccountHelper
+@inject NavigationManager NavigationManager
+
+<h3>Settings</h3>
+
+<WalletIntegration UserId="UserId" />
+
+@code {
+    Guid UserId;
+
+    protected override Task OnInitializedAsync()
+    {
+        if (!Guid.TryParse(AccountHelper.GetUserId(), out UserId))
+        {
+            NavigationManager.NavigateTo("/access-denied");
+        }
+
+        return Task.CompletedTask;
+    }
+}

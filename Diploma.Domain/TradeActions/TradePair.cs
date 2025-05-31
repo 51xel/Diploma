@@ -9,6 +9,7 @@ namespace Diploma.Domain.TradeActions
         public virtual TradeAction BuyAction { get; init; }
         public virtual TradeAction SellAction { get; set; }
 
+        //EF
         public TradePair() {}
 
         public TradePair(

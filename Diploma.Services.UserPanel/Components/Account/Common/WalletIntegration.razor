@@ -1,0 +1,306 @@
+﻿@rendermode InteractiveServer
+@attribute [Authorize]
+
+@using System.ComponentModel.DataAnnotations
+@using Diploma.Application.Wallets.Commands.CreateWallet
+@using Diploma.Application.Wallets.Commands.DeleteWallet
+@using Diploma.Application.Wallets.Commands.UpdateWallet
+@using Diploma.Application.Wallets.Queries.GetAvailableWalletIntegrations
+@using Diploma.Application.Wallets.Queries.GetUserWallet
+@using Diploma.Domain.Wallets
+@using Diploma.Services.UserPanel.Components.Common
+
+@inject ISender Mediator
+@inject ILogger<WalletIntegration> Logger
+@inject NavigationManager NavigationManager
+
+<Container class="mt-5">
+    <Card class="shadow p-4 rounded-4">
+        <CardHeader>
+            <Heading Size="HeadingSize.Is3">Wallet Integrations</Heading>
+        </CardHeader>
+        <CardBody>
+            @if (!HasIntegration)
+            {
+                <Field class="mb-3">
+                    <Label for="walletSelector">Select Wallet</Label>
+                    <Select TValue="string" SelectedValue="SelectedWalletName" SelectedValueChanged="OnWalletSelected">
+                        <SelectItem Value="string.Empty" Disabled>Select one of the available wallet integrations</SelectItem>
+                        @foreach (var wallet in AvailableWalletIntegrations)
+                        {
+                            <SelectItem Value="@wallet">@wallet</SelectItem>
+                        }
+                    </Select>
+                </Field>
+                <Paragraph Class="text-muted">
+                    To proceed, you need to integrate a wallet. Select from the list above to begin the integration process.
+                </Paragraph>
+            }
+            else
+            {
+                <Field class="mb-3">
+                    <Label for="walletSelector">Selected Wallet</Label>
+                    <Select TValue="string" SelectedValue="SelectedWalletName" SelectedValueChanged="OnWalletSelected">
+                        @foreach (var wallet in AvailableWalletIntegrations)
+                        {
+                            <SelectItem Value="@wallet">@wallet</SelectItem>
+                        }
+                    </Select>
+                </Field>
+                <Field class="mb-3">
+                    <Label for="apiKey">API Key</Label>
+
+                    @if (ShowApiKeyError)
+                    {
+                        <Paragraph Class="text-danger mb-1">@ApiKeyErrorMessage</Paragraph>
+                    }
+
+                    <Addons>
+                        <TextEdit id="apiKey"
+                        Placeholder="Enter your API key"
+                        @bind-Text="SelectedApiKey"
+                        Class="@((ShowApiKeyError ? "border border-danger" : ""))" />
+                        <Addon>
+                            <Button Color="Color.Primary" Clicked="SaveApiKey">Save</Button>
+                        </Addon>
+                    </Addons>
+                </Field>
+                <Paragraph Class="text-muted">
+                    You can delete your wallet integration at any time.
+                </Paragraph>
+
+                @if (CurrentUserWallet is not null)
+                {
+                    <Button Color="Color.Danger" Clicked="DeleteIntegration">Delete Integration</Button>
+                }
+            }
+        </CardBody>
+    </Card>
+</Container>
+
+<ConfirmationModal @ref="createNewWalletConfirmationModal"
+Title="New Wallet Integration"
+Message="You currently have an active wallet integration."
+Warning="This action is permanent and cannot be undone."
+OnConfirm="ConfirmCreating"
+OnCancel="CloseModal"
+OnClosing="OnModalClosing">
+
+    <p>
+        <strong>Only one wallet can be active at a time.</strong><br />
+        By continuing, your current wallet will be <strong>deleted</strong> and replaced with:
+        <strong>@SelectedWalletName</strong>.
+    </p>
+
+</ConfirmationModal>
+
+@code {
+    [Parameter, EditorRequired] public Guid UserId { get; set; }
+
+    private ConfirmationModal createNewWalletConfirmationModal;
+    private bool cancelClose;
+
+    private List<string> AvailableWalletIntegrations = new();
+    private string SelectedWalletName = string.Empty;
+    private bool HasIntegration = false;
+
+    private bool ShowApiKeyError = false;
+    private string ApiKeyErrorMessage = string.Empty;
+
+    private string _selectedApiKey;
+    private string SelectedApiKey
+    {
+        get => _selectedApiKey;
+        set
+        {
+            _selectedApiKey = value;
+            OnApiKeyChanged(value); 
+        }
+
+    }
+
+    private Wallet? CurrentUserWallet;
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (UserId == Guid.Empty)
+        {
+            NavigationManager.NavigateTo("/access-Denied");
+        }
+
+        var getAvailableWalletIntegrationsQuery = new GetAvailableWalletIntegrationsQuery();
+        var availableWalletIntegrations = await Mediator.Send(getAvailableWalletIntegrationsQuery);
+
+        if (availableWalletIntegrations.IsError)
+        {
+            //Add some popup
+            Logger.LogError("Error while getting available wallet integrations");
+            return;
+        }
+
+        AvailableWalletIntegrations = availableWalletIntegrations.Value
+            .Select(integration => integration.ToString())
+            .ToList();
+
+        var getUserWalletQuery = new GetUserWalletQuery(UserId);
+        var userWallet = await Mediator.Send(getUserWalletQuery);
+
+        if (userWallet.IsError)
+        {
+            //Add some popup
+            Logger.LogError("Error while getting user wallet");
+            return;
+        }
+
+        if (userWallet.Value is not null)
+        {
+            SelectedWalletName = userWallet.Value;
+            SelectedApiKey = userWallet.Value.EncryptedApiKey;
+
+            CurrentUserWallet = userWallet.Value;
+
+            HasIntegration = true;
+        }
+    }
+
+    private Task OnWalletSelected(string value)
+    {
+        SelectedWalletName = value;
+
+        if (!string.IsNullOrWhiteSpace(SelectedWalletName))
+        {
+            SelectedApiKey = SelectedWalletName == CurrentUserWallet ? CurrentUserWallet?.EncryptedApiKey ?? string.Empty : string.Empty;
+
+            HasIntegration = true;
+        }
+
+        return Task.CompletedTask;
+    }
+
+    private void OnApiKeyChanged(string value)
+    {
+        if (!string.IsNullOrWhiteSpace(value))
+        {
+            ShowApiKeyError = false;
+            ApiKeyErrorMessage = string.Empty;
+        }
+    }
+
+    private async Task SaveApiKey()
+    {
+        if (string.IsNullOrWhiteSpace(SelectedApiKey))
+        {
+            ShowApiKeyError = true;
+            ApiKeyErrorMessage = "API Key is required.";
+
+            return;
+        }
+
+        if (CurrentUserWallet is null)
+        {
+            await TryCreateWalletAsync();
+            return;
+        }
+
+        if (SelectedWalletName == CurrentUserWallet && 
+            SelectedApiKey != CurrentUserWallet.EncryptedApiKey)
+        {
+            CurrentUserWallet.EncryptedApiKey = SelectedApiKey;
+
+            var updateWalletCommand = new UpdateWalletCommand(CurrentUserWallet);
+
+            var updatedWallet = await Mediator.Send(updateWalletCommand);
+
+            if (updatedWallet.IsError)
+            {
+                //Add some popup
+                Logger.LogError("Error while updating wallet");
+            }
+
+            CurrentUserWallet = updatedWallet.Value;
+            SelectedApiKey = CurrentUserWallet.EncryptedApiKey;
+        }
+        else if (SelectedWalletName != CurrentUserWallet)
+        {
+            createNewWalletConfirmationModal?.ShowAsync();
+        }
+    }
+
+    private Task CloseModal()
+    {
+        cancelClose = false;
+
+        return createNewWalletConfirmationModal?.HideAsync() ?? Task.CompletedTask;
+    }
+
+    private Task OnModalClosing(ModalClosingEventArgs e)
+    {
+        e.Cancel = cancelClose || e.CloseReason != CloseReason.UserClosing;
+
+        return Task.CompletedTask;
+    }
+
+    private async Task ConfirmCreating()
+    {
+        await TryDeleteCurrentWalletAsync();
+        await TryCreateWalletAsync();
+    }
+
+    private async Task DeleteIntegration()
+    {
+        if (!await TryDeleteCurrentWalletAsync())
+        {
+            return;
+        }
+
+        HasIntegration = false;
+        SelectedWalletName = string.Empty;
+        SelectedApiKey = string.Empty;
+        CurrentUserWallet = null;
+    }
+
+    private async Task<bool> TryDeleteCurrentWalletAsync()
+    {
+        if (CurrentUserWallet is null)
+        {
+            //Add some popup
+            Logger.LogError("Error while deleting wallet");
+            return false;
+        }
+
+        var result = await Mediator.Send(new DeleteWalletCommand(CurrentUserWallet));
+
+        if (result.IsError)
+        {
+            //Add some popup
+            Logger.LogError("Error while deleting wallet");
+            return false;
+        }
+
+        return true;
+    }
+
+    private async Task<bool> TryCreateWalletAsync()
+    {
+        if (!Enum.TryParse<Integration>(SelectedWalletName, ignoreCase: true, out var integration))
+        {
+            //Add some popup
+            return false;
+        }
+
+        var createWalletCommand = new CreateWalletCommand(UserId, integration, SelectedApiKey);
+
+        var createdWallet = await Mediator.Send(createWalletCommand);
+
+        if (createdWallet.IsError)
+        {
+            //Add some popup
+            Logger.LogError("Error while creating wallet");
+            return false;
+        }
+
+        CurrentUserWallet = createdWallet.Value;
+
+        return true;
+    }
+}

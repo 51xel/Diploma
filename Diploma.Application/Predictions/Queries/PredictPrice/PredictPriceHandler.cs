@@ -6,7 +6,7 @@ using MediatR;
 
 namespace Diploma.Application.Predictions.Queries.PredictPrice
 {
-    internal class PredictPriceHandler : IRequestHandler<PredictPriceQuery, ErrorOr<IEnumerable<Prediction>>>
+    class PredictPriceHandler : IRequestHandler<PredictPriceQuery, ErrorOr<IEnumerable<Prediction>>>
     {
         private readonly PredictPriceValidator _validator;
         private readonly IModelRepository _modelRepository;

@@ -15,7 +15,7 @@ namespace Diploma.Dal.EntityFramework.TradeActions
 
         public async Task CreateAsync(TradeAction tradeAction)
         {
-            await _applicationDbContext.TradeActions.AddAsync(tradeAction);
+            _applicationDbContext.TradeActions.Add(tradeAction);
             await _applicationDbContext.SaveChangesAsync();
         }
     }

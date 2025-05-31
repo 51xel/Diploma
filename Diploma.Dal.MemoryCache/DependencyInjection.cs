@@ -1,9 +1,8 @@
 ﻿using Diploma.Application.Models.Interfaces;
 using Diploma.Dal.MemoryCache.Models;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Diploma.Dal.PythonRunTime
+namespace Diploma.Dal.MemoryCache
 {
     public static class DependencyInjection
     {
