@@ -28,7 +28,7 @@ namespace Diploma.Dal.EntityFramework.Wallets
 
         public async Task<Wallet?> GetWalletAsync(Guid userId, CancellationToken cancellationToken)
         {
-            return await _applicationDbContext.Wallets.FirstOrDefaultAsync(wallet => wallet.User.Id == userId, cancellationToken);
+            return await _applicationDbContext.Wallets.FirstOrDefaultAsync(wallet => wallet.UserId == userId, cancellationToken);
         }
 
         public async Task<Wallet> UpdateWalletAsync(Wallet wallet, CancellationToken cancellationToken)

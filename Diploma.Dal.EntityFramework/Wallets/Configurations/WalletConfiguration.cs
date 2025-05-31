@@ -11,12 +11,18 @@ namespace Diploma.Dal.EntityFramework.Wallets.Configurations
         {
             builder.ToTable("wallet");
 
-            builder.HasKey(wallet => wallet.User);
+            builder.HasKey(wallet => wallet.UserId);
 
             builder
-                .Property(wallet => wallet.User)
+                .Property(wallet => wallet.UserId)
                 .HasColumnName("userId")
                 .IsRequired();
+
+            builder
+                .HasOne(wallet => wallet.User)
+                .WithOne() 
+                .HasForeignKey<Wallet>(wallet => wallet.UserId)
+                .OnDelete(DeleteBehavior.Cascade); 
 
             builder
                 .Property(wallet => wallet.EncryptedApiKey)
@@ -29,13 +35,6 @@ namespace Diploma.Dal.EntityFramework.Wallets.Configurations
                 .HasColumnName("integration")
                 .HasConversion(new EnumToNumberConverter<Integration, int>())
                 .IsRequired();
-
-            builder
-                .HasOne(wallet => wallet.User)
-                .WithOne()
-                .HasForeignKey<Wallet>("userId")
-                .IsRequired()
-                .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

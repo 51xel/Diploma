@@ -1,0 +1,29 @@
+﻿@page "/statistic"
+@rendermode InteractiveServer
+@attribute [Authorize]
+
+<Tabs SelectedTab="@selectedTab" SelectedTabChanged="@OnSelectedTabChanged">
+    <Items>
+        <Tab Name="tradeActions">Trade Actions</Tab>
+        <Tab Name="userTradeActions">User TradeActions</Tab>
+    </Items>
+    <Content>
+        <TabPanel Name="tradeActions">
+            <TradeActions/>
+        </TabPanel>
+        <TabPanel Name="userTradeActions">
+            <UserTradeActions/>
+        </TabPanel>
+    </Content>
+</Tabs>
+
+@code {
+    string selectedTab = "tradeActions";
+
+    private Task OnSelectedTabChanged(string name)
+    {
+        selectedTab = name;
+
+        return Task.CompletedTask;
+    }
+}

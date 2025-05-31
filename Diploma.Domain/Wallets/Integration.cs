@@ -3,6 +3,7 @@
     public enum Integration
     {
         None = 0,
-        Binance = 1
+        Binance = 1,
+        Test = 2
     }
 }

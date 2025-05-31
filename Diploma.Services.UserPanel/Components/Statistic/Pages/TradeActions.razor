@@ -1,0 +1,77 @@
+﻿<LineChart @ref="lineChart" TItem="double" Options="@lineChartOptions"></LineChart>
+
+@code {
+    private LineChart<double> lineChart;
+    private
+
+    LineChartOptions lineChartOptions = new()
+        {
+            AspectRatio = 5d / 3d,
+            Layout = new()
+            {
+                Padding = new()
+                {
+                    Top = 32,
+                    Right = 16,
+                    Bottom = 16,
+                    Left = 8
+                }
+            },
+            Elements = new()
+            {
+                Line = new()
+                {
+                    Fill = false,
+                    Tension = 0.4,
+                }
+            },
+            Scales = new()
+            {
+                Y = new()
+                {
+                    Stacked = true,
+                }
+            },
+            Plugins = new()
+            {
+                Legend = new()
+                {
+                    Display = false
+                }
+            }
+        };
+
+    private static string[] Labels = new string[] { "1", "2", "3", "4", "5", "6" };
+    private static string[] BackgroundColors = new string[] { "#4bc0c0", "#36a2eb", "#ff3d88" };
+    private static string[] BorderColors = new string[] { "#4bc0c0", "#36a2eb", "#ff3d88" };
+    private Random random = new(DateTime.Now.Millisecond);
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await lineChart.Clear();
+            await lineChart.AddLabelsDatasetsAndUpdate(
+                Labels,
+                GetLineChartDataset(0),
+                GetLineChartDataset(1),
+                GetLineChartDataset(2));
+        }
+    }
+
+    private LineChartDataset<double> GetLineChartDataset(int colorIndex)
+    {
+        return new()
+            {
+                Label = "# of randoms",
+                Data = RandomizeData(2, 110),
+                BackgroundColor = BackgroundColors[colorIndex],
+                BorderColor = BorderColors[colorIndex],
+            };
+    }
+
+    List<double> RandomizeData(int min, int max)
+    {
+        return Enumerable.Range(0, Labels.Count()).Select(x => random.Next(min, max)).Select(x => (double)x).ToList();
+    }
+}

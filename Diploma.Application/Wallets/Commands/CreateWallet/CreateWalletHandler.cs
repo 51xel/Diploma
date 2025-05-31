@@ -28,7 +28,7 @@ namespace Diploma.Application.Wallets.Commands.CreateWallet
                 return Error.Failure(description: "User is not exists");
             }
 
-            var newWallet = new Wallet(user, request.Integration, request.ApiKey);
+            var newWallet = new Wallet(user.Id, request.Integration, request.ApiKey);
 
             var userWallet = await _walletRepository.GetWalletAsync(user.Id, cancellationToken);
 

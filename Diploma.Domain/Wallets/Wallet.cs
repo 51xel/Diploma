@@ -4,7 +4,9 @@ namespace Diploma.Domain.Wallets
 {
     public class Wallet
     {
+        public Guid UserId { get; init; }
         public virtual User User { get; init; }
+
         public Integration Integration { get; init; }
         public string EncryptedApiKey { get; set; }
 
@@ -12,11 +14,10 @@ namespace Diploma.Domain.Wallets
         public Wallet() { }
 
         public Wallet(
-            User user, 
+            Guid userId, 
             Integration integration,
             string encryptedApiKey)
         {
-            ArgumentNullException.ThrowIfNull(user, nameof(user));
             ArgumentException.ThrowIfNullOrEmpty(encryptedApiKey);
 
             if (integration == Integration.None)
@@ -24,8 +25,9 @@ namespace Diploma.Domain.Wallets
                 throw new InvalidOperationException();
             }
 
-            User = user;
+            UserId = userId;
             Integration = integration;
+            EncryptedApiKey = encryptedApiKey;
         }
 
         public override string ToString()

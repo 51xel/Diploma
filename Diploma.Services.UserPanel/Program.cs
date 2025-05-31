@@ -17,13 +17,13 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Configuration.AddAzureKeyVault(
-    new Uri(builder.Configuration["AzureKeyVaultUri"]!),
-    new DefaultAzureCredential(),
-    new AzureKeyVaultConfigurationOptions
-    {
-        Manager = new KeyVaultSecretManager()
-    });
+//builder.Configuration.AddAzureKeyVault(
+//    new Uri(builder.Configuration["AzureKeyVaultUri"]!),
+//    new DefaultAzureCredential(),
+//    new AzureKeyVaultConfigurationOptions
+//    {
+//        Manager = new KeyVaultSecretManager()
+//    });
 
 builder.Services
     .AddApplication()

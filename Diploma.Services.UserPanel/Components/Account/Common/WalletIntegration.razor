@@ -58,7 +58,7 @@
                     <Addons>
                         <TextEdit id="apiKey"
                         Placeholder="Enter your API key"
-                        TextChanged="OnApiKeyChanged"
+                        @bind-Text="SelectedApiKey"
                         Class="@((ShowApiKeyError ? "border border-danger" : ""))" />
                         <Addon>
                             <Button Color="Color.Primary" Clicked="SaveApiKey">Save</Button>
@@ -102,11 +102,22 @@ OnClosing="OnModalClosing">
 
     private List<string> AvailableWalletIntegrations = new();
     private string SelectedWalletName = string.Empty;
-    private string SelectedApiKey = string.Empty;
     private bool HasIntegration = false;
 
     private bool ShowApiKeyError = false;
     private string ApiKeyErrorMessage = string.Empty;
+
+    private string _selectedApiKey;
+    private string SelectedApiKey
+    {
+        get => _selectedApiKey;
+        set
+        {
+            _selectedApiKey = value;
+            OnApiKeyChanged(value); 
+        }
+
+    }
 
     private Wallet? CurrentUserWallet;
 
@@ -168,7 +179,6 @@ OnClosing="OnModalClosing">
 
     private void OnApiKeyChanged(string value)
     {
-        SelectedApiKey = value;
         if (!string.IsNullOrWhiteSpace(value))
         {
             ShowApiKeyError = false;
@@ -195,6 +205,8 @@ OnClosing="OnModalClosing">
         if (SelectedWalletName == CurrentUserWallet && 
             SelectedApiKey != CurrentUserWallet.EncryptedApiKey)
         {
+            CurrentUserWallet.EncryptedApiKey = SelectedApiKey;
+
             var updateWalletCommand = new UpdateWalletCommand(CurrentUserWallet);
 
             var updatedWallet = await Mediator.Send(updateWalletCommand);
